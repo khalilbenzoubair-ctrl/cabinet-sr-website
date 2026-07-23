@@ -6,151 +6,218 @@
     <title>Sophie Rodier - Cabinet d'Expertise Comptable & Conseil</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Caveat pour le style manuscrit du logo SR + Plus Jakarta Sans pour le corps -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        handwritten: ['Caveat', 'cursive']
+                    },
                     colors: {
-                        brand: {
-                            navy: '#0F172A',
-                            blue: '#1E40AF',
-                            accent: '#2563EB',
-                            light: '#F8FAFC'
+                        sr: {
+                            black: '#18181B',
+                            blue: '#1E3A8A',
+                            orange: '#EA580C',
+                            green: '#059669',
+                            pink: '#E11D48',
+                            yellow: '#D97706',
+                            bgLight: '#FAF9F6'
                         }
                     }
                 }
             }
         }
     </script>
-    <!-- FontAwesome pour les icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-brand-light text-slate-800 font-sans antialiased">
+<body class="bg-sr-bgLight text-slate-800 font-sans antialiased">
 
-    <!-- Top Bar Contact -->
-    <div class="bg-brand-navy text-white text-sm py-2 px-6 flex justify-between items-center border-b border-slate-800">
+    <!-- Topbar Contact -->
+    <div class="bg-sr-black text-white text-xs py-2 px-6 flex justify-between items-center">
         <div class="flex items-center space-x-6">
-            <a href="tel:0565555913" class="hover:text-blue-400 transition flex items-center gap-2">
-                <i class="fa-solid fa-phone text-xs"></i> 05 65 55 59 13
+            <a href="tel:0565555913" class="hover:text-yellow-400 transition flex items-center gap-2">
+                <i class="fa-solid fa-phone text-sr-yellow"></i> 05 65 55 59 13
             </a>
-            <a href="mailto:sophie.rodier.expertisecomptable@orange.fr" class="hover:text-blue-400 transition hidden sm:flex items-center gap-2">
-                <i class="fa-solid fa-envelope text-xs"></i> sophie.rodier.expertisecomptable@orange.fr
+            <a href="mailto:sophie.rodier.expertisecomptable@orange.fr" class="hover:text-yellow-400 transition hidden sm:flex items-center gap-2">
+                <i class="fa-solid fa-envelope text-sr-yellow"></i> sophie.rodier.expertisecomptable@orange.fr
             </a>
         </div>
-        <div>
-            <span class="text-slate-400 text-xs">Rodez & Aveyron</span>
-        </div>
+        <div class="font-medium text-slate-300">Rodez & Aveyron</div>
     </div>
 
-    <!-- Main Navigation -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Logo / Brand -->
             <a href="index.html" class="flex items-center space-x-3">
-                <div class="bg-brand-blue text-white font-bold text-xl px-3 py-1.5 rounded-lg shadow-sm">
-                    SR
-                </div>
-                <div>
-                    <span class="block font-bold text-lg text-slate-900 leading-tight">Sophie Rodier</span>
-                    <span class="block text-xs text-slate-500 font-medium">Expertise Comptable & Conseil</span>
+                <div class="font-handwritten text-3xl font-bold text-slate-900 leading-none">
+                    Sophie Rodier
+                    <span class="block text-xs font-sans font-semibold text-sr-blue tracking-wider uppercase">Expertise Comptable</span>
                 </div>
             </a>
 
-            <!-- Desktop Menu -->
-            <nav class="hidden lg:flex items-center space-x-8 font-medium text-sm text-slate-600">
-                <a href="index.html" class="text-brand-blue font-semibold">Accueil</a>
-                <a href="expertise-comptable.html" class="hover:text-brand-blue transition">Expertise Comptable</a>
-                <a href="elite-conseil.html" class="hover:text-brand-blue transition">Elite Conseil</a>
-                <a href="lance-ta-boite.html" class="hover:text-brand-blue transition">Lance Ta Boîte</a>
-                <a href="juridique-administratif.html" class="hover:text-brand-blue transition">Juridique & Admin</a>
+            <!-- Navigation Principale -->
+            <nav class="hidden lg:flex items-center space-x-6 font-semibold text-sm">
+                <a href="index.html" class="text-sr-blue font-bold">Accueil</a>
+                <a href="expertise-comptable.html" class="hover:text-sr-blue transition">Expertise Comptable</a>
+                <a href="elite-conseil.html" class="hover:text-sr-orange transition">Elite Conseil</a>
+                <a href="lance-ta-boite.html" class="hover:text-sr-green transition">Lance Ta Boîte</a>
+                <a href="juridique-administratif.html" class="hover:text-sr-pink transition">Juridique & Admin</a>
             </nav>
 
-            <!-- CTA Button -->
-            <div class="hidden sm:block">
-                <a href="contact.html" class="bg-brand-blue hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-lg shadow-sm hover:shadow transition text-sm">
-                    Prendre Rendez-vous
+            <div>
+                <a href="contact.html" class="bg-sr-pink hover:bg-rose-700 text-white font-bold px-5 py-2.5 rounded-full shadow-md transition text-sm inline-block">
+                    Contactez-moi !
                 </a>
             </div>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="py-20 lg:py-28 bg-gradient-to-b from-white to-slate-50 border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <div class="inline-flex items-center gap-2 bg-blue-50 text-brand-blue font-semibold text-xs px-3 py-1.5 rounded-full border border-blue-100">
-                    <span class="w-2 h-2 rounded-full bg-brand-blue"></span>
-                    Bien plus qu'un simple cabinet comptable
-                </div>
-                <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight tracking-tight">
-                    Un accompagnement sur-mesure à chaque étape de votre entreprise.
-                </h1>
-                <p class="text-lg text-slate-600 leading-relaxed">
-                    Du pilotage comptable quotidien au conseil stratégique à haute valeur ajoutée, nous sécurisons et propulsons l'activité des créateurs, chefs d'entreprise et particuliers.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 pt-2">
-                    <a href="contact.html" class="bg-brand-blue hover:bg-blue-700 text-white font-semibold px-6 py-3.5 rounded-lg shadow-md hover:shadow-lg transition text-center">
-                        Discuter de votre projet
-                    </a>
-                    <a href="#expertises" class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 font-semibold px-6 py-3.5 rounded-lg transition text-center">
-                        Découvrir nos services
-                    </a>
-                </div>
+    <section class="py-16 lg:py-24 relative overflow-hidden bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 text-center space-y-6">
+            <span class="font-handwritten text-3xl lg:text-4xl text-sr-blue font-bold block">
+                Un cabinet qui va au-delà de la simple comptabilité
+            </span>
+            <h1 class="text-3xl lg:text-5xl font-extrabold text-slate-900 max-w-4xl mx-auto leading-tight">
+                Créateurs d'entreprise, chefs d'entreprise & particuliers : nous vous accompagnons à chaque étape !
+            </h1>
+            <p class="text-slate-600 max-w-2xl mx-auto text-base lg:text-lg">
+                Des conseils sur-mesure pilotés par les compétences d'un Expert-Comptable et Commissaire aux Comptes.
+            </p>
+            <div class="pt-4 flex justify-center gap-4 flex-wrap">
+                <a href="contact.html" class="bg-sr-green hover:bg-emerald-700 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition">
+                    Prendre un rendez-vous
+                </a>
+                <a href="#expertises" class="bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold px-8 py-3.5 rounded-full transition">
+                    Découvrir nos activités
+                </a>
             </div>
-            <div class="relative">
-                <div class="bg-gradient-to-tr from-brand-blue to-blue-400 rounded-2xl p-8 text-white shadow-xl space-y-6">
-                    <div class="flex justify-between items-start border-b border-white/10 pb-6">
-                        <div>
-                            <p class="text-sm font-medium text-blue-100">Cabinet SR</p>
-                            <h3 class="text-2xl font-bold">L'Expertise à votre service</h3>
-                        </div>
-                        <i class="fa-solid fa-chart-line text-3xl text-blue-200"></i>
+        </div>
+    </section>
+
+    <!-- SECTION DES 6 ACTIVITÉS COLORÉES (Fidèle au Logo & Ancien Site) -->
+    <section id="expertises" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="font-handwritten text-4xl font-bold text-slate-900 mb-2">Nos Activités</h2>
+                <p class="text-slate-600 text-sm font-medium">Cliquez sur une expertise pour découvrir tous nos services</p>
+            </div>
+
+            <!-- Grille des 6 Blocs Colorés -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. Expert Comptable (Noir / Dark) -->
+                <a href="expertise-comptable.html" class="bg-sr-black text-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 block relative overflow-hidden group">
+                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white">
+                        <i class="fa-solid fa-calculator"></i>
                     </div>
-                    <ul class="space-y-3 text-sm text-blue-50">
-                        <li class="flex items-center gap-3">
-                            <i class="fa-solid fa-check-circle text-blue-300"></i> Comptabilité & Déclarations Fiscales
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fa-solid fa-check-circle text-blue-300"></i> Commissariat aux Comptes & Audit
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fa-solid fa-check-circle text-blue-300"></i> Stratégie & Elite Conseil Dirigeant
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fa-solid fa-check-circle text-blue-300"></i> Parcours complet Création d'Entreprise
-                        </li>
-                    </ul>
-                </div>
+                    <h3 class="text-2xl font-bold mb-3">Expert Comptable</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        Un cabinet comptable dynamique répondant aux obligations légales et offrant un accompagnement complet.
+                    </p>
+                    <span class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-yellow-400 group-hover:translate-x-1 transition">
+                        En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </span>
+                </a>
+
+                <!-- 2. Commissariat aux comptes (Bleu) -->
+                <a href="expertise-comptable.html#audit" class="bg-sr-blue text-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 block relative overflow-hidden group">
+                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Commissariat aux Comptes</h3>
+                    <p class="text-blue-100 text-sm leading-relaxed mb-6">
+                        Une certification légale des comptes, un gage de transparence et de sécurité pour votre croissance.
+                    </p>
+                    <span class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-blue-200 group-hover:translate-x-1 transition">
+                        En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </span>
+                </a>
+
+                <!-- 3. Elite Conseil (Orange) -->
+                <a href="elite-conseil.html" class="bg-sr-orange text-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 block relative overflow-hidden group">
+                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Elite Conseil</h3>
+                    <p class="text-orange-100 text-sm leading-relaxed mb-6">
+                        Conseil et accompagnement sur-mesure à haute valeur ajoutée pour chefs d'entreprise exigeants.
+                    </p>
+                    <span class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-orange-200 group-hover:translate-x-1 transition">
+                        En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </span>
+                </a>
+
+                <!-- 4. Lance Ta Boite (Vert) -->
+                <a href="lance-ta-boite.html" class="bg-sr-green text-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 block relative overflow-hidden group">
+                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Lance Ta Boîte</h3>
+                    <p class="text-emerald-100 text-sm leading-relaxed mb-6">
+                        Accompagnement rassurant et structuré en 9 étapes pour créer votre entreprise en toute sérénité.
+                    </p>
+                    <span class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-emerald-200 group-hover:translate-x-1 transition">
+                        En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </span>
+                </a>
+
+                <!-- 5. Côté Juridique (Rose / Magenta) -->
+                <a href="juridique-administratif.html#juridique" class="bg-sr-pink text-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 block relative overflow-hidden group">
+                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Côté Juridique</h3>
+                    <p class="text-rose-100 text-sm leading-relaxed mb-6">
+                        Formalités juridiques rapides : création, modifications de statuts, assemblées et baux commerciaux.
+                    </p>
+                    <span class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-rose-200 group-hover:translate-x-1 transition">
+                        En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </span>
+                </a>
+
+                <!-- 6. Côté Administratif (Jaune / Moutarde) -->
+                <a href="juridique-administratif.html#administratif" class="bg-sr-yellow text-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 block relative overflow-hidden group">
+                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Côté Administratif</h3>
+                    <p class="text-amber-100 text-sm leading-relaxed mb-6">
+                        Externalisation des tâches chronophages pour pros et assistance aux particuliers (50% crédit d'impôt).
+                    </p>
+                    <span class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-amber-200 group-hover:translate-x-1 transition">
+                        En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </span>
+                </a>
+
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-brand-navy text-slate-400 py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
-            <div class="space-y-4">
-                <span class="text-white font-bold text-lg">Sophie Rodier</span>
-                <p class="text-sm">Cabinet d'expertise comptable et de commissariat aux comptes au service des entreprises et des créateurs.</p>
+    <footer class="bg-sr-black text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div class="space-y-3">
+                <span class="font-handwritten text-3xl font-bold text-white block">Sophie Rodier</span>
+                <p class="text-xs text-slate-400">Cabinet d'expertise comptable, de conseil et d'accompagnement administratif à votre service.</p>
             </div>
             <div>
-                <h4 class="text-white font-semibold mb-4 text-sm">Services</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="expertise-comptable.html" class="hover:text-white transition">Expertise Comptable</a></li>
-                    <li><a href="elite-conseil.html" class="hover:text-white transition">Elite Conseil</a></li>
-                    <li><a href="lance-ta-boite.html" class="hover:text-white transition">Lance Ta Boîte</a></li>
-                    <li><a href="juridique-administratif.html" class="hover:text-white transition">Gestion Juridique & Admin</a></li>
+                <h4 class="font-bold text-sm text-yellow-400 mb-3">Coordonnées</h4>
+                <ul class="space-y-2 text-xs text-slate-300">
+                    <li><i class="fa-solid fa-phone mr-2 text-sr-yellow"></i> 05 65 55 59 13</li>
+                    <li><i class="fa-solid fa-envelope mr-2 text-sr-yellow"></i> sophie.rodier.expertisecomptable@orange.fr</li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-semibold mb-4 text-sm">Contact</h4>
-                <ul class="space-y-2 text-sm">
-                    <li>Tél: 05 65 55 59 13</li>
-                    <li>Email: sophie.rodier.expertisecomptable@orange.fr</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-semibold mb-4 text-sm">Mentions</h4>
-                <p class="text-xs">© 2026 Groupe SR - Tous droits réservés.</p>
+                <h4 class="font-bold text-sm text-yellow-400 mb-3">Réseau & Partenaires</h4>
+                <p class="text-xs text-slate-400">© 2026 Sophie Rodier - Tous droits réservés.</p>
             </div>
         </div>
     </footer>
