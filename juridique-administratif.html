@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juridique & Administratif - Sophie Rodier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
+                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-sr-bgLight text-slate-800 font-sans">
+
+    <!-- Topbar & Header -->
+    <div class="bg-sr-black text-white text-xs py-2 px-6 flex justify-between items-center">
+        <a href="tel:0565555913" class="hover:text-yellow-400 flex items-center gap-2"><i class="fa-solid fa-phone text-sr-yellow"></i> 05 65 55 59 13</a>
+        <div>Rodez & Aveyron</div>
+    </div>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-handwritten text-3xl font-bold text-slate-900">Sophie Rodier</a>
+            <nav class="hidden lg:flex items-center space-x-6 font-semibold text-sm">
+                <a href="index.html" class="hover:text-sr-blue">Accueil</a>
+                <a href="expertise-comptable.html" class="hover:text-sr-blue">Expertise Comptable</a>
+                <a href="elite-conseil.html" class="hover:text-sr-orange">Elite Conseil</a>
+                <a href="lance-ta-boite.html" class="hover:text-sr-green">Lance Ta Boîte</a>
+                <a href="juridique-administratif.html" class="text-sr-pink font-bold">Juridique & Admin</a>
+            </nav>
+            <a href="contact.html" class="bg-sr-pink text-white font-bold px-5 py-2.5 rounded-full text-sm">Contactez-moi</a>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="bg-sr-pink text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center space-y-3">
+            <h1 class="font-handwritten text-5xl font-bold text-yellow-200">Services Juridiques & Administratifs</h1>
+            <p class="text-rose-100 max-w-2xl mx-auto">Simplifiez la gestion de votre entreprise et gagnez du temps au quotidien.</p>
+        </div>
+    </section>
+
+    <!-- Content Grid -->
+    <section class="py-16 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+        
+        <!-- Côté Juridique -->
+        <div id="juridique" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+            <div class="flex items-center gap-3">
+                <span class="w-10 h-10 bg-rose-100 text-sr-pink rounded-lg flex items-center justify-center font-bold text-xl"><i class="fa-solid fa-gavel"></i></span>
+                <h2 class="text-2xl font-bold text-sr-pink">Côté Juridique</h2>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-600">
+                <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Audit de conformité juridique de votre entreprise</li>
+                <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Secrétariat juridique annuel (AG, approbation des comptes)</li>
+                <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Modifications statutaires (transfert de siège, augmentation de capital)</li>
+                <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Rédaction de baux commerciaux, professionnels et conventions</li>
+            </ul>
+        </div>
+
+        <!-- Côté Administratif -->
+        <div id="administratif" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+            <div class="flex items-center gap-3">
+                <span class="w-10 h-10 bg-amber-100 text-sr-yellow rounded-lg flex items-center justify-center font-bold text-xl"><i class="fa-solid fa-folder-open"></i></span>
+                <h2 class="text-2xl font-bold text-sr-yellow">Côté Administratif</h2>
+            </div>
+            <div class="space-y-4 text-sm text-slate-600">
+                <p><strong>Pour les professionnels :</strong> Externalisation de la facturation, relances clients, paiements fournisseurs et classement des pièces.</p>
+                <div class="p-4 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-900">
+                    <strong class="block mb-1 text-sm font-bold text-sr-yellow"><i class="fa-solid fa-star mr-1"></i> Particuliers - Service à la personne</strong>
+                    Bénéficiez de <strong>50% de crédit d'impôt</strong> sur l'assistance administrative à domicile (tri de papiers, déclaration d'impôts, courriers).
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="bg-sr-black text-white py-8 text-center text-xs">
+        © 2026 Sophie Rodier - Tous droits réservés.
+    </footer>
+</body>
+</html>

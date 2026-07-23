@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sophie Rodier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
+                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-sr-bgLight text-slate-800 font-sans">
+
+    <!-- Topbar & Header -->
+    <div class="bg-sr-black text-white text-xs py-2 px-6 flex justify-between items-center">
+        <a href="tel:0565555913" class="hover:text-yellow-400 flex items-center gap-2"><i class="fa-solid fa-phone text-sr-yellow"></i> 05 65 55 59 13</a>
+        <div>Rodez & Aveyron</div>
+    </div>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-handwritten text-3xl font-bold text-slate-900">Sophie Rodier</a>
+            <nav class="hidden lg:flex items-center space-x-6 font-semibold text-sm">
+                <a href="index.html" class="hover:text-sr-blue">Accueil</a>
+                <a href="expertise-comptable.html" class="hover:text-sr-blue">Expertise Comptable</a>
+                <a href="elite-conseil.html" class="hover:text-sr-orange">Elite Conseil</a>
+                <a href="lance-ta-boite.html" class="hover:text-sr-green">Lance Ta Boîte</a>
+                <a href="juridique-administratif.html" class="hover:text-sr-pink">Juridique & Admin</a>
+            </nav>
+            <a href="contact.html" class="bg-sr-pink text-white font-bold px-5 py-2.5 rounded-full text-sm">Contactez-moi</a>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="bg-sr-black text-white py-12 text-center">
+        <h1 class="font-handwritten text-5xl font-bold text-yellow-400">Contactez-nous</h1>
+        <p class="text-slate-300 text-sm mt-2">Discutons de votre projet ou fixons un rendez-vous au cabinet.</p>
+    </section>
+
+    <!-- Form Section -->
+    <section class="py-16 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+        
+        <!-- Info Contact -->
+        <div class="space-y-6">
+            <h2 class="text-3xl font-extrabold text-slate-900">Nos Coordonnées</h2>
+            <p class="text-slate-600 text-sm">N'hésitez pas à nous contacter par téléphone ou par email. Notre équipe se fera un plaisir de vous recontacter dans les plus brefs délais.</p>
+            
+            <div class="space-y-4 pt-4">
+                <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                    <div class="w-12 h-12 bg-blue-50 text-sr-blue rounded-lg flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <span class="text-xs text-slate-400 block font-semibold uppercase">Téléphone</span>
+                        <a href="tel:0565555913" class="text-base font-bold text-slate-900 hover:text-sr-blue">05 65 55 59 13</a>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+                    <div class="w-12 h-12 bg-rose-50 text-sr-pink rounded-lg flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <span class="text-xs text-slate-400 block font-semibold uppercase">Email</span>
+                        <a href="mailto:sophie.rodier.expertisecomptable@orange.fr" class="text-sm font-bold text-slate-900 hover:text-sr-pink break-all">sophie.rodier.expertisecomptable@orange.fr</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulaire Netlify Form -->
+        <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200">
+            <h3 class="text-xl font-bold text-slate-900 mb-6">Envoyer un message</h3>
+            <form name="contact" method="POST" data-netlify="true" class="space-y-4">
+                <input type="hidden" name="form-name" value="contact" />
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nom & Prénom</label>
+                    <input type="text" name="name" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm" placeholder="Votre nom">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Téléphone</label>
+                    <input type="tel" name="phone" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm" placeholder="Votre numéro">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email</label>
+                    <input type="email" name="email" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm" placeholder="votre@email.com">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Message / Projet</label>
+                    <textarea name="message" rows="4" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm" placeholder="Expliquez-nous brièvement votre besoin..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-sr-pink hover:bg-rose-700 text-white font-bold py-3 rounded-lg transition shadow-md">
+                    Envoyer mon message
+                </button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="bg-sr-black text-white py-8 text-center text-xs">
+        © 2026 Sophie Rodier - Tous droits réservés.
+    </footer>
+</body>
+</html>

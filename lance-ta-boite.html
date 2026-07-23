@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lance Ta Boîte - Sophie Rodier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
+                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-sr-bgLight text-slate-800 font-sans">
+
+    <!-- Topbar & Header -->
+    <div class="bg-sr-black text-white text-xs py-2 px-6 flex justify-between items-center">
+        <a href="tel:0565555913" class="hover:text-yellow-400 flex items-center gap-2"><i class="fa-solid fa-phone text-sr-yellow"></i> 05 65 55 59 13</a>
+        <div>Rodez & Aveyron</div>
+    </div>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-handwritten text-3xl font-bold text-slate-900">Sophie Rodier</a>
+            <nav class="hidden lg:flex items-center space-x-6 font-semibold text-sm">
+                <a href="index.html" class="hover:text-sr-blue">Accueil</a>
+                <a href="expertise-comptable.html" class="hover:text-sr-blue">Expertise Comptable</a>
+                <a href="elite-conseil.html" class="hover:text-sr-orange">Elite Conseil</a>
+                <a href="lance-ta-boite.html" class="text-sr-green font-bold">Lance Ta Boîte</a>
+                <a href="juridique-administratif.html" class="hover:text-sr-pink">Juridique & Admin</a>
+            </nav>
+            <a href="contact.html" class="bg-sr-pink text-white font-bold px-5 py-2.5 rounded-full text-sm">Contactez-moi</a>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="bg-sr-green text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center space-y-3">
+            <h1 class="font-handwritten text-5xl font-bold text-yellow-300">Lance Ta Boîte</h1>
+            <p class="text-emerald-100 max-w-2xl mx-auto">Un parcours structuré en 9 étapes pour créer votre entreprise sereinement et avec méthode.</p>
+        </div>
+    </section>
+
+    <!-- 9 Etapes -->
+    <section class="py-16 max-w-5xl mx-auto px-6">
+        <div class="space-y-6">
+            <div class="bg-white p-6 rounded-xl border-l-4 border-sr-green shadow-sm flex items-start gap-4">
+                <span class="bg-sr-green text-white font-bold text-lg w-10 h-10 rounded-full flex items-center justify-center shrink-0">1</span>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900">Premier rendez-vous conseil</h3>
+                    <p class="text-sm text-slate-600">Présentation des grandes lignes du projet et cadrage des étapes clés.</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-l-4 border-sr-green shadow-sm flex items-start gap-4">
+                <span class="bg-sr-green text-white font-bold text-lg w-10 h-10 rounded-full flex items-center justify-center shrink-0">2</span>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900">Collecte des informations & Étude de marché</h3>
+                    <p class="text-sm text-slate-600">Rassemblement des éléments financiers et opérationnels pour monter le dossier.</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-l-4 border-sr-green shadow-sm flex items-start gap-4">
+                <span class="bg-sr-green text-white font-bold text-lg w-10 h-10 rounded-full flex items-center justify-center shrink-0">3</span>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900">Formalisation du Business Plan & Statut Juridique</h3>
+                    <p class="text-sm text-slate-600">Choix de la forme juridique idéale (SASU, SARL, EURL) et chiffrage des besoins.</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-l-4 border-sr-green shadow-sm flex items-start gap-4">
+                <span class="bg-sr-green text-white font-bold text-lg w-10 h-10 rounded-full flex items-center justify-center shrink-0">4</span>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900">Recherche de financements & aides</h3>
+                    <p class="text-sm text-slate-600">Dossiers de banque, demandes d'ACRE, subventions et prêts d'honneur.</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-l-4 border-sr-green shadow-sm flex items-start gap-4">
+                <span class="bg-sr-green text-white font-bold text-lg w-10 h-10 rounded-full flex items-center justify-center shrink-0">5</span>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900">Rédaction des statuts & Immatriculation</h3>
+                    <p class="text-sm text-slate-600">Réalisation de toutes les démarches administratives pour obtenir le KBIS.</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-l-4 border-sr-green shadow-sm flex items-start gap-4">
+                <span class="bg-sr-green text-white font-bold text-lg w-10 h-10 rounded-full flex items-center justify-center shrink-0">6-9</span>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900">Mise en réseau & Suivi des premiers mois</h3>
+                    <p class="text-sm text-slate-600">Connexion avec nos partenaires (assurances, banques) et accompagnement mensuel au démarrage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-sr-black text-white py-8 text-center text-xs">
+        © 2026 Sophie Rodier - Tous droits réservés.
+    </footer>
+</body>
+</html>
