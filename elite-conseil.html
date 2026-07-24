@@ -6,12 +6,21 @@
     <title>Elite Conseil - Sophie Rodier</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
+   <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
-                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } }
+                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        }
+                    },
+                    animation: {
+                        float: 'float 4s ease-in-out infinite',
+                    }
                 }
             }
         }
@@ -48,10 +57,23 @@
     </header>
 
     <!-- Banner -->
-    <section class="bg-sr-orange text-white py-16">
-        <div class="max-w-7xl mx-auto px-6 text-center space-y-3">
-            <h1 class="font-handwritten text-5xl font-bold text-yellow-200">Elite Conseil</h1>
-            <p class="text-orange-100 max-w-2xl mx-auto">Conseil sur-mesure et accompagnement stratégique à haute valeur ajoutée pour chefs d'entreprise.</p>
+    <section class="bg-sr-orange text-white py-12 lg:py-16 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-8 items-center">
+            
+            <!-- IMAGE À GAUCHE (avec animation lévitation) -->
+            <div class="hidden md:block md:col-span-5 relative">
+                <!-- La classe animate-float fait léviter l'image, mix-blend-multiply fond le blanc dans le orange -->
+                <img src="images/hero-elite.png" alt="Equipe Elite Conseil" class="w-full h-auto object-contain animate-float max-h-80 mix-blend-multiply">
+            </div>
+
+            <!-- TEXTE À DROITE -->
+            <div class="md:col-span-7 text-center md:text-left space-y-4">
+                <h1 class="font-handwritten text-5xl md:text-6xl font-bold text-yellow-200 leading-tight">Elite Conseil</h1>
+                <p class="text-orange-100 text-base md:text-lg max-w-2xl mx-auto md:mx-0">
+                    Conseil sur-mesure et accompagnement stratégique à haute valeur ajoutée pour les chefs d'entreprise.
+                </p>
+            </div>
+            
         </div>
     </section>
 
