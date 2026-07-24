@@ -27,9 +27,15 @@
     </div>
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
-                <img src="images/logo.png" alt="Sophie Rodier Expertise Comptable" class="h-12 md:h-14 w-auto object-contain">
+            
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="images/logo.png" alt="Logo SR" class="h-12 md:h-14 w-auto object-contain">
+                <div class="font-handwritten text-3xl font-bold text-slate-900 leading-none">
+                    Sophie Rodier
+                    <span class="block text-xs font-sans font-semibold text-sr-blue tracking-wider uppercase mt-1">Expertise Comptable</span>
+                </div>
             </a>
+
             <nav class="hidden lg:flex items-center space-x-6 font-semibold text-sm">
                 <a href="index.html" class="hover:text-sr-blue">Accueil</a>
                 <a href="expertise-comptable.html" class="hover:text-sr-blue">Expertise Comptable</a>
@@ -44,39 +50,81 @@
     <!-- Banner -->
     <section class="bg-sr-pink text-white py-16">
         <div class="max-w-7xl mx-auto px-6 text-center space-y-3">
-            <h1 class="font-handwritten text-5xl font-bold text-yellow-200">Services Juridiques & Administratifs</h1>
-            <p class="text-rose-100 max-w-2xl mx-auto">Simplifiez la gestion de votre entreprise et gagnez du temps au quotidien.</p>
+            <h1 class="font-handwritten text-5xl font-bold text-yellow-200">Coté Juridique & Administratif</h1>
+            <p class="text-rose-100 max-w-2xl mx-auto">Gagner du temps pour ce qui compte : on s'affranchit des tâches chronophages.</p>
         </div>
     </section>
 
-    <!-- Content Grid -->
-    <section class="py-16 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
-        <div id="juridique" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 space-y-4">
-            <div class="flex items-center gap-3">
-                <span class="w-10 h-10 bg-rose-100 text-sr-pink rounded-lg flex items-center justify-center font-bold text-xl"><i class="fa-solid fa-gavel"></i></span>
-                <h2 class="text-2xl font-bold text-sr-pink">Côté Juridique</h2>
-            </div>
-            <ul class="space-y-3 text-sm text-slate-600">
-                <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Audit de conformité juridique de votre entreprise</li>
-                <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Secrétariat juridique annuel (AG, approbation des comptes)</li>
-                <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Modifications statutaires (transfert de siège, augmentation de capital)</li>
-                <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Rédaction de baux commerciaux, professionnels et conventions</li>
-            </ul>
-        </div>
-
-        <div id="administratif" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 space-y-4">
-            <div class="flex items-center gap-3">
-                <span class="w-10 h-10 bg-amber-100 text-sr-yellow rounded-lg flex items-center justify-center font-bold text-xl"><i class="fa-solid fa-folder-open"></i></span>
-                <h2 class="text-2xl font-bold text-sr-yellow">Côté Administratif</h2>
-            </div>
-            <div class="space-y-4 text-sm text-slate-600">
-                <p><strong>Pour les professionnels :</strong> Externalisation de la facturation, relances clients, paiements fournisseurs et classement des pièces.</p>
-                <div class="p-4 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-900">
-                    <strong class="block mb-1 text-sm font-bold text-sr-yellow"><i class="fa-solid fa-star mr-1"></i> Particuliers - Service à la personne</strong>
-                    Bénéficiez de <strong>50% de crédit d'impôt</strong> sur l'assistance administrative à domicile (tri de papiers, déclaration d'impôts, courriers).
+    <!-- Content -->
+    <section class="py-16 max-w-7xl mx-auto px-6 space-y-12">
+        
+        <!-- Côté Juridique -->
+        <div id="juridique" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-bold text-sr-pink mb-6 border-b pb-4"><i class="fa-solid fa-gavel mr-2"></i> Coté Juridique</h2>
+            <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-600">
+                <div>
+                    <strong class="text-sr-pink block mb-2">Organisation & Constitution</strong>
+                    <ul class="space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Audit de conformité juridique & Préconisation</li>
+                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Constitution : Bon statut/régime, rédaction, signature élec., Greffe, KBIS rapide</li>
+                    </ul>
+                    <strong class="text-sr-pink block mb-2">Suivi Annuel & Contrats</strong>
+                    <ul class="space-y-2">
+                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> AG d'approbation (prépa, convocation, PV)</li>
+                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Rémunérations & dividendes</li>
+                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Baux commerciaux/professionnels, location gérance</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong class="text-sr-pink block mb-2">Interventions ponctuelles</strong>
+                    <ul class="space-y-2">
+                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Modifications statutaires</li>
+                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Distribution des réserves</li>
+                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Cession/apport de titres</li>
+                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Ouverture/fermeture établissement</li>
+                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Augmentation / Réduction capital</li>
+                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Transformations, Pacte d'associés</li>
+                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Mise en sommeil, Dissolution, Liquidation</li>
+                    </ul>
                 </div>
             </div>
         </div>
+
+        <!-- Côté Administratif (Pros) -->
+        <div id="administratif" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-bold text-sr-yellow mb-6 border-b pb-4"><i class="fa-solid fa-folder-open mr-2"></i> Coté Administratif (Entreprises)</h2>
+            <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-600">
+                <ul class="space-y-2">
+                    <li><strong class="text-sr-yellow">1/ Admin des ventes :</strong> Facturation, encaissements, relances, remises en banque.</li>
+                    <li><strong class="text-sr-yellow">2/ Admin des achats :</strong> Paiements fournisseurs, rapprochement, notes de frais, trésorerie.</li>
+                    <li><strong class="text-sr-yellow">3/ Préparation comptable :</strong> Transmission des pièces au cabinet.</li>
+                </ul>
+                <ul class="space-y-2">
+                    <li><strong class="text-sr-yellow">4/ Secrétariat général :</strong> Traitement devis, numérisation, archivage, courriers.</li>
+                    <li><strong class="text-sr-yellow">5/ Facture électronique :</strong> Mise en place des obligations.</li>
+                    <li><strong class="text-sr-yellow">6/ Montage de dossiers :</strong> Dossiers bancaires, subventions, notariés...</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Côté Administratif (Particuliers) -->
+        <div class="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200">
+            <h2 class="text-xl font-bold text-amber-600 mb-4"><i class="fa-solid fa-house-user mr-2"></i> Crédit d'impôt Service à la Personne (Particuliers)</h2>
+            <p class="text-sm font-semibold text-slate-800 mb-4">Récupération de 50% des honoraires à titre de crédit d'impôt.</p>
+            <div class="grid sm:grid-cols-2 gap-x-4 gap-y-2 text-sm text-slate-700">
+                <div>1/ Impôt sur le revenu</div>
+                <div>2/ Impôt fortune immobilière (IFI)</div>
+                <div>3/ Déclaration biens immobiliers</div>
+                <div>4/ Organisation, tri et classement</div>
+                <div>5/ Gestion administrative (courriers)</div>
+                <div>6/ Règlement des factures</div>
+                <div>7/ Assistance informatique</div>
+                <div>8/ Suivi projet / financement</div>
+                <div>9/ Aides à domicile (URSSAF/CESU)</div>
+                <div>10/ Aide à la gestion locative</div>
+            </div>
+        </div>
+
     </section>
 
     <footer class="bg-sr-black text-white py-8 text-center text-xs">
