@@ -22,28 +22,30 @@
 
     <!-- Topbar & Header -->
     <div class="bg-sr-black text-white text-xs py-2 px-6 flex justify-between items-center">
-        <a href="tel:0565555913" class="hover:text-yellow-400 flex items-center gap-2"><i class="fa-solid fa-phone text-sr-yellow"></i> 05 65 55 59 13</a>
-        <div>Rodez & Aveyron</div>
+        <div class="flex items-center space-x-6">
+            <a href="tel:0565490153" class="hover:text-yellow-400 hover:scale-105 transition-all flex items-center gap-2">
+                <i class="fa-solid fa-phone text-sr-yellow"></i> 05 65 49 01 53
+            </a>
+        </div>
+        <div class="font-medium text-slate-300">10B Bd de Verdun, Saint-Affrique</div>
     </div>
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-            
-            <a href="index.html" class="flex items-center gap-3">
-                <img src="images/logo.png" alt="Logo SR" class="h-12 md:h-14 w-auto object-contain">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="images/logo.png" alt="Logo SR" class="h-12 md:h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
                 <div class="font-handwritten text-3xl font-bold text-slate-900 leading-none">
                     Sophie Rodier
                     <span class="block text-xs font-sans font-semibold text-sr-blue tracking-wider uppercase mt-1">Expertise Comptable</span>
                 </div>
             </a>
-
             <nav class="hidden lg:flex items-center space-x-6 font-semibold text-sm">
-                <a href="index.html" class="hover:text-sr-blue">Accueil</a>
-                <a href="expertise-comptable.html" class="hover:text-sr-blue">Expertise Comptable</a>
-                <a href="elite-conseil.html" class="hover:text-sr-orange">Elite Conseil</a>
-                <a href="lance-ta-boite.html" class="hover:text-sr-green">Lance Ta Boîte</a>
-                <a href="juridique-administratif.html" class="hover:text-sr-pink">Juridique & Admin</a>
+                <a href="index.html" class="hover:text-sr-blue hover:-translate-y-0.5 transition-transform duration-200">Accueil</a>
+                <a href="expertise-comptable.html" class="hover:text-sr-blue hover:-translate-y-0.5 transition-transform duration-200">Expertise Comptable</a>
+                <a href="elite-conseil.html" class="hover:text-sr-orange hover:-translate-y-0.5 transition-transform duration-200">Elite Conseil</a>
+                <a href="lance-ta-boite.html" class="hover:text-sr-green hover:-translate-y-0.5 transition-transform duration-200">Lance Ta Boîte</a>
+                <a href="juridique-administratif.html" class="hover:text-sr-pink hover:-translate-y-0.5 transition-transform duration-200">Juridique & Admin</a>
             </nav>
-            <a href="contact.html" class="bg-sr-pink text-white font-bold px-5 py-2.5 rounded-full text-sm">Contactez-moi</a>
+            <a href="contact.html" class="bg-sr-pink text-white font-bold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 text-sm">Contactez-moi</a>
         </div>
     </header>
 
@@ -60,53 +62,80 @@
             <p class="text-slate-600 text-sm">N'hésitez pas à nous contacter par téléphone ou par email. Notre équipe se fera un plaisir de vous recontacter dans les plus brefs délais.</p>
             
             <div class="space-y-4 pt-4">
-                <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-200">
-                    <div class="w-12 h-12 bg-blue-50 text-sr-blue rounded-lg flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-phone"></i></div>
+                <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:scale-[1.02] transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-blue-50 text-sr-blue rounded-lg flex items-center justify-center text-xl shrink-0 group-hover:bg-sr-blue group-hover:text-white transition-colors"><i class="fa-solid fa-phone"></i></div>
                     <div>
                         <span class="text-xs text-slate-400 block font-semibold uppercase">Téléphone</span>
-                        <a href="tel:0565555913" class="text-base font-bold text-slate-900 hover:text-sr-blue">05 65 55 59 13</a>
+                        <a href="tel:0565490153" class="text-base font-bold text-slate-900 hover:text-sr-blue">05 65 49 01 53</a>
                     </div>
                 </div>
 
-                <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-200">
-                    <div class="w-12 h-12 bg-rose-50 text-sr-pink rounded-lg flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-envelope"></i></div>
+                <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:scale-[1.02] transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-rose-50 text-sr-pink rounded-lg flex items-center justify-center text-xl shrink-0 group-hover:bg-sr-pink group-hover:text-white transition-colors"><i class="fa-solid fa-envelope"></i></div>
                     <div>
                         <span class="text-xs text-slate-400 block font-semibold uppercase">Email</span>
                         <a href="mailto:sophie.rodier.expertisecomptable@orange.fr" class="text-sm font-bold text-slate-900 hover:text-sr-pink break-all">sophie.rodier.expertisecomptable@orange.fr</a>
                     </div>
                 </div>
+
+                <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:scale-[1.02] transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-emerald-50 text-sr-green rounded-lg flex items-center justify-center text-xl shrink-0 group-hover:bg-sr-green group-hover:text-white transition-colors"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <span class="text-xs text-slate-400 block font-semibold uppercase">Adresse</span>
+                        <span class="text-sm font-bold text-slate-900">10B, boulevard de Verdun<br>12400 SAINT-AFFRIQUE</span>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200">
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200 hover:shadow-xl transition-shadow duration-300">
             <h3 class="text-xl font-bold text-slate-900 mb-6">Envoyer un message</h3>
+            
+            <!-- Le form utilise Netlify natif pour gérer l'envoi -->
             <form name="contact" method="POST" data-netlify="true" class="space-y-4">
                 <input type="hidden" name="form-name" value="contact" />
                 <div>
                     <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nom & Prénom</label>
-                    <input type="text" name="name" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm" placeholder="Votre nom">
+                    <input type="text" name="name" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm transition-shadow" placeholder="Votre nom">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Téléphone</label>
-                    <input type="tel" name="phone" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm" placeholder="Votre numéro">
+                    <input type="tel" name="phone" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm transition-shadow" placeholder="Votre numéro">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email</label>
-                    <input type="email" name="email" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm" placeholder="votre@email.com">
+                    <input type="email" name="email" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm transition-shadow" placeholder="votre@email.com">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Message / Projet</label>
-                    <textarea name="message" rows="4" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm" placeholder="Expliquez-nous brièvement votre besoin..."></textarea>
+                    <textarea name="message" rows="4" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm transition-shadow" placeholder="Expliquez-nous brièvement votre besoin..."></textarea>
                 </div>
-                <button type="submit" class="w-full bg-sr-pink hover:bg-rose-700 text-white font-bold py-3 rounded-lg transition shadow-md">
+                <button type="submit" class="w-full bg-sr-pink hover:bg-rose-700 text-white font-bold py-3 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
                     Envoyer mon message
                 </button>
             </form>
         </div>
     </section>
 
-    <footer class="bg-sr-black text-white py-8 text-center text-xs">
-        © 2026 Sophie Rodier - Tous droits réservés.
+    <!-- FOOTER -->
+    <footer class="bg-sr-black text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
+            <div>
+                <img src="images/logo.png" alt="Sophie Rodier" class="h-12 w-auto brightness-0 invert mb-4">
+                <p class="text-xs text-slate-400">Cabinet d'expertise comptable, de conseil et d'accompagnement administratif.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-sm text-yellow-400 mb-3">Coordonnées</h4>
+                <ul class="space-y-2 text-xs text-slate-300">
+                    <li class="hover:text-white transition-colors"><i class="fa-solid fa-location-dot mr-2 text-sr-yellow"></i> 10B Bd de Verdun, 12400 Saint-Affrique</li>
+                    <li class="hover:text-white transition-colors"><a href="tel:0565490153"><i class="fa-solid fa-phone mr-2 text-sr-yellow"></i> 05 65 49 01 53</a></li>
+                    <li class="hover:text-white transition-colors"><a href="mailto:sophie.rodier.expertisecomptable@orange.fr"><i class="fa-solid fa-envelope mr-2 text-sr-yellow"></i> sophie.rodier.expertisecomptable@orange.fr</a></li>
+                </ul>
+            </div>
+            <div class="text-xs text-slate-400">
+                © 2026 Sophie Rodier - Tous droits réservés.
+            </div>
+        </div>
     </footer>
 </body>
 </html>
