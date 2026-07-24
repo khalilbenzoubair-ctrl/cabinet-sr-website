@@ -11,7 +11,16 @@
             theme: {
                 extend: {
                     fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
-                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } }
+                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        }
+                    },
+                    animation: {
+                        float: 'float 4s ease-in-out infinite',
+                    }
                 }
             }
         }
@@ -47,11 +56,24 @@
         </div>
     </header>
 
-    <!-- Banner -->
-    <section class="bg-sr-black text-white py-16">
-        <div class="max-w-7xl mx-auto px-6 text-center space-y-3">
-            <h1 class="font-handwritten text-5xl font-bold text-yellow-400">Expertise Comptable & Commissariat</h1>
-            <p class="text-slate-300 max-w-2xl mx-auto">Un cabinet comptable dynamique offrant un éventail de services pour un accompagnement complet et sécurisé.</p>
+   <!-- Banner -->
+    <section class="bg-sr-black text-white py-12 lg:py-16 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-8 items-center">
+            
+            <!-- IMAGE À GAUCHE (avec animation lévitation) -->
+            <div class="hidden md:block md:col-span-5 relative">
+                <!-- La classe animate-float appelle l'animation infinie qu'on vient de créer -->
+                <img src="images/hero-comptable.png" alt="Expertise Comptable" class="w-full h-auto object-contain animate-float max-h-80">
+            </div>
+
+            <!-- TEXTE À DROITE -->
+            <div class="md:col-span-7 text-center md:text-left space-y-4">
+                <h1 class="font-handwritten text-5xl md:text-6xl font-bold text-yellow-400 leading-tight">Expertise Comptable <br>& Commissariat</h1>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl mx-auto md:mx-0">
+                    Un cabinet comptable dynamique offrant un éventail de services pour un accompagnement complet et sécurisé.
+                </p>
+            </div>
+            
         </div>
     </section>
 
