@@ -6,12 +6,22 @@
     <title>Juridique & Administratif - Sophie Rodier</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
+   <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
-                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } }
+                    // Mise à jour : Rose pâle et Jaune électrique
+                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#FDE047', bgLight: '#FAF9F6' } },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        }
+                    },
+                    animation: {
+                        float: 'float 4s ease-in-out infinite',
+                    }
                 }
             }
         }
@@ -52,7 +62,7 @@
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-8 items-center">
             
             <div class="hidden md:block md:col-span-5 relative">
-                <img src="images/hero-juridique.png" alt="Juridique et Administratif" class="w-full h-auto object-contain animate-float max-h-80">
+                <img src="images/hero-juridique.png" alt="Juridique et Administratif" class="w-full h-auto object-contain animate-float max-h-80 mix-blend-multiply">
             </div>
 
             <div class="md:col-span-7 text-center md:text-left space-y-4">

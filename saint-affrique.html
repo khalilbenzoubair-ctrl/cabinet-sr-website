@@ -8,12 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
+   <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
-                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } }
+                    // Mise à jour : Rose pâle et Jaune électrique
+                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#FDE047', bgLight: '#FAF9F6' } },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        }
+                    },
+                    animation: {
+                        float: 'float 4s ease-in-out infinite',
+                    }
                 }
             }
         }
@@ -39,7 +49,7 @@
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
             
-            <a href="index.html" class="flex items-center gap-3 group">
+            <a href="saint-affrique.html" class="flex items-center gap-3 group">
                 <img src="images/logo.jpg" alt="Logo SR Patrimoine Conseil Expertise" class="h-16 md:h-20 w-auto object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300">
                 <div class="font-handwritten text-3xl font-bold text-slate-900 leading-none">
                     Sophie Rodier
@@ -48,7 +58,7 @@
             </a>
 
             <nav class="hidden lg:flex items-center space-x-6 font-semibold text-sm">
-                <a href="index.html" class="text-sr-blue font-bold">Accueil</a>
+                <a href="saint-affrique.html" class="text-sr-blue font-bold">Accueil</a>
                 <a href="expertise-comptable.html" class="hover:text-sr-blue hover:-translate-y-0.5 transition-transform duration-200">Expertise Comptable</a>
                 <a href="elite-conseil.html" class="hover:text-sr-orange hover:-translate-y-0.5 transition-transform duration-200">Elite Conseil</a>
                 <a href="lance-ta-boite.html" class="hover:text-sr-green hover:-translate-y-0.5 transition-transform duration-200">Lance Ta Boîte</a>
@@ -99,7 +109,8 @@
     <section id="expertises" class="py-20">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="font-handwritten text-4xl font-bold text-slate-900 mb-2">Nos Activités</h2>
+                <!-- Remplace l'ancien h2 par celui-ci -->
+            <h2 class="text-2xl font-bold text-sr-orange mb-6 border-b pb-4"><i class="fa-solid fa-gem mr-2"></i> Elite Conseil & Gestion de Patrimoine</h2>
                 <p class="text-slate-600 text-sm font-medium">Cliquez sur une expertise pour découvrir tous nos services</p>
             </div>
 
