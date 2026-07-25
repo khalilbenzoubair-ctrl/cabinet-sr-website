@@ -108,11 +108,10 @@
     <!-- SECTION ACTIVITÉS (Avec animations améliorées) -->
     <section id="expertises" class="py-20">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <!-- Remplace l'ancien h2 par celui-ci -->
-            <h2 class="text-2xl font-bold text-sr-orange mb-6 border-b pb-4"><i class="fa-solid fa-gem mr-2"></i> Elite Conseil & Gestion de Patrimoine</h2>
-                <p class="text-slate-600 text-sm font-medium">Cliquez sur une expertise pour découvrir tous nos services</p>
-            </div>
+            <!-- En-tête de la section -->
+        <div class="text-center mb-12">
+            <p class="text-slate-500">Cliquez sur une expertise pour découvrir tous nos services</p>
+        </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Les cartes ont un hover:scale-[1.03] et un glow d'ombre -->
@@ -138,7 +137,7 @@
                     <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white group-hover:rotate-6 transition-transform">
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">Elite Conseil</h3>
+                    <h3 class="text-2xl font-bold mb-3">Elite Conseil <br>& Gestion de Patrimoine</h3>
                     <p class="text-orange-100 text-sm leading-relaxed mb-6">Chef d'entreprise, bénéficiez d'un conseil et accompagnement sur-mesure à haute valeur ajoutée.</p>
                     <span class="inline-flex items-center text-xs font-bold uppercase text-orange-200 group-hover:translate-x-2 transition-transform">En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i></span>
                 </a>
@@ -161,14 +160,17 @@
                     <span class="inline-flex items-center text-xs font-bold uppercase text-rose-200 group-hover:translate-x-2 transition-transform">En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i></span>
                 </a>
 
-                <a href="juridique-administratif.html#administratif" class="bg-sr-yellow text-white p-8 rounded-2xl shadow-md hover:shadow-2xl hover:shadow-sr-yellow/30 hover:-translate-y-2 hover:scale-[1.03] transition-all duration-300 block relative group">
-                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white group-hover:rotate-6 transition-transform">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-3">Côté Administratif</h3>
-                    <p class="text-amber-100 text-sm leading-relaxed mb-6">Affranchissez-vous des tâches chronophages ou bénéficiez du crédit d'impôt (particuliers).</p>
-                    <span class="inline-flex items-center text-xs font-bold uppercase text-amber-200 group-hover:translate-x-2 transition-transform">En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i></span>
-                </a>
+                <!-- Carte Côté Administratif (Texte foncé pour lisibilité) -->
+            <a href="juridique-administratif.html#administratif" class="bg-sr-yellow text-slate-900 p-8 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-black/5 rounded-lg flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-folder-open text-slate-900"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Côté Administratif</h3>
+                <p class="text-slate-800 text-sm mb-6 opacity-90">Affranchissez-vous des tâches chronophages ou bénéficiez du crédit d'impôt (particuliers).</p>
+                <span class="text-xs font-bold tracking-wider uppercase flex items-center text-slate-900 group-hover:translate-x-2 transition-transform duration-300">
+                    En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i>
+                </span>
+            </a>
             </div>
         </div>
     </section>
