@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expertise Comptable - Rodez</title>
+    <title>Expertise & Audit - Cabinet de Rodez</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>tailwind.config={theme:{extend:{fontFamily:{sans:['"Plus Jakarta Sans"','sans-serif'],handwritten:['Caveat','cursive']},colors:{sr:{black:'#18181B',blue:'#1E3A8A',orange:'#EA580C',green:'#059669',pink:'#F472B6',yellow:'#FDE047',bgLight:'#FAF9F6'}}}}}</script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
+                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#FDE047', bgLight: '#FAF9F6' } },
+                    keyframes: {
+                        fadeInUp: { '0%': { opacity: '0', transform: 'translateY(30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } }
+                    },
+                    animation: { fadeInUp: 'fadeInUp 0.8s ease-out forwards' }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>.stagger-1 { animation-delay: 100ms; } .stagger-2 { animation-delay: 200ms; } .stagger-3 { animation-delay: 300ms; }</style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
 
-    <!-- Topbar & Header Rodez (Identique à l'accueil pour la cohérence) -->
+    <!-- Header (Identique Accueil) -->
     <div class="bg-sr-blue text-white text-xs py-2 px-6 flex justify-between items-center">
-        <div class="flex items-center space-x-6">
-            <a href="tel:0565555913" class="hover:text-yellow-400"><i class="fa-solid fa-phone mr-1"></i> 05 65 55 59 13</a>
-        </div>
+        <div class="flex items-center space-x-6"><a href="tel:0565555913" class="hover:text-yellow-400"><i class="fa-solid fa-phone mr-1"></i> 05 65 55 59 13</a></div>
         <div class="font-medium text-blue-200">5 bd Gambetta, Rodez</div>
     </div>
-    <header class="bg-white shadow-sm border-b border-slate-100">
+    <header class="bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3">
-                <img src="images/logo-rodez.png" alt="Cabinet Rodez" class="h-16 w-auto">
-                <div class="font-handwritten text-3xl font-bold text-slate-900 leading-none">
-                    Sophie Rodier <span class="block text-xs font-sans font-semibold text-sr-blue tracking-wider uppercase mt-1">Cabinet de Rodez</span>
-                </div>
-            </a>
+            <a href="index.html" class="flex items-center gap-3"><img src="images/logo-rodez.png" alt="Cabinet Rodez" class="h-16 w-auto mix-blend-multiply"><div class="font-handwritten text-3xl font-bold text-slate-900 leading-none">Sophie Rodier <span class="block text-xs font-sans font-semibold text-sr-blue tracking-wider uppercase mt-1">Cabinet de Rodez</span></div></a>
             <nav class="hidden lg:flex items-center space-x-6 font-semibold text-sm">
                 <a href="rodez.html" class="hover:text-sr-blue transition-colors">Accueil</a>
                 <a href="rodez-expertise-comptable.html" class="text-sr-blue font-bold border-b-2 border-sr-blue pb-1">Expertise Comptable</a>
@@ -33,43 +40,127 @@
                 <a href="rodez-lance-ta-boite.html" class="hover:text-sr-green transition-colors">Lance Ta Boîte</a>
                 <a href="rodez-juridique-administratif.html" class="hover:text-sr-pink transition-colors">Juridique & Admin</a>
             </nav>
-            <a href="rodez-contact.html" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-2.5 rounded-lg text-sm">Contactez-nous</a>
+            <a href="rodez-contact.html" class="bg-slate-900 text-white font-bold px-6 py-2.5 rounded-lg text-sm">Contactez-nous</a>
         </div>
     </header>
 
-    <!-- NOUVELLE BANNIÈRE SERVICE (Split Layout avec grand logo à droite) -->
-    <section class="bg-sr-black text-white py-16 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
-            
-            <!-- Texte à gauche -->
-            <div class="md:w-3/5 text-left">
-                <span class="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-bold tracking-wider mb-4 border border-white/20">Pôle Comptabilité & Audit</span>
-                <h1 class="font-handwritten text-5xl md:text-6xl font-bold text-white mb-6">Expertise Comptable</h1>
-                <p class="text-slate-300 text-lg">
-                    L'accompagnement indispensable pour sécuriser vos obligations légales et optimiser la gestion de votre entreprise à Rodez.
-                </p>
+    <!-- BANNIÈRE PÔLE FINANCIER -->
+    <section class="bg-slate-900 text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-sr-blue/20"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12 animate-fadeInUp">
+            <div class="md:w-3/5">
+                <span class="inline-block px-4 py-1.5 bg-sr-blue/30 text-blue-200 rounded-full text-xs font-bold tracking-widest uppercase mb-6 border border-sr-blue/50">Cœur d'expertise</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">Comptabilité & <span class="text-sr-blue">Audit Légal</span></h1>
+                <p class="text-slate-300 text-xl font-light">De la sécurisation de vos saisies quotidiennes à la certification officielle de vos comptes. Nous transformons vos obligations légales en leviers de performance.</p>
             </div>
-
-            <!-- Logo mis en valeur à droite -->
-            <div class="md:w-2/5 flex justify-center md:justify-end">
-                <div class="bg-white p-6 rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                    <img src="images/logo-expert.png" alt="Expert-Comptable" class="h-40 md:h-48 w-auto object-contain">
+            <div class="md:w-2/5 flex justify-center">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="images/logo-expert.png" alt="Expertise" class="h-32 bg-white rounded-3xl p-4 shadow-2xl transform -rotate-3 hover:rotate-0 transition-transform duration-500">
+                    <img src="images/logo-commissaire.png" alt="Audit" class="h-32 bg-white rounded-3xl p-4 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 translate-y-6">
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- Section Contenu -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-6 text-left">
-            <h2 class="text-3xl font-bold text-slate-900 mb-6">Nos services dédiés à Rodez</h2>
-            <p class="text-slate-600 mb-8">Insère ici le contenu détaillé de tes services.</p>
+    <!-- SOUS-SECTION 1 : L'EXPERTISE COMPTABLE (Reprise des données de la capture) -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16 md:w-2/3 animate-fadeInUp">
+                <h2 class="font-handwritten text-4xl text-sr-blue font-bold mb-2">Notre Pôle Expertise</h2>
+                <h3 class="text-3xl font-bold text-slate-900">Un suivi comptable, social et fiscal exhaustif.</h3>
+            </div>
+
+            <!-- Grille de prestations réécrites avec un design de cartes modernes -->
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Bloc Comptabilité & Fiscalité -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-shadow animate-fadeInUp stagger-1">
+                    <div class="w-12 h-12 bg-sr-blue text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-calculator"></i></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-4">Gestion & Fiscalité</h4>
+                    <p class="text-slate-600 text-sm mb-6">Nous assurons l'intégralité de vos obligations déclaratives pour une sérénité totale vis-à-vis de l'administration.</p>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Tenue comptable complète ou partagée</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Établissement des comptes annuels & bilans</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Prise en charge des déclarations fiscales</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Élaboration des situations intermédiaires</li>
+                    </ul>
+                </div>
+
+                <!-- Bloc Social -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-shadow animate-fadeInUp stagger-2">
+                    <div class="w-12 h-12 bg-sr-blue text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-users"></i></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-4">Pôle Social & RH</h4>
+                    <p class="text-slate-600 text-sm mb-6">Un accompagnement rigoureux dans la gestion de votre personnel, de l'embauche à la clôture de la paie.</p>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Émission des bulletins de paie</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Gestion complète des déclarations sociales</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Conseil en droit du travail</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Accompagnement aux contrôles URSSAF</li>
+                    </ul>
+                </div>
+
+                <!-- Bloc Transmission / Création -->
+                <div class="bg-sr-blue text-white p-8 rounded-3xl shadow-xl animate-fadeInUp stagger-3 relative overflow-hidden">
+                    <div class="absolute -bottom-10 -right-10 text-white/10 text-9xl"><i class="fa-solid fa-chart-line"></i></div>
+                    <h4 class="text-xl font-bold mb-4 relative z-10">Accompagnement Stratégique</h4>
+                    <p class="text-blue-100 text-sm mb-6 relative z-10">De l'étincelle de la création jusqu'à la passation de votre entreprise, nous sécurisons chaque étape de votre vie de dirigeant.</p>
+                    <div class="mt-auto relative z-10">
+                        <a href="rodez-contact.html" class="inline-block bg-white text-sr-blue font-bold px-6 py-2.5 rounded-lg text-sm hover:bg-slate-50 transition-colors">En parler avec un expert</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+    <!-- SOUS-SECTION 2 : AUDIT & CAC (Reprise des données de la capture) -->
+    <section id="audit" class="py-24 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                
+                <div class="md:w-1/2 animate-fadeInUp">
+                    <img src="images/logo-commissaire.png" alt="Audit" class="h-24 w-auto mb-6">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Commissariat aux comptes & Missions d'Audit</h2>
+                    <p class="text-slate-600 mb-6 text-lg">La transparence financière est le socle de la confiance. Notre pôle d'audit intervient pour garantir la fiabilité absolue de vos informations économiques auprès de vos actionnaires et partenaires.</p>
+                    
+                    <div class="space-y-6 mt-8">
+                        <!-- Mission Légale -->
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex gap-4">
+                            <div class="text-sr-blue text-2xl mt-1"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Interventions Légales</h4>
+                                <p class="text-sm text-slate-600 mt-1">Audit légal strict, certification de vos comptes et commissariat aux apports et à la fusion.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Mission Contractuelle -->
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex gap-4">
+                            <div class="text-sr-blue text-2xl mt-1"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Interventions Contractuelles</h4>
+                                <p class="text-sm text-slate-600 mt-1">Audit d'acquisition (Due Diligence), évaluation d'entreprise et missions de vérification spécifiques sur demande.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 animate-fadeInUp stagger-2">
+                    <div class="bg-slate-900 rounded-3xl p-10 text-white shadow-2xl">
+                        <h3 class="font-handwritten text-4xl text-sr-yellow mb-6">Pourquoi faire certifier vos comptes ?</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 border-b border-slate-800 pb-4"><i class="fa-solid fa-shield-halved text-sr-yellow mt-1"></i> <span><strong>Sécurisation:</strong> Prévention des risques financiers et détection des anomalies.</span></li>
+                            <li class="flex items-start gap-3 border-b border-slate-800 pb-4"><i class="fa-solid fa-handshake text-sr-yellow mt-1"></i> <span><strong>Crédibilité:</strong> Renforce la confiance des banques, investisseurs et fournisseurs.</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-chart-pie text-sr-yellow mt-1"></i> <span><strong>Transparence:</strong> Assurance d'une communication financière fidèle à la réalité de l'entreprise.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER RODEZ -->
+    <footer class="bg-slate-900 text-white py-12 border-t border-slate-900">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
             <div><img src="images/logo-rodez.png" alt="Rodez" class="h-16 w-auto bg-white rounded-xl p-2"></div>
             <div>
