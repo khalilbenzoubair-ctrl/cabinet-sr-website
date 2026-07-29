@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophie Rodier - Cabinet de Rodez</title>
+    <title>Sophie RODIER - Cabinet de Rodez</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
         <div class="font-medium text-blue-200">5 bd Gambetta, Rodez</div>
     </div>
 
-    <!-- Header Navigation -->
+    <!-- Header Navigation avec les deux boutons -->
     <header class="bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
@@ -49,13 +49,15 @@
                 <a href="rodez-elite-conseil.html" class="hover:text-sr-orange transition-colors">Élite Conseil</a>
                 <a href="rodez-lance-ta-boite.html" class="hover:text-sr-green transition-colors">Lance Ta Boîte</a>
                 <a href="rodez-juridique-administratif.html" class="hover:text-sr-pink transition-colors">Juridique & Admin</a>
+            </nav>
             <div class="flex items-center gap-3">
-    <a href="rejoignez-nous.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Nous rejoindre</a>
-    <a href="contact.html" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Contactez-nous</a>
-</div>
+                <a href="rejoignez-nous.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Nous rejoindre</a>
+                <a href="rodez-contact.html" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Contactez-nous</a>
+            </div>
+        </div>
     </header>
 
-    <!-- HERO -->
+    <!-- HERO ASYMÉTRIQUE -->
     <section class="flex flex-col lg:flex-row bg-white overflow-hidden border-b border-slate-200">
         <div class="lg:w-1/2 p-12 lg:p-20 flex flex-col justify-center animate-fadeInUp">
             <span class="font-handwritten text-3xl text-sr-blue font-bold block mb-4">L'expertise au service de vos ambitions</span>
@@ -71,7 +73,7 @@
         </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- SECTION SERVICES AVEC LES 6 BADGES RONDS HD -->
     <section id="expertises" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16 animate-fadeInUp">
@@ -83,7 +85,9 @@
                 <!-- EXPERT COMPTABLE -->
                 <a href="rodez-expertise-comptable.html" class="group bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 animate-fadeInUp stagger-1 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-slate-900/5 rounded-bl-[100px] -z-10 group-hover:scale-110 transition-transform"></div>
-                    <img src="images/logo-expert.png" alt="EXPERT COMPTABLE" class="h-16 w-auto mb-6 group-hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 rounded-full bg-slate-50 p-1 mb-6 border border-slate-200">
+                        <img src="images/logo-expert.png" alt="EXPERT COMPTABLE" class="w-full h-full rounded-full object-contain group-hover:scale-110 transition-transform">
+                    </div>
                     <h3 class="text-2xl font-black text-slate-900 mb-3 uppercase tracking-tight">EXPERT COMPTABLE</h3>
                     <p class="text-slate-600 mb-6">Fiabilisation de vos données financières, bilans, déclarations fiscales et gestion sociale de vos équipes.</p>
                     <span class="text-sm font-bold uppercase text-slate-900 flex items-center group-hover:translate-x-3 transition-transform">Explorer l'entité <i class="fa-solid fa-arrow-right ml-2"></i></span>
@@ -92,7 +96,9 @@
                 <!-- COMMISSAIRE AUX COMPTES -->
                 <a href="rodez-expertise-comptable.html#audit" class="group bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 animate-fadeInUp stagger-2 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-sr-blue/5 rounded-bl-[100px] -z-10 group-hover:scale-110 transition-transform"></div>
-                    <img src="images/logo-commissaire.png" alt="COMMISSAIRE AUX COMPTES" class="h-16 w-auto mb-6 group-hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 rounded-full bg-blue-50 p-1 mb-6 border border-blue-100">
+                        <img src="images/logo-commissaire.png" alt="COMMISSAIRE AUX COMPTES" class="w-full h-full rounded-full object-contain group-hover:scale-110 transition-transform">
+                    </div>
                     <h3 class="text-2xl font-black text-sr-blue mb-3 uppercase tracking-tight">COMMISSAIRE AUX COMPTES</h3>
                     <p class="text-slate-600 mb-6">Commissariat aux comptes, audits d'acquisition et certification rigoureuse de votre information financière.</p>
                     <span class="text-sm font-bold uppercase text-sr-blue flex items-center group-hover:translate-x-3 transition-transform">Explorer l'entité <i class="fa-solid fa-arrow-right ml-2"></i></span>
@@ -101,7 +107,9 @@
                 <!-- ÉLITE CONSEIL -->
                 <a href="rodez-elite-conseil.html" class="group bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 animate-fadeInUp stagger-3 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-sr-orange/5 rounded-bl-[100px] -z-10 group-hover:scale-110 transition-transform"></div>
-                    <img src="images/logo-conseil.png" alt="ÉLITE CONSEIL" class="h-16 w-auto mb-6 group-hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 rounded-full bg-orange-50 p-1 mb-6 border border-orange-100">
+                        <img src="images/logo-conseil.png" alt="ÉLITE CONSEIL" class="w-full h-full rounded-full object-contain group-hover:scale-110 transition-transform">
+                    </div>
                     <h3 class="text-2xl font-black text-sr-orange mb-3 uppercase tracking-tight">ÉLITE CONSEIL</h3>
                     <p class="text-slate-600 mb-6">Déploiement de tableaux de bord, stratégie de financement et direction financière externalisée.</p>
                     <span class="text-sm font-bold uppercase text-sr-orange flex items-center group-hover:translate-x-3 transition-transform">Explorer l'entité <i class="fa-solid fa-arrow-right ml-2"></i></span>
@@ -110,7 +118,9 @@
                 <!-- LANCE TA BOÎTE -->
                 <a href="rodez-lance-ta-boite.html" class="group bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 animate-fadeInUp stagger-1 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-sr-green/5 rounded-bl-[100px] -z-10 group-hover:scale-110 transition-transform"></div>
-                    <img src="images/logo-creation.png" alt="LANCE TA BOÎTE" class="h-16 w-auto mb-6 group-hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 rounded-full bg-emerald-50 p-1 mb-6 border border-emerald-100">
+                        <img src="images/logo-creation.png" alt="LANCE TA BOÎTE" class="w-full h-full rounded-full object-contain group-hover:scale-110 transition-transform">
+                    </div>
                     <h3 class="text-2xl font-black text-sr-green mb-3 uppercase tracking-tight">LANCE TA BOÎTE</h3>
                     <p class="text-slate-600 mb-6">Du business plan au choix des statuts : un parcours balisé pour faire décoller votre projet sereinement.</p>
                     <span class="text-sm font-bold uppercase text-sr-green flex items-center group-hover:translate-x-3 transition-transform">Explorer l'entité <i class="fa-solid fa-arrow-right ml-2"></i></span>
@@ -119,7 +129,9 @@
                 <!-- CÔTÉ JURIDIQUE -->
                 <a href="rodez-juridique-administratif.html#juridique" class="group bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 animate-fadeInUp stagger-2 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-sr-pink/5 rounded-bl-[100px] -z-10 group-hover:scale-110 transition-transform"></div>
-                    <img src="images/logo-juridique.png" alt="CÔTÉ JURIDIQUE" class="h-16 w-auto mb-6 group-hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 rounded-full bg-pink-50 p-1 mb-6 border border-pink-100">
+                        <img src="images/logo-juridique.png" alt="CÔTÉ JURIDIQUE" class="w-full h-full rounded-full object-contain group-hover:scale-110 transition-transform">
+                    </div>
                     <h3 class="text-2xl font-black text-sr-pink mb-3 uppercase tracking-tight">CÔTÉ JURIDIQUE</h3>
                     <p class="text-slate-600 mb-6">Rédaction d'actes, gestion des assemblées et modifications statutaires gérées par nos juristes.</p>
                     <span class="text-sm font-bold uppercase text-sr-pink flex items-center group-hover:translate-x-3 transition-transform">Explorer l'entité <i class="fa-solid fa-arrow-right ml-2"></i></span>
@@ -128,7 +140,9 @@
                 <!-- CÔTÉ ADMINISTRATIF -->
                 <a href="rodez-juridique-administratif.html#administratif" class="group bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 animate-fadeInUp stagger-3 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-400/10 rounded-bl-[100px] -z-10 group-hover:scale-110 transition-transform"></div>
-                    <img src="images/logo-admin.png" alt="CÔTÉ ADMINISTRATIF" class="h-16 w-auto mb-6 group-hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 rounded-full bg-yellow-50 p-1 mb-6 border border-yellow-200">
+                        <img src="images/logo-admin.png" alt="CÔTÉ ADMINISTRATIF" class="w-full h-full rounded-full object-contain group-hover:scale-110 transition-transform">
+                    </div>
                     <h3 class="text-2xl font-black text-yellow-500 mb-3 uppercase tracking-tight">CÔTÉ ADMINISTRATIF</h3>
                     <p class="text-slate-600 mb-6">Externalisation de votre facturation, relances clients et rapprochements bancaires.</p>
                     <span class="text-sm font-bold uppercase text-yellow-500 flex items-center group-hover:translate-x-3 transition-transform">Explorer l'entité <i class="fa-solid fa-arrow-right ml-2"></i></span>
@@ -137,7 +151,7 @@
         </div>
     </section>
 
-    <!-- SECTION LOCALISATION GOOGLE MAPS (Réintégrée) -->
+    <!-- SECTION LOCALISATION GOOGLE MAPS -->
     <section class="py-20 bg-white border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-12 animate-fadeInUp">

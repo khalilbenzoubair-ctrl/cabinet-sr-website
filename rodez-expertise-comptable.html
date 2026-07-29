@@ -22,7 +22,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
 
-    <!-- Header avec les deux boutons -->
+    <!-- Header -->
     <div class="bg-sr-blue text-white text-xs py-2 px-6 flex justify-between items-center">
         <div class="flex items-center space-x-6"><a href="tel:0565555913" class="hover:text-yellow-400"><i class="fa-solid fa-phone mr-1"></i> 05 65 55 59 13</a></div>
         <div class="font-medium text-blue-200">5 bd Gambetta, Rodez</div>
@@ -44,7 +44,7 @@
         </div>
     </header>
 
-    <!-- BANNIÈRE AVEC LOGOS EN BADGES RONDS -->
+    <!-- BANNIÈRE AVEC LES DEUX BADGES RONDS HD -->
     <section class="bg-slate-900 text-white py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-sr-blue/20"></div>
         <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12 animate-fadeInUp">
@@ -53,7 +53,6 @@
                 <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">Comptabilité & <span class="text-sr-blue">Audit Légal</span></h1>
                 <p class="text-slate-300 text-xl font-light">De la sécurisation de vos saisies quotidiennes à la certification officielle de vos comptes. Nous transformons vos obligations légales en leviers de performance.</p>
             </div>
-            <!-- Double badge rond HD -->
             <div class="md:w-2/5 flex justify-center gap-6">
                 <div class="bg-white p-2 rounded-full shadow-2xl transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-500 border-4 border-white/10">
                     <img src="images/logo-expert.png" alt="EXPERT COMPTABLE" class="h-36 w-36 rounded-full object-contain">
@@ -65,15 +64,17 @@
         </div>
     </section>
 
-    <!-- CONTENU EXISTANT COMPTABILITÉ & AUDIT -->
+    <!-- PÔLE EXPERTISE COMPTABLE (Intégralité du contenu) -->
     <section class="py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-6">
             <div class="mb-16 md:w-2/3">
                 <h2 class="font-handwritten text-4xl text-sr-blue font-bold mb-2">Notre Pôle Expertise</h2>
                 <h3 class="text-3xl font-bold text-slate-900">Un suivi comptable, social et fiscal exhaustif.</h3>
             </div>
+
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                <!-- Comptabilité & Fiscalité -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-shadow">
                     <div class="w-12 h-12 bg-sr-blue text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-calculator"></i></div>
                     <h4 class="text-xl font-bold text-slate-900 mb-4">Gestion & Fiscalité</h4>
                     <p class="text-slate-600 text-sm mb-6">Nous assurons l'intégralité de vos obligations déclaratives pour une sérénité totale vis-à-vis de l'administration.</p>
@@ -81,9 +82,12 @@
                         <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Tenue comptable complète ou partagée</li>
                         <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Établissement des comptes annuels & bilans</li>
                         <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Prise en charge des déclarations fiscales</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Élaboration des situations intermédiaires</li>
                     </ul>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+
+                <!-- Social & RH -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-shadow">
                     <div class="w-12 h-12 bg-sr-blue text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-users"></i></div>
                     <h4 class="text-xl font-bold text-slate-900 mb-4">Pôle Social & RH</h4>
                     <p class="text-slate-600 text-sm mb-6">Un accompagnement rigoureux dans la gestion de votre personnel, de l'embauche à la clôture de la paie.</p>
@@ -91,8 +95,11 @@
                         <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Émission des bulletins de paie</li>
                         <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Gestion complète des déclarations sociales</li>
                         <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Conseil en droit du travail</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Accompagnement aux contrôles URSSAF</li>
                     </ul>
                 </div>
+
+                <!-- Stratégie -->
                 <div class="bg-sr-blue text-white p-8 rounded-3xl shadow-xl flex flex-col justify-between">
                     <div>
                         <h4 class="text-xl font-bold mb-4">Accompagnement Stratégique</h4>
@@ -102,6 +109,54 @@
                         <a href="rodez-contact.html" class="inline-block bg-white text-sr-blue font-bold px-6 py-2.5 rounded-lg text-sm hover:bg-slate-50 transition-colors">En parler avec un expert</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PÔLE COMMISSARIAT AUX COMPTES & AUDIT (Section réintégrée en totalité) -->
+    <section id="audit" class="py-24 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                
+                <div class="md:w-1/2">
+                    <div class="w-16 h-16 rounded-full bg-white p-1 mb-6 shadow border border-blue-100">
+                        <img src="images/logo-commissaire.png" alt="Audit" class="w-full h-full rounded-full object-contain">
+                    </div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Commissariat aux comptes & Missions d'Audit</h2>
+                    <p class="text-slate-600 mb-6 text-lg">La transparence financière est le socle de la confiance. Notre pôle d'audit intervient pour garantir la fiabilité absolue de vos informations économiques auprès de vos actionnaires et partenaires.</p>
+                    
+                    <div class="space-y-6 mt-8">
+                        <!-- Mission Légale -->
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex gap-4">
+                            <div class="text-sr-blue text-2xl mt-1"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Interventions Légales</h4>
+                                <p class="text-sm text-slate-600 mt-1">Audit légal strict, certification de vos comptes et commissariat aux apports et à la fusion.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Mission Contractuelle -->
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex gap-4">
+                            <div class="text-sr-blue text-2xl mt-1"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Interventions Contractuelles</h4>
+                                <p class="text-sm text-slate-600 mt-1">Audit d'acquisition (Due Diligence), évaluation d'entreprise et missions de vérification spécifiques sur demande.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2">
+                    <div class="bg-slate-900 rounded-3xl p-10 text-white shadow-2xl">
+                        <h3 class="font-handwritten text-4xl text-sr-yellow mb-6">Pourquoi faire certifier vos comptes ?</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 border-b border-slate-800 pb-4"><i class="fa-solid fa-shield-halved text-sr-yellow mt-1"></i> <span><strong>Sécurisation:</strong> Prévention des risques financiers et détection des anomalies.</span></li>
+                            <li class="flex items-start gap-3 border-b border-slate-800 pb-4"><i class="fa-solid fa-handshake text-sr-yellow mt-1"></i> <span><strong>Crédibilité:</strong> Renforce la confiance des banques, investisseurs et fournisseurs.</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-chart-pie text-sr-yellow mt-1"></i> <span><strong>Transparence:</strong> Assurance d'une communication financière fidèle à la réalité de l'entreprise.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

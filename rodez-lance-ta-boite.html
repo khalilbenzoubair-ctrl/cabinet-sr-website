@@ -7,23 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
-                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#FDE047', bgLight: '#FAF9F6' } },
-                    keyframes: { fadeInUp: { '0%': { opacity: '0', transform: 'translateY(30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } } },
-                    animation: { fadeInUp: 'fadeInUp 0.8s ease-out forwards' }
-                }
-            }
-        }
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] }, colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#FDE047', bgLight: '#FAF9F6' } } } } }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>.stagger-1 { animation-delay: 100ms; } .stagger-2 { animation-delay: 200ms; } .stagger-3 { animation-delay: 300ms; } .stagger-4 { animation-delay: 400ms; }</style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
 
-    <!-- Header -->
+    <!-- Header avec les deux boutons -->
     <div class="bg-sr-blue text-white text-xs py-2 px-6 flex justify-between items-center">
         <div class="flex items-center space-x-6"><a href="tel:0565555913" class="hover:text-yellow-400"><i class="fa-solid fa-phone mr-1"></i> 05 65 55 59 13</a></div>
         <div class="font-medium text-blue-200">5 bd Gambetta, Rodez</div>
@@ -38,21 +28,23 @@
                 <a href="rodez-lance-ta-boite.html" class="text-sr-green font-bold border-b-2 border-sr-green pb-1">Lance Ta Boîte</a>
                 <a href="rodez-juridique-administratif.html" class="hover:text-sr-pink transition-colors">Juridique & Admin</a>
             </nav>
-           <div class="flex items-center gap-3">
-    <a href="rejoignez-nous.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Nous rejoindre</a>
-    <a href="contact.html" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Contactez-nous</a>
-</div>
+            <div class="flex items-center gap-3">
+                <a href="rejoignez-nous.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Nous rejoindre</a>
+                <a href="rodez-contact.html" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Contactez-nous</a>
+            </div>
+        </div>
     </header>
 
     <!-- BANNIÈRE -->
     <section class="bg-slate-900 text-white py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-sr-green/10"></div>
-        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12 animate-fadeInUp">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-3/5">
                 <span class="inline-block px-4 py-1.5 bg-sr-green/20 text-emerald-300 rounded-full text-xs font-bold tracking-widest uppercase mb-6 border border-sr-green/50">Pôle Création d'Entreprise</span>
                 <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">LANCE TA <span class="text-sr-green">BOÎTE</span></h1>
                 <p class="text-slate-300 text-xl font-light">Le tremplin complet pour les créateurs et repreneurs d'entreprise à Rodez. Nous transformons votre projet en société viable, structurée et prête à réussir sur le marché de l'Aveyron.</p>
             </div>
+            <!-- Badge rond Vert HD -->
             <div class="md:w-2/5 flex justify-center">
                 <div class="bg-white p-3 rounded-full shadow-2xl transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-500 border-4 border-white/10">
                     <img src="images/logo-creation.png" alt="LANCE TA BOÎTE" class="h-44 w-44 rounded-full object-contain">
@@ -61,20 +53,18 @@
         </div>
     </section>
 
-    <!-- CONTENU DÉTAILLÉ -->
+    <!-- CONTENU DÉTAILLÉ (4 Étapes intégrales) -->
     <section class="py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16 md:w-2/3 animate-fadeInUp">
+            <div class="mb-16 md:w-2/3">
                 <h2 class="font-handwritten text-4xl text-sr-green font-bold mb-2">Notre Pôle Création</h2>
                 <h3 class="text-3xl font-bold text-slate-900">Un parcours en 4 étapes clés pour ne rien laisser au hasard.</h3>
                 <p class="text-slate-600 mt-4 text-lg">Créer une entreprise ne consiste pas simplement à remplir un formulaire en ligne. C'est faire des choix fiscaux, sociaux et juridiques qui impacteront vos revenus pendant des années. Nous vous guidons à chaque pas.</p>
             </div>
 
-            <!-- Grille de 4 cartes riches -->
             <div class="grid md:grid-cols-2 gap-8">
-                
                 <!-- Étape 1 -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all animate-fadeInUp stagger-1">
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all">
                     <div class="w-12 h-12 bg-sr-green text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-lightbulb"></i></div>
                     <h4 class="text-2xl font-bold text-slate-900 mb-3">1. Business Plan & Faisabilité</h4>
                     <p class="text-slate-600 text-sm mb-6">Nous réalisons un crash-test de votre modèle économique pour vérifier sa rentabilité réelle avant de vous lancer.</p>
@@ -86,7 +76,7 @@
                 </div>
 
                 <!-- Étape 2 -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all animate-fadeInUp stagger-2">
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all">
                     <div class="w-12 h-12 bg-sr-green text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-scale-balanced"></i></div>
                     <h4 class="text-2xl font-bold text-slate-900 mb-3">2. Statut Juridique & Rémunération</h4>
                     <p class="text-slate-600 text-sm mb-6">SASU, EURL, SARL, SAS, Profession Libérale... Lequel choisir ? Nous étudions votre situation personnelle pour choisir la forme optimale.</p>
@@ -98,7 +88,7 @@
                 </div>
 
                 <!-- Étape 3 -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all animate-fadeInUp stagger-3">
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all">
                     <div class="w-12 h-12 bg-sr-green text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-stamp"></i></div>
                     <h4 class="text-2xl font-bold text-slate-900 mb-3">3. Formalités & Immatriculation</h4>
                     <p class="text-slate-600 text-sm mb-6">Zéro stress administratif. Nos équipes juridiques rédigent l'ensemble de vos actes légaux et s'occupent des greffes.</p>
@@ -109,8 +99,8 @@
                     </ul>
                 </div>
 
-                <!-- Étape 4 (CTA) -->
-                <div class="bg-sr-green text-white p-8 rounded-3xl shadow-xl animate-fadeInUp stagger-4 relative overflow-hidden flex flex-col justify-between">
+                <!-- Étape 4 -->
+                <div class="bg-sr-green text-white p-8 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between">
                     <div class="absolute -bottom-10 -right-10 text-white/10 text-9xl"><i class="fa-solid fa-rocket"></i></div>
                     <div>
                         <h4 class="text-2xl font-bold mb-3">4. Suivi Post-Création (90 jours)</h4>
