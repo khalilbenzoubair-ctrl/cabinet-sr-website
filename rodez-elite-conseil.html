@@ -19,7 +19,7 @@
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>.stagger-1 { animation-delay: 100ms; } .stagger-2 { animation-delay: 200ms; } .stagger-3 { animation-delay: 300ms; }</style>
+    <style>.stagger-1 { animation-delay: 100ms; } .stagger-2 { animation-delay: 200ms; } .stagger-3 { animation-delay: 300ms; } .stagger-4 { animation-delay: 400ms; }</style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
 
@@ -42,14 +42,14 @@
         </div>
     </header>
 
-    <!-- BANNIÈRE ÉLITE CONSEIL -->
+    <!-- BANNIÈRE -->
     <section class="bg-slate-900 text-white py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-sr-orange/10"></div>
         <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12 animate-fadeInUp">
             <div class="md:w-3/5">
                 <span class="inline-block px-4 py-1.5 bg-sr-orange/20 text-orange-200 rounded-full text-xs font-bold tracking-widest uppercase mb-6 border border-sr-orange/50">Pôle Stratégie & Croissance</span>
                 <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">ÉLITE <span class="text-sr-orange">CONSEIL</span></h1>
-                <p class="text-slate-300 text-xl font-light">Doté d'une vision à 360°, notre pôle de conseil vous offre l'expertise d'un Directeur Financier externalisé pour structurer, financer et accélérer le développement de votre société.</p>
+                <p class="text-slate-300 text-xl font-light">Accélérez votre développement avec l'accompagnement stratégique d'un Directeur Financier (DAF) à temps partagé. Nous transformons vos données comptables en leviers de décision opérationnelle.</p>
             </div>
             <div class="md:w-2/5 flex justify-center">
                 <img src="images/logo-conseil.png" alt="ÉLITE CONSEIL" class="h-40 bg-white rounded-3xl p-6 shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500">
@@ -57,45 +57,71 @@
         </div>
     </section>
 
-    <!-- CONTENU ÉLITE CONSEIL -->
+    <!-- CONTENU DÉTAILLÉ -->
     <section class="py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-6">
             <div class="mb-16 md:w-2/3 animate-fadeInUp">
                 <h2 class="font-handwritten text-4xl text-sr-orange font-bold mb-2">Notre Pôle Conseil</h2>
-                <h3 class="text-3xl font-bold text-slate-900">Prenez de la hauteur sur votre activité.</h3>
+                <h3 class="text-3xl font-bold text-slate-900">Un accompagnement de haut niveau pour piloter, financer et sécuriser votre croissance.</h3>
+                <p class="text-slate-600 mt-4 text-lg">Le rôle du dirigeant ne se résume pas à la gestion courante. Face aux mutations économiques, ÉLITE CONSEIL apporte des solutions d'ingénierie financière adaptées aux PME et ETI de l'Aveyron.</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- 4 Cartes de Services Riches -->
+            <div class="grid md:grid-cols-2 gap-8">
+                
                 <!-- Carte 1 -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-shadow animate-fadeInUp stagger-1">
-                    <div class="w-12 h-12 bg-sr-orange text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-chart-pie"></i></div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-4">Pilotage de la Performance</h4>
-                    <p class="text-slate-600 text-sm mb-6">Ne naviguez plus à vue. Nous mettons en place des outils de suivi précis.</p>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all animate-fadeInUp stagger-1">
+                    <div class="w-12 h-12 bg-sr-orange text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-chart-line"></i></div>
+                    <h4 class="text-2xl font-bold text-slate-900 mb-3">Pilotage de la Performance & KPI</h4>
+                    <p class="text-slate-600 text-sm mb-6">Fini les bilans qui arrivent six mois après la clôture. Nous mettons en place un pilotage continu basé sur des indicateurs fiables et des reportings personnalisés.</p>
                     <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> Création de tableaux de bord sur-mesure</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> Calcul et suivi des coûts de revient</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> Analyse de rentabilité périodique</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> <strong>Tableaux de bord de gestion :</strong> Suivi mensuel du chiffre d'affaires, des marges et du résultat.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> <strong>Calcul du coût de revient :</strong> Analyse par chantier, par produit ou par ligne de service.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> <strong>Seuil de rentabilité :</strong> Détermination précise de votre point mort pour sécuriser vos embauches.</li>
                     </ul>
                 </div>
+
                 <!-- Carte 2 -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-shadow animate-fadeInUp stagger-2">
-                    <div class="w-12 h-12 bg-sr-orange text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-coins"></i></div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-4">Recherche de Financements</h4>
-                    <p class="text-slate-600 text-sm mb-6">Nous structurons vos dossiers pour maximiser vos chances d'obtenir des fonds.</p>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all animate-fadeInUp stagger-2">
+                    <div class="w-12 h-12 bg-sr-orange text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-vault"></i></div>
+                    <h4 class="text-2xl font-bold text-slate-900 mb-3">Gestion de Trésorerie & BFR</h4>
+                    <p class="text-slate-600 text-sm mb-6">La trésorerie est le nerf de la guerre. Nous vous aidons à anticiper les décaissements, sécuriser votre besoin en fonds de roulement et éviter les impayés.</p>
                     <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> Élaboration de plans de financement</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> Accompagnement aux rendez-vous bancaires</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> Optimisation de la trésorerie</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> <strong>Plan de trésorerie prévisionnel :</strong> Visualisation sur 3, 6 et 12 mois de vos flux de liquidités.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> <strong>Optimisation du BFR :</strong> Analyse de votre poste clients, fournisseurs et stocks.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> <strong>Négociation bancaire :</strong> Mise en place de lignes de crédit court terme (affacturage, découvert).</li>
                     </ul>
                 </div>
+
                 <!-- Carte 3 -->
-                <div class="bg-sr-orange text-white p-8 rounded-3xl shadow-xl animate-fadeInUp stagger-3 relative overflow-hidden">
-                    <div class="absolute -bottom-10 -right-10 text-white/20 text-9xl"><i class="fa-solid fa-user-tie"></i></div>
-                    <h4 class="text-xl font-bold mb-4 relative z-10">DAF Externalisé</h4>
-                    <p class="text-orange-50 text-sm mb-6 relative z-10">Bénéficiez des compétences d'un Directeur Financier sans en supporter le coût salarial complet. Une expertise pointue, disponible à la carte.</p>
-                    <div class="mt-auto relative z-10">
-                        <a href="rodez-contact.html" class="inline-block bg-white text-sr-orange font-bold px-6 py-2.5 rounded-lg text-sm hover:bg-slate-50 transition-colors">Solliciter notre expertise</a>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all animate-fadeInUp stagger-3">
+                    <div class="w-12 h-12 bg-sr-orange text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <h4 class="text-2xl font-bold text-slate-900 mb-3">Ingénierie de Financement & Croissance</h4>
+                    <p class="text-slate-600 text-sm mb-6">Que ce soit pour un rachat d'entreprise, une acquisition immobilière ou du matériel industriel, nous montons des dossiers bétons auprès de vos partenaires bancaires.</p>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> <strong>Plan de financement pluriannuel :</strong> Modélisation de votre capacité de remboursement.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> <strong>Recherche de subventions :</strong> Aides régionales Occitanie, crédits d'impôt et BPI France.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-orange mt-1"></i> <strong>Croissance externe :</strong> Évaluation d'entreprises cibles et due-diligence financière.</li>
+                    </ul>
+                </div>
+
+                <!-- Carte 4 (DAF Externalisé) -->
+                <div class="bg-sr-orange text-white p-8 rounded-3xl shadow-xl animate-fadeInUp stagger-4 relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute -bottom-10 -right-10 text-white/10 text-9xl"><i class="fa-solid fa-user-tie"></i></div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-4">Votre DAF à Temps Partagé</h4>
+                        <p class="text-orange-50 text-sm mb-6">Vous n'avez pas la taille critique pour recruter un Directeur Administratif et Financier à temps plein ? Nous mettons un expert à votre disposition 1 à 4 jours par mois.</p>
+                        <ul class="space-y-3 text-sm text-orange-100 mb-8">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-star text-white mt-1"></i> <span>Présence en comité de direction pour guider vos choix.</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-star text-white mt-1"></i> <span>Interface directe avec vos banquiers, experts-comptables et avocats.</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-star text-white mt-1"></i> <span>Zéro charge salariale fixe : flexibilité totale selon vos besoins.</span></li>
+                        </ul>
+                    </div>
+                    <div class="relative z-10">
+                        <a href="rodez-contact.html" class="inline-block bg-white text-sr-orange font-bold px-8 py-3 rounded-xl shadow-lg hover:bg-slate-100 transition-colors">Découvrir l'offre DAF</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
