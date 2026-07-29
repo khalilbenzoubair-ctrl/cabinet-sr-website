@@ -7,23 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
-                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#FDE047', bgLight: '#FAF9F6' } },
-                    keyframes: { fadeInUp: { '0%': { opacity: '0', transform: 'translateY(30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } } },
-                    animation: { fadeInUp: 'fadeInUp 0.8s ease-out forwards' }
-                }
-            }
-        }
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] }, colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#FDE047', bgLight: '#FAF9F6' } } } } }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>.stagger-1 { animation-delay: 100ms; } .stagger-2 { animation-delay: 200ms; }</style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
 
-    <!-- Header -->
+    <!-- Header avec les deux boutons -->
     <div class="bg-sr-blue text-white text-xs py-2 px-6 flex justify-between items-center">
         <div class="flex items-center space-x-6"><a href="tel:0565555913" class="hover:text-yellow-400"><i class="fa-solid fa-phone mr-1"></i> 05 65 55 59 13</a></div>
         <div class="font-medium text-blue-200">5 bd Gambetta, Rodez</div>
@@ -38,156 +28,44 @@
                 <a href="rodez-lance-ta-boite.html" class="hover:text-sr-green transition-colors">Lance Ta Boîte</a>
                 <a href="rodez-juridique-administratif.html" class="text-sr-pink font-bold border-b-2 border-sr-pink pb-1">Juridique & Admin</a>
             </nav>
-            <a href="rodez-contact.html" class="bg-slate-900 text-white font-bold px-6 py-2.5 rounded-lg text-sm">Contactez-nous</a>
+            <div class="flex items-center gap-3">
+                <a href="rejoignez-nous.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Nous rejoindre</a>
+                <a href="rodez-contact.html" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Contactez-nous</a>
+            </div>
         </div>
     </header>
 
-    <!-- BANNIÈRE -->
-    <section class="bg-slate-900 text-white py-20 relative overflow-hidden">
+    <!-- SECTION 1 : CÔTÉ JURIDIQUE (Badge rond Rose) -->
+    <section id="juridique" class="bg-slate-900 text-white py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-sr-pink/10"></div>
-        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12 animate-fadeInUp">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-3/5">
-                <span class="inline-block px-4 py-1.5 bg-sr-pink/20 text-pink-200 rounded-full text-xs font-bold tracking-widest uppercase mb-6 border border-sr-pink/50">Sécurisation & Délégation</span>
-                <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">JURIDIQUE & <span class="text-yellow-400">ADMINISTRATIF</span></h1>
-                <p class="text-slate-300 text-xl font-light">Deux entités complémentaires pour alléger votre charge mentale. Nous garantissons la conformité légale de vos actes sociaux et externalisons vos tâches administratives chronophages.</p>
+                <span class="inline-block px-4 py-1.5 bg-sr-pink/20 text-pink-200 rounded-full text-xs font-bold tracking-widest uppercase mb-6 border border-sr-pink/50">Conformité & Droit</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">CÔTÉ <span class="text-sr-pink">JURIDIQUE</span></h1>
+                <p class="text-slate-300 text-lg font-light mb-8">Nous garantissons la validité de vos actes et la bonne tenue de votre secrétariat juridique tout au long de la vie de la société.</p>
             </div>
-            <div class="md:w-2/5 flex justify-center gap-4">
-                <img src="images/logo-juridique.png" alt="CÔTÉ JURIDIQUE" class="h-32 bg-white rounded-3xl p-4 shadow-2xl transform -rotate-3 hover:rotate-0 transition-transform duration-500">
-                <img src="images/logo-admin.png" alt="CÔTÉ ADMINISTRATIF" class="h-32 bg-white rounded-3xl p-4 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 translate-y-4">
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 1 : CÔTÉ JURIDIQUE (Rose) -->
-    <section id="juridique" class="py-24 bg-white relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col lg:flex-row gap-16 items-start">
-                
-                <div class="lg:w-1/3 animate-fadeInUp">
-                    <div class="bg-sr-pink/10 p-4 rounded-2xl w-fit mb-6"><img src="images/logo-juridique.png" alt="CÔTÉ JURIDIQUE" class="h-16 w-auto"></div>
-                    <span class="text-sr-pink font-bold uppercase tracking-wider text-sm block mb-2">Entité CÔTÉ JURIDIQUE</span>
-                    <h2 class="text-4xl font-extrabold text-slate-900 mb-6 leading-tight">Secrétariat juridique & conformité légale</h2>
-                    <p class="text-slate-600 text-lg mb-8">Le non-respect des formalités juridiques peut coûter cher à un dirigeant (amendes, nullité des décisions). Nos juristes sécurisent l'intégralité du cycle de vie légal de votre structure.</p>
-                    <a href="rodez-contact.html" class="inline-block bg-sr-pink text-white font-bold px-8 py-3.5 rounded-xl shadow-lg hover:bg-pink-600 transition-colors">Consulter un juriste</a>
+            <!-- Badge rond Rose HD -->
+            <div class="md:w-2/5 flex justify-center">
+                <div class="bg-white p-3 rounded-full shadow-2xl transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-500 border-4 border-white/10">
+                    <img src="images/logo-juridique.png" alt="CÔTÉ JURIDIQUE" class="h-44 w-44 rounded-full object-contain">
                 </div>
-
-                <div class="lg:w-2/3 grid sm:grid-cols-2 gap-6 animate-fadeInUp stagger-1">
-                    <!-- Bloc 1 -->
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <div class="text-sr-pink text-2xl mb-4"><i class="fa-solid fa-file-contract"></i></div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-2">Secrétariat Juridique Annuel</h4>
-                        <p class="text-sm text-slate-600 mb-4">La formalité obligatoire des sociétés commerciales. Nous prenons tout en charge pour clôturer sereinement votre exercice.</p>
-                        <ul class="space-y-2 text-xs text-slate-700">
-                            <li>• Rédaction des rapports de gestion</li>
-                            <li>• Organisation des Assemblées Générales (AGO)</li>
-                            <li>• Dépôt légal des comptes au greffe du tribunal</li>
-                        </ul>
-                    </div>
-
-                    <!-- Bloc 2 -->
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <div class="text-sr-pink text-2xl mb-4"><i class="fa-solid fa-pen-to-square"></i></div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-2">Modifications Statutaires</h4>
-                        <p class="text-sm text-slate-600 mb-4">Votre entreprise évolue ? Nous rédigeons les actes exceptionnels pour adapter vos statuts légaux.</p>
-                        <ul class="space-y-2 text-xs text-slate-700">
-                            <li>• Transfert de siège social & changement de gérant</li>
-                            <li>• Augmentation / réduction de capital social</li>
-                            <li>• Transformation de société (SARL vers SASU...)</li>
-                        </ul>
-                    </div>
-
-                    <!-- Bloc 3 -->
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <div class="text-sr-pink text-2xl mb-4"><i class="fa-solid fa-handshake"></i></div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-2">Pactes & Contrats d'Affaires</h4>
-                        <p class="text-sm text-slate-600 mb-4">Sécurisez vos relations d'associés et vos contrats commerciaux avec des textes blindés.</p>
-                        <ul class="space-y-2 text-xs text-slate-700">
-                            <li>• Rédaction de pactes d'associés / actionnaires</li>
-                            <li>• Baux commerciaux et conventions de trésorerie</li>
-                            <li>• Cessions de parts sociales & actions</li>
-                        </ul>
-                    </div>
-
-                    <!-- Bloc 4 -->
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <div class="text-sr-pink text-2xl mb-4"><i class="fa-solid fa-folder-tree"></i></div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-2">Restructuration & Holdings</h4>
-                        <p class="text-sm text-slate-600 mb-4">Optimisez votre organisation juridique pour protéger votre patrimoine et faciliter les flux.</p>
-                        <ul class="space-y-2 text-xs text-slate-700">
-                            <li>• Création de holdings d'animation ou passives</li>
-                            <li>• Opérations de fusion, scission et apport partiel</li>
-                            <li>• Accompagnement aux dissolutions / liquidations</li>
-                        </ul>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- SECTION 2 : CÔTÉ ADMINISTRATIF (Jaune/Gris) -->
-    <section id="administratif" class="py-24 bg-slate-100 relative border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col lg:flex-row gap-16 items-start">
-                
-                <div class="lg:w-1/3 animate-fadeInUp">
-                    <div class="bg-yellow-400/20 p-4 rounded-2xl w-fit mb-6"><img src="images/logo-admin.png" alt="CÔTÉ ADMINISTRATIF" class="h-16 w-auto"></div>
-                    <span class="text-yellow-600 font-bold uppercase tracking-wider text-sm block mb-2">Entité CÔTÉ ADMINISTRATIF</span>
-                    <h2 class="text-4xl font-extrabold text-slate-900 mb-6 leading-tight">Externalisation de votre gestion administrative</h2>
-                    <p class="text-slate-600 text-lg mb-8">Un artisan ou un chef d'entreprise passe en moyenne 10 heures par semaine sur sa paperasse. Nous vous proposons un secrétariat administratif externalisé et flexible.</p>
-                    <a href="rodez-contact.html" class="inline-block bg-slate-900 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg hover:bg-slate-800 transition-colors">Déléguer ma gestion</a>
+    <!-- SECTION 2 : CÔTÉ ADMINISTRATIF (Badge rond Jaune) -->
+    <section id="administratif" class="bg-slate-100 py-24 relative overflow-hidden border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col-reverse md:flex-row items-center gap-12">
+            <!-- Badge rond Jaune HD -->
+            <div class="md:w-2/5 flex justify-center">
+                <div class="bg-white p-3 rounded-full shadow-2xl transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-500 border-4 border-white">
+                    <img src="images/logo-admin.png" alt="CÔTÉ ADMINISTRATIF" class="h-44 w-44 rounded-full object-contain">
                 </div>
-
-                <div class="lg:w-2/3 grid sm:grid-cols-2 gap-6 animate-fadeInUp stagger-1">
-                    <!-- Bloc 1 -->
-                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                        <div class="text-yellow-500 text-2xl mb-4"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-2">Facturation & Relances Clients</h4>
-                        <p class="text-sm text-slate-600 mb-4">Protégez votre trésorerie avec un suivi professionnel de votre poste clients.</p>
-                        <ul class="space-y-2 text-xs text-slate-700">
-                            <li>• Émission de vos devis et factures conformes</li>
-                            <li>• Suivi des règlements & pointage bancaire</li>
-                            <li>• Relances préventives et recouvrement amiable</li>
-                        </ul>
-                    </div>
-
-                    <!-- Bloc 2 -->
-                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                        <div class="text-yellow-500 text-2xl mb-4"><i class="fa-solid fa-folder-open"></i></div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-2">Pré-comptabilité & Classement</h4>
-                        <p class="text-sm text-slate-600 mb-4">Gagnez du temps avant l'envoi de vos pièces au pôle comptable.</p>
-                        <ul class="space-y-2 text-xs text-slate-700">
-                            <li>• Collecte, dématérialisation et archivage des notes</li>
-                            <li>• Classement numérique sur espace cloud sécurisé</li>
-                            <li>• Rapprochements bancaires et lettrage basique</li>
-                        </ul>
-                    </div>
-
-                    <!-- Bloc 3 -->
-                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                        <div class="text-yellow-500 text-2xl mb-4"><i class="fa-solid fa-envelope-open-text"></i></div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-2">Gestion Courante & Secrétariat</h4>
-                        <p class="text-sm text-slate-600 mb-4">Un appui logistique et administratif au quotidien pour le chef d'entreprise.</p>
-                        <ul class="space-y-2 text-xs text-slate-700">
-                            <li>• Gestion du courrier d'entreprise & rédactionnels</li>
-                            <li>• Suivi des contrats d'assurance, flotte, téléphonie</li>
-                            <li>• Assistance administrative aux appels d'offres</li>
-                        </ul>
-                    </div>
-
-                    <!-- Bloc 4 -->
-                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                        <div class="text-yellow-500 text-2xl mb-4"><i class="fa-solid fa-business-time"></i></div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-2">Relations Organismes & Administrations</h4>
-                        <p class="text-sm text-slate-600 mb-4">Nous faisons l'intermédiaire avec vos différents interlocuteurs officiels.</p>
-                        <ul class="space-y-2 text-xs text-slate-700">
-                            <li>• Gestion des formalités URSSAF et caisses</li>
-                            <li>• Demandes d'attestations fiscales & sociales</li>
-                            <li>• Constitution de dossiers administratifs divers</li>
-                        </ul>
-                    </div>
-                </div>
-
+            </div>
+            <div class="md:w-3/5 text-slate-900">
+                <span class="inline-block px-4 py-1.5 bg-yellow-400/20 text-yellow-700 rounded-full text-xs font-bold tracking-widest uppercase mb-6 border border-yellow-400/50">Délégation & Gestion</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">CÔTÉ <span class="text-yellow-500">ADMINISTRATIF</span></h1>
+                <p class="text-slate-600 text-lg mb-8">Déchargez-vous de la paperasse. Notre équipe prend le relais sur la gestion quotidienne pour vous faire gagner un temps précieux.</p>
             </div>
         </div>
     </section>
