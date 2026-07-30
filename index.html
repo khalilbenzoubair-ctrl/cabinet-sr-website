@@ -48,38 +48,58 @@
             <p class="text-lg text-slate-600 max-w-2xl mx-auto">Veuillez sélectionner le cabinet de votre choix pour accéder à nos services d'expertise comptable et de conseil.</p>
         </div>
 
-        <!-- Les deux cartes de choix -->
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            
-           <!-- CARTE ACCUEIL SAINT-AFFRIQUE -->
-<a href="expertise-comptable.html" class="group bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 animate-fadeInUp stagger-1 relative overflow-hidden">
-    <div class="absolute top-0 right-0 w-32 h-32 bg-slate-900/5 rounded-bl-[100px] -z-10 group-hover:scale-110 transition-transform"></div>
-    <div class="w-16 h-16 rounded-full bg-slate-50 p-1 mb-6 border border-slate-200">
-        <img src="images/logo-st-affrique.jpg" alt="Patrimoine Conseil Expertise Saint-Affrique" class="h-32 w-auto mx-auto mb-4 object-contain">
-    </div>
-    <h3 class="text-2xl font-black text-slate-900 mb-3 uppercase tracking-tight">PATRIMOINE CONSEIL EXPERTISE SAINT-AFFRIQUE</h3>
-    <p class="text-slate-600 mb-6">Fiabilisation de vos données financières, bilans, déclarations fiscales et gestion sociale de vos équipes.</p>
-    <span class="text-sm font-bold uppercase text-slate-900 flex items-center group-hover:translate-x-3 transition-transform">Explorer l'entité <i class="fa-solid fa-arrow-right ml-2"></i></span>
-</a>
-
-            <!-- Carte Rodez -->
-            <a href="rodez.html" class="group bg-white p-10 rounded-3xl shadow-lg border border-slate-200 hover:shadow-2xl hover:-translate-y-2 hover:border-sr-orange transition-all duration-300 text-center relative overflow-hidden">
-                <div class="absolute inset-0 bg-sr-orange translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out opacity-5"></div>
-                <!-- LOGO AGRANDI pour garder l'équilibre visuel -->
-                <div class="w-32 h-32 bg-orange-50 rounded-2xl flex items-center justify-center mx-auto mb-6 p-3 group-hover:scale-110 transition-transform duration-300">
-                    <img src="images/logo-rodez.png" alt="Logo Rodez" class="h-full w-auto object-contain mix-blend-multiply">
-                </div>
-               <h3 class="text-sm font-bold text-sr-blue uppercase tracking-wider mb-1">
-    PATRIMOINE CONSEIL EXPERTISE RODEZ
-</h3>
-                <p class="text-slate-500 text-sm mb-6">5 bd Gambetta<br>12000 RODEZ</p>
-                <span class="inline-block bg-slate-100 text-sr-orange font-bold px-6 py-2.5 rounded-full text-sm group-hover:bg-sr-orange group-hover:text-white transition-colors duration-300">
-                    Accéder au site <i class="fa-solid fa-arrow-right ml-2"></i>
-                </span>
-            </a>
-
+       <!-- GRILLE DE SÉLECTION DES 2 CABINETS (100% SYMÉTRIQUE) -->
+<div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto px-6">
+    
+    <!-- CARTE GAUCHE : SAINT-AFFRIQUE -->
+    <a href="saint-affrique.html" class="group bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 text-center flex flex-col justify-between">
+        <div>
+            <!-- Conteneur logo identique -->
+            <div class="w-36 h-36 mx-auto mb-6 bg-blue-50/60 rounded-3xl flex items-center justify-center p-4 border border-blue-100/50">
+                <img src="images/logo-st-affrique.jpg" alt="Saint-Affrique" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform">
+            </div>
+            <!-- Titre en police bleue identique -->
+            <h3 class="text-sm font-bold text-sr-blue uppercase tracking-wider mb-2">
+                PATRIMOINE CONSEIL EXPERTISE SAINT-AFFRIQUE
+            </h3>
+            <!-- Adresse -->
+            <p class="text-slate-500 text-sm leading-relaxed mb-8">
+                10B, boulevard de Verdun<br>12400 SAINT-AFFRIQUE
+            </p>
         </div>
-    </div>
+        <!-- Bouton pilule identique -->
+        <div>
+            <span class="inline-flex items-center gap-2 bg-slate-100 group-hover:bg-sr-blue group-hover:text-white text-sr-blue font-bold text-sm px-6 py-3 rounded-full transition-all">
+                Accéder au site <i class="fa-solid fa-arrow-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- CARTE DROITE : RODEZ -->
+    <a href="rodez.html" class="group bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 text-center flex flex-col justify-between">
+        <div>
+            <!-- Conteneur logo identique -->
+            <div class="w-36 h-36 mx-auto mb-6 bg-amber-50/60 rounded-3xl flex items-center justify-center p-4 border border-amber-100/50">
+                <img src="images/logo-rodez.png" alt="Rodez" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform">
+            </div>
+            <!-- Titre en police bleue identique -->
+            <h3 class="text-sm font-bold text-sr-blue uppercase tracking-wider mb-2">
+                PATRIMOINE CONSEIL EXPERTISE RODEZ
+            </h3>
+            <!-- Adresse -->
+            <p class="text-slate-500 text-sm leading-relaxed mb-8">
+                5 bd Gambetta<br>12000 RODEZ
+            </p>
+        </div>
+        <!-- Bouton pilule identique -->
+        <div>
+            <span class="inline-flex items-center gap-2 bg-slate-100 group-hover:bg-sr-orange group-hover:text-white text-sr-orange font-bold text-sm px-6 py-3 rounded-full transition-all">
+                Accéder au site <i class="fa-solid fa-arrow-right"></i>
+            </span>
+        </div>
+    </a>
+
+</div>
 
 </body>
 </html>
