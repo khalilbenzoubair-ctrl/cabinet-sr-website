@@ -55,83 +55,128 @@
     </header>
 
    <main>
-    <!-- BANNIÈRE UNIFIÉE (Style Lance Ta Boite / Elite Conseil) -->
-    <section class="bg-slate-900 text-white py-20 border-b-4 border-sr-blue">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+    <!-- BANNIÈRE ANIMÉE EXPERTISE -->
+    <section class="relative bg-slate-900 text-white py-24 overflow-hidden border-b-4 border-sr-blue">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/30 rounded-full mix-blend-screen filter blur-[100px] animate-pulse"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between animate-fadeInUp">
             <div class="max-w-2xl">
-                <span class="inline-block bg-white/10 text-blue-300 font-semibold text-xs tracking-widest uppercase px-3 py-1 rounded-full mb-4">
+                <span class="inline-block bg-white/10 text-blue-300 font-bold text-xs tracking-widest uppercase px-4 py-1.5 rounded-full mb-6 border border-blue-400/30">
                     FIABILITÉ & CONSEIL
                 </span>
-                <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6 uppercase">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
                     EXPERTISE COMPTABLE & AUDIT
                 </h1>
-                <p class="text-slate-200 text-lg mb-0 leading-relaxed">
-                    De la tenue de votre comptabilité à la certification de vos comptes, un accompagnement sur-mesure pour sécuriser votre activité.
+                <p class="text-slate-300 text-lg mb-0 leading-relaxed max-w-xl">
+                    De la tenue de votre comptabilité à la certification de vos comptes, bénéficiez d'un accompagnement sur-mesure pour sécuriser et pérenniser votre activité.
                 </p>
             </div>
-        </div>
-    </section>
-
-    <!-- SECTION 1 : EXPERTISE COMPTABLE (Ancien site) -->
-    <section class="bg-white py-24 border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex items-center gap-6 mb-12">
-                <div class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-200 p-2 shadow-sm">
-                    <!-- LOGO NOIR (Format corrigé) -->
-                    <img src="images/logo-expert.png" alt="Logo Expert Comptable" class="w-full h-full object-contain">
+            <div class="mt-10 md:mt-0 hidden lg:flex gap-4">
+                <div class="w-24 h-24 bg-white rounded-2xl flex items-center justify-center p-3 shadow-2xl transform rotate-[-5deg] hover:rotate-0 transition-transform border-4 border-slate-800">
+                    <img src="images/logo-expert.png" alt="Logo Expert" class="w-full h-full object-contain">
                 </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Patrimoine Conseil Expertise</h2>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                    <h3 class="text-xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-4">Vos Besoins</h3>
-                    <ul class="space-y-4 text-slate-600">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Création d'entreprise</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Développement de votre activité</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Embauche de salariés</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Optimisation fiscale et sociale</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Cession ou transmission</li>
-                    </ul>
-                </div>
-                
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-lg">
-                    <h3 class="text-xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-4">Nos Solutions</h3>
-                    <ul class="space-y-4 text-slate-600">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-arrow-right text-sr-blue mt-1"></i> Tenue de votre comptabilité</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-arrow-right text-sr-blue mt-1"></i> Établissement de vos comptes annuels</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-arrow-right text-sr-blue mt-1"></i> Déclarations fiscales (TVA, IS...)</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-arrow-right text-sr-blue mt-1"></i> Bulletins de paie et charges sociales</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-arrow-right text-sr-blue mt-1"></i> Tableaux de bord de gestion</li>
-                    </ul>
+                <div class="w-24 h-24 bg-white rounded-2xl flex items-center justify-center p-3 shadow-2xl transform rotate-[5deg] hover:rotate-0 transition-transform border-4 border-blue-900 mt-8">
+                    <img src="images/logo-commissaire.png" alt="Logo Commissaire" class="w-full h-full object-contain">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 2 : COMMISSAIRE AUX COMPTES (Ancien site) -->
-    <section id="audit" class="bg-slate-50 py-24">
+    <!-- SECTION 1 : PATRIMOINE CONSEIL EXPERTISE (Basé sur l'ancien site) -->
+    <section class="bg-white py-24">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex items-center gap-6 mb-12">
-                <div class="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center border border-blue-100 p-2 shadow-sm">
-                    <!-- LOGO BLEU (Format corrigé) -->
-                    <img src="images/logo-commissaire.png" alt="Logo Commissaire aux Comptes" class="w-full h-full object-contain">
+            <div class="flex items-center gap-6 mb-16 animate-fadeInUp">
+                <div class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-200 p-3 shadow-sm shrink-0">
+                    <img src="images/logo-expert.png" alt="Patrimoine Conseil Expertise" class="max-w-full max-h-full object-contain">
                 </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-sr-blue">Commissariat aux Comptes</h2>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900">Patrimoine Conseil Expertise</h2>
             </div>
 
-            <div class="bg-sr-blue text-white p-10 rounded-3xl shadow-xl">
-                <p class="text-lg mb-10 text-blue-100">La certification de vos comptes est une garantie de transparence et de fiabilité vis-à-vis de vos partenaires financiers, de vos actionnaires et de l'administration.</p>
-                
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-blue-900/50 p-6 rounded-2xl">
-                        <h4 class="text-xl font-bold text-sr-yellow mb-4">Audit Légal</h4>
-                        <p class="text-blue-50 text-sm">Certification des comptes annuels, commissariat aux apports et à la fusion, vérifications spécifiques imposées par la loi.</p>
-                    </div>
-                    <div class="bg-blue-900/50 p-6 rounded-2xl">
-                        <h4 class="text-xl font-bold text-sr-yellow mb-4">Audit Contractuel</h4>
-                        <p class="text-blue-50 text-sm">Audit d'acquisition (Due Diligence), évaluation d'entreprise, audit d'organisation interne et de fraude.</p>
-                    </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Comptabilité -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-lg transition-shadow">
+                    <i class="fa-solid fa-calculator text-sr-blue text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Comptabilité</h3>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Tenue et révision comptable</li>
+                        <li>• Établissement des comptes annuels</li>
+                        <li>• Mise en place d'indicateurs de gestion</li>
+                        <li>• Tableaux de bord & prévisionnels</li>
+                        <li>• Formation sur nos outils digitaux</li>
+                    </ul>
+                </div>
+                <!-- Social -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-lg transition-shadow">
+                    <i class="fa-solid fa-users text-sr-blue text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Pôle Social</h3>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Établissement des bulletins de paie</li>
+                        <li>• Déclarations sociales (DSN)</li>
+                        <li>• Gestion des embauches et contrats</li>
+                        <li>• Procédures de rupture (licenciement...)</li>
+                        <li>• Audit de conformité sociale</li>
+                    </ul>
+                </div>
+                <!-- Fiscal -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-lg transition-shadow">
+                    <i class="fa-solid fa-landmark text-sr-blue text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Pôle Fiscal</h3>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Établissement des liasses fiscales</li>
+                        <li>• Déclarations de TVA, IS, CVAE</li>
+                        <li>• Optimisation fiscale du dirigeant</li>
+                        <li>• Assistance lors de contrôles fiscaux</li>
+                        <li>• Impôt sur le revenu & IFI</li>
+                    </ul>
+                </div>
+                <!-- Juridique -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-lg transition-shadow">
+                    <i class="fa-solid fa-scale-balanced text-sr-blue text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Appui Juridique</h3>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Choix du statut juridique</li>
+                        <li>• Rédaction des statuts de société</li>
+                        <li>• Secrétariat juridique annuel (AG)</li>
+                        <li>• Dépôt des comptes au Greffe</li>
+                        <li>• Modifications statutaires diverses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 : COMMISSAIRE AUX COMPTES -->
+    <section id="audit" class="bg-slate-100 py-24 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center gap-6 mb-16 animate-fadeInUp">
+                <div class="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center border border-blue-200 p-3 shadow-sm shrink-0">
+                    <img src="images/logo-commissaire.png" alt="Commissaire aux Comptes" class="max-w-full max-h-full object-contain">
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-sr-blue">Commissariat aux Comptes</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-10 rounded-3xl border border-blue-100 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-blue-50 rounded-bl-full -z-10"></div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-6 border-b-2 border-sr-blue pb-4 inline-block">Audit Légal</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Mission encadrée par la loi garantissant la fiabilité de l'information financière de votre entreprise auprès des tiers.</p>
+                    <ul class="space-y-4 text-sm text-slate-700 font-medium">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Certification des comptes annuels et consolidés</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Commissariat aux apports et à la fusion</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Commissariat à la transformation</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-blue mt-1"></i> Délivrance d'attestations spécifiques</li>
+                    </ul>
+                </div>
+
+                <div class="bg-sr-blue p-10 rounded-3xl text-white shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-blue-800 rounded-bl-full -z-10"></div>
+                    <h3 class="text-2xl font-black text-white mb-6 border-b-2 border-sr-yellow pb-4 inline-block">Audit Contractuel</h3>
+                    <p class="text-blue-100 mb-6 leading-relaxed">Missions sur-mesure réalisées à votre demande pour évaluer et sécuriser des opérations spécifiques.</p>
+                    <ul class="space-y-4 text-sm text-blue-50 font-medium">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-arrow-right text-sr-yellow mt-1"></i> Audit d'acquisition (Due Diligence)</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-arrow-right text-sr-yellow mt-1"></i> Évaluation financière d'entreprise</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-arrow-right text-sr-yellow mt-1"></i> Audit d'organisation et contrôle interne</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-arrow-right text-sr-yellow mt-1"></i> Prévention et détection de fraudes</li>
+                    </ul>
                 </div>
             </div>
         </div>

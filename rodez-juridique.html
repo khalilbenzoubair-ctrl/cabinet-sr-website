@@ -50,82 +50,70 @@
         </div>
     </header>
 
-   <main>
-    <!-- BANNIÈRE UNIFIÉE JURIDIQUE -->
-    <section class="bg-slate-900 text-white py-20 border-b-4 border-sr-pink">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+  <main>
+    <!-- BANNIÈRE ANIMÉE JURIDIQUE -->
+    <section class="relative bg-slate-900 text-white py-24 overflow-hidden border-b-4 border-sr-pink">
+        <div class="absolute -top-20 -left-20 w-[400px] h-[400px] bg-pink-600/30 rounded-full mix-blend-screen filter blur-[100px] animate-pulse"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between animate-fadeInUp">
             <div class="max-w-2xl">
-                <span class="inline-block bg-white/10 text-pink-400 font-semibold text-xs tracking-widest uppercase px-3 py-1 rounded-full mb-4">
+                <span class="inline-block bg-white/10 text-pink-300 font-bold text-xs tracking-widest uppercase px-4 py-1.5 rounded-full mb-6 border border-pink-400/30">
                     SÉCURISATION & DÉLÉGATION
                 </span>
-                <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6 uppercase">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
                     CÔTÉ JURIDIQUE
                 </h1>
-                <p class="text-slate-200 text-lg mb-0 leading-relaxed">
-                    Nous garantissons la conformité légale de vos actes sociaux et sécurisons l'intégralité du cycle de vie de votre structure.
+                <p class="text-slate-300 text-lg mb-0 leading-relaxed max-w-xl">
+                    Nous sécurisons l'intégralité du cycle de vie de votre structure, de sa création à sa transmission, avec des actes conformes et rigoureux.
                 </p>
+            </div>
+            <div class="mt-10 md:mt-0 hidden lg:block">
+                <div class="w-32 h-32 bg-white rounded-2xl flex items-center justify-center p-4 shadow-[0_0_40px_rgba(244,114,182,0.3)] border-4 border-slate-800 transform hover:scale-105 transition-transform">
+                    <img src="images/logo-juridique.png" alt="Logo Juridique" class="max-w-full max-h-full object-contain">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTENU JURIDIQUE PROPRE -->
+    <!-- CONTENU JURIDIQUE (Basé sur l'ancien site) -->
     <section class="bg-slate-50 py-24">
         <div class="max-w-7xl mx-auto px-6">
-            
-            <div class="flex items-center gap-6 mb-12">
-                <div class="w-20 h-20 bg-pink-50 rounded-2xl flex items-center justify-center border border-pink-100 p-2 shadow-sm">
-                    <!-- LOGO ROSE FIXÉ -->
-                    <img src="images/logo-juridique.png" alt="Logo Juridique" class="w-full h-full object-contain">
-                </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Secrétariat juridique & conformité</h2>
+            <div class="text-center mb-16 animate-fadeInUp">
+                <h2 class="font-handwritten text-5xl font-bold text-slate-900 mb-3">Nos Prestations Juridiques</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg">Un accompagnement complet pour protéger vos intérêts et respecter vos obligations légales.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <i class="fa-solid fa-file-signature text-sr-pink text-2xl mb-4"></i>
-                    <h4 class="text-lg font-bold text-slate-900 mb-3">Secrétariat Juridique Annuel</h4>
-                    <p class="text-sm text-slate-600 mb-4">La formalité obligatoire des sociétés commerciales. Nous prenons tout en charge pour clôturer sereinement votre exercice.</p>
-                    <ul class="text-xs text-slate-500 space-y-2">
-                        <li>• Rédaction des rapports de gestion</li>
-                        <li>• Organisation des Assemblées Générales</li>
-                        <li>• Dépôt légal des comptes au greffe</li>
-                    </ul>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-3xl border border-pink-100 hover:shadow-xl hover:border-sr-pink transition-all">
+                    <i class="fa-solid fa-seedling text-sr-pink text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Création de société</h3>
+                    <p class="text-sm text-slate-600">Choix de la forme juridique adaptée, rédaction des statuts sur-mesure et immatriculation complète de votre entreprise.</p>
                 </div>
-                
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <i class="fa-solid fa-pen-to-square text-sr-pink text-2xl mb-4"></i>
-                    <h4 class="text-lg font-bold text-slate-900 mb-3">Modifications Statutaires</h4>
-                    <p class="text-sm text-slate-600 mb-4">Votre entreprise évolue ? Nous rédigeons les actes exceptionnels pour adapter vos statuts légaux.</p>
-                    <ul class="text-xs text-slate-500 space-y-2">
-                        <li>• Transfert de siège & changement de gérant</li>
-                        <li>• Augmentation du capital social</li>
-                        <li>• Transformation de société (SARL vers SASU...)</li>
-                    </ul>
+                <div class="bg-white p-8 rounded-3xl border border-pink-100 hover:shadow-xl hover:border-sr-pink transition-all">
+                    <i class="fa-solid fa-file-signature text-sr-pink text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Approbation des comptes</h3>
+                    <p class="text-sm text-slate-600">Préparation des AG ordinaires annuelles, rédaction des rapports de gestion et dépôt obligatoire des comptes au greffe.</p>
                 </div>
-                
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <i class="fa-solid fa-handshake text-sr-pink text-2xl mb-4"></i>
-                    <h4 class="text-lg font-bold text-slate-900 mb-3">Pactes & Contrats d'Affaires</h4>
-                    <p class="text-sm text-slate-600 mb-4">Sécurisez vos relations d'associés et vos contrats commerciaux avec des textes blindés.</p>
-                    <ul class="text-xs text-slate-500 space-y-2">
-                        <li>• Rédaction de pactes d'associés</li>
-                        <li>• Baux commerciaux et conventions</li>
-                        <li>• Cessions de parts sociales & actions</li>
-                    </ul>
+                <div class="bg-white p-8 rounded-3xl border border-pink-100 hover:shadow-xl hover:border-sr-pink transition-all">
+                    <i class="fa-solid fa-pen-to-square text-sr-pink text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Modifications statutaires</h3>
+                    <p class="text-sm text-slate-600">Changement de gérant, transfert de siège social, augmentation de capital ou modification d'objet social.</p>
                 </div>
-                
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <i class="fa-solid fa-sitemap text-sr-pink text-2xl mb-4"></i>
-                    <h4 class="text-lg font-bold text-slate-900 mb-3">Restructuration & Holdings</h4>
-                    <p class="text-sm text-slate-600 mb-4">Optimisez votre organisation juridique pour protéger votre patrimoine et faciliter les flux.</p>
-                    <ul class="text-xs text-slate-500 space-y-2">
-                        <li>• Création de holdings</li>
-                        <li>• Opérations de fusion et scission</li>
-                        <li>• Accompagnement aux dissolutions</li>
-                    </ul>
+                <div class="bg-white p-8 rounded-3xl border border-pink-100 hover:shadow-xl hover:border-sr-pink transition-all">
+                    <i class="fa-solid fa-shop text-sr-pink text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Baux & Contrats</h3>
+                    <p class="text-sm text-slate-600">Rédaction de baux commerciaux, conventions de trésorerie, et pactes d'associés pour sécuriser vos relations.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-pink-100 hover:shadow-xl hover:border-sr-pink transition-all">
+                    <i class="fa-solid fa-handshake text-sr-pink text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Cession de parts</h3>
+                    <p class="text-sm text-slate-600">Accompagnement dans la transmission de votre entreprise, rédaction des actes de cession d'actions ou de parts sociales.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-pink-100 hover:shadow-xl hover:border-sr-pink transition-all">
+                    <i class="fa-solid fa-power-off text-sr-pink text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Dissolution & Liquidation</h3>
+                    <p class="text-sm text-slate-600">Prise en charge des formalités complexes lors de la fermeture ou de la cessation d'activité de votre structure.</p>
                 </div>
             </div>
-
         </div>
     </section>
 </main>

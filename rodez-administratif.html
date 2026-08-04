@@ -42,61 +42,81 @@
     </header>
 
     <main>
-    <!-- BANNIÈRE UNIFIÉE ADMINISTRATIF -->
-    <section class="bg-slate-900 text-white py-20 border-b-4 border-sr-yellow">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+    <!-- BANNIÈRE ANIMÉE ADMINISTRATIF -->
+    <section class="relative bg-slate-900 text-white py-24 overflow-hidden border-b-4 border-sr-yellow">
+        <div class="absolute top-1/2 right-10 w-[400px] h-[400px] -translate-y-1/2 bg-yellow-500/20 rounded-full mix-blend-screen filter blur-[100px] animate-pulse"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between animate-fadeInUp">
             <div class="max-w-2xl">
-                <span class="inline-block bg-white/10 text-sr-yellow font-semibold text-xs tracking-widest uppercase px-3 py-1 rounded-full mb-4">
+                <span class="inline-block bg-white/10 text-yellow-300 font-bold text-xs tracking-widest uppercase px-4 py-1.5 rounded-full mb-6 border border-yellow-400/30">
                     SÉCURISATION & DÉLÉGATION
                 </span>
-                <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6 uppercase">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
                     CÔTÉ ADMINISTRATIF
                 </h1>
-                <p class="text-slate-200 text-lg mb-0 leading-relaxed">
-                    Un appui logistique pour alléger votre charge mentale. Nous externalisons vos tâches administratives chronophages.
+                <p class="text-slate-300 text-lg mb-0 leading-relaxed max-w-xl">
+                    Libérez-vous de la paperasse. Nous prenons en charge vos tâches administratives chronophages pour que vous restiez concentré sur votre cœur de métier.
                 </p>
+            </div>
+            <div class="mt-10 md:mt-0 hidden lg:block">
+                <div class="w-32 h-32 bg-white rounded-2xl flex items-center justify-center p-4 shadow-[0_0_40px_rgba(253,224,71,0.2)] border-4 border-slate-800 transform hover:-translate-y-2 transition-transform">
+                    <img src="images/logo-admin.png" alt="Logo Administratif" class="max-w-full max-h-full object-contain">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTENU UNIQUE ET PROPRE -->
-    <section class="bg-slate-50 py-24">
+    <!-- CONTENU ADMINISTRATIF (Basé sur l'ancien site) -->
+    <section class="bg-white py-24">
         <div class="max-w-7xl mx-auto px-6">
-            
-            <div class="flex items-center gap-6 mb-12">
-                <div class="w-20 h-20 bg-yellow-50 rounded-2xl flex items-center justify-center border border-yellow-200 p-2 shadow-sm">
-                    <!-- LOGO JAUNE FIXÉ -->
-                    <img src="images/logo-admin.png" alt="Logo Administratif" class="w-full h-full object-contain">
-                </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Externalisation de votre gestion</h2>
+            <div class="text-center mb-16 animate-fadeInUp">
+                <h2 class="font-handwritten text-5xl font-bold text-slate-900 mb-3">Vos besoins au quotidien</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg">Un secrétariat externalisé flexible et adapté à la taille de votre entreprise.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <i class="fa-solid fa-file-invoice-dollar text-sr-yellow text-2xl mb-4"></i>
-                    <h4 class="text-lg font-bold text-slate-900 mb-3">Facturation</h4>
-                    <p class="text-sm text-slate-600">Émission de vos devis et factures, suivi des règlements et relances préventives des clients.</p>
+                <!-- Ligne 1 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:-translate-y-1 hover:shadow-md transition-all">
+                    <i class="fa-solid fa-envelope-open-text text-sr-yellow text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Secrétariat</h3>
+                    <p class="text-sm text-slate-600">Traitement du courrier, gestion des appels et tenue d'agenda.</p>
                 </div>
-                
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <i class="fa-regular fa-folder-open text-sr-yellow text-2xl mb-4"></i>
-                    <h4 class="text-lg font-bold text-slate-900 mb-3">Pré-comptabilité</h4>
-                    <p class="text-sm text-slate-600">Collecte, dématérialisation et archivage de vos notes de frais et factures d'achat.</p>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:-translate-y-1 hover:shadow-md transition-all">
+                    <i class="fa-solid fa-stamp text-sr-yellow text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Démarches Diverses</h3>
+                    <p class="text-sm text-slate-600">Gestion des formalités complexes avec les différents organismes.</p>
                 </div>
-                
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <i class="fa-solid fa-box-archive text-sr-yellow text-2xl mb-4"></i>
-                    <h4 class="text-lg font-bold text-slate-900 mb-3">Secrétariat</h4>
-                    <p class="text-sm text-slate-600">Gestion du courrier d'entreprise, suivi des contrats et assistance appels d'offres.</p>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:-translate-y-1 hover:shadow-md transition-all">
+                    <i class="fa-solid fa-pen-nib text-sr-yellow text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Rédaction</h3>
+                    <p class="text-sm text-slate-600">Création et mise en page de vos documents professionnels.</p>
                 </div>
-                
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <i class="fa-solid fa-building-columns text-sr-yellow text-2xl mb-4"></i>
-                    <h4 class="text-lg font-bold text-slate-900 mb-3">Relations Officielles</h4>
-                    <p class="text-sm text-slate-600">Intermédiaire avec les organismes (URSSAF), demandes d'attestations et montages de dossiers.</p>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:-translate-y-1 hover:shadow-md transition-all">
+                    <i class="fa-solid fa-file-invoice-dollar text-sr-yellow text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Devis & Factures</h3>
+                    <p class="text-sm text-slate-600">Émission de la facturation client conforme aux réglementations.</p>
+                </div>
+                <!-- Ligne 2 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:-translate-y-1 hover:shadow-md transition-all">
+                    <i class="fa-solid fa-building-columns text-sr-yellow text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Rapprochement</h3>
+                    <p class="text-sm text-slate-600">Pointage bancaire précis pour préparer le bilan comptable.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:-translate-y-1 hover:shadow-md transition-all">
+                    <i class="fa-solid fa-chart-line text-sr-yellow text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Trésorerie</h3>
+                    <p class="text-sm text-slate-600">Suivi rigoureux des flux financiers entrants et sortants.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:-translate-y-1 hover:shadow-md transition-all">
+                    <i class="fa-solid fa-phone-volume text-sr-yellow text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Relance Clients</h3>
+                    <p class="text-sm text-slate-600">Suivi des impayés et relances préventives pour protéger votre cash.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:-translate-y-1 hover:shadow-md transition-all">
+                    <i class="fa-solid fa-folder-tree text-sr-yellow text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Classement</h3>
+                    <p class="text-sm text-slate-600">Organisation numérique et physique de vos pièces et archives.</p>
                 </div>
             </div>
-
         </div>
     </section>
 </main>
