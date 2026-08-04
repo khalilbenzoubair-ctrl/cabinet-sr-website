@@ -59,33 +59,33 @@
         </div>
     </header>
 
-    <!-- HERO SECTION : RAYURES HORIZONTALES À GAUCHE / BUREAU À DROITE -->
-    <section class="relative w-full flex flex-col lg:flex-row min-h-[600px] overflow-hidden border-b border-slate-200">
+    <!-- HERO SECTION REVISITÉE -->
+<section class="relative w-full flex flex-col lg:flex-row min-h-[600px] overflow-hidden border-b border-slate-200">
+    
+    <!-- PARTIE GAUCHE : Dégradé fondu (couleurs mélangées) -->
+    <div class="lg:w-3/5 w-full relative flex items-center justify-center p-8 md:p-12 lg:p-20"
+         style="background: linear-gradient(135deg, #18181B, #1E3A8A, #059669, #EA580C, #FDE047, #F472B6);">
         
-        <!-- PARTIE GAUCHE : Lignes horizontales parfaites (Noir en haut -> Rose en bas) -->
-        <div class="lg:w-3/5 w-full relative flex items-center justify-center p-8 md:p-12 lg:p-20"
-             style="background: linear-gradient(to bottom, #18181B 0%, #18181B 16.66%, #1E3A8A 16.66%, #1E3A8A 33.33%, #059669 33.33%, #059669 50%, #EA580C 50%, #EA580C 66.66%, #FDE047 66.66%, #FDE047 83.33%, #F472B6 83.33%, #F472B6 100%);">
-             
-            <!-- Bloc de texte semi-transparent foncé pour assurer la lisibilité sur les lignes colorées -->
-            <div class="bg-slate-900/85 backdrop-blur-md p-8 lg:p-12 rounded-3xl border border-white/10 z-10 animate-fadeInUp max-w-2xl shadow-2xl relative">
-                <span class="font-handwritten text-3xl text-sr-yellow font-bold block mb-4">L'expertise au service de vos ambitions</span>
-                <h1 class="text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-6">Patrimoine Conseil Expertise Rodez</h1>
-                <p class="text-slate-200 text-lg mb-8">Sécurisez aujourd'hui, pilotez demain. De la création de votre structure à l'optimisation de votre patrimoine, bénéficiez d'un accompagnement pluridisciplinaire sur-mesure en Aveyron depuis nos bureaux.</p>
-                
-                <div class="flex flex-wrap gap-4">
-                    <a href="rodez-contact.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg hover:-translate-y-1 transition-all border border-blue-700">Prendre rendez-vous</a>
-                    <a href="mailto:sophie.rodier.expertisecomptable@orange.fr?subject=Prise%20de%20contact%20-%20Patrimoine%20Conseil%20Expertise%20Rodez" class="bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-3.5 rounded-xl border border-white/20 transition-all">Envoyer un message</a>
-                </div>
+        <!-- Masque de transition pour fondre vers l'image de droite -->
+        <div class="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-slate-50/30 z-20 hidden lg:block"></div>
+         
+        <div class="bg-slate-900/85 backdrop-blur-md p-8 lg:p-12 rounded-3xl border border-white/10 z-30 animate-fadeInUp max-w-2xl shadow-2xl relative">
+            <span class="font-handwritten text-3xl text-sr-yellow font-bold block mb-4">L'expertise au service de vos ambitions</span>
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-6">Patrimoine Conseil Expertise Rodez</h1>
+            <p class="text-slate-200 text-lg mb-8">Sécurisez aujourd'hui, pilotez demain. De la création de votre structure à l'optimisation de votre patrimoine, bénéficiez d'un accompagnement pluridisciplinaire sur-mesure en Aveyron depuis nos bureaux.</p>
+            
+            <div class="flex flex-wrap gap-4">
+                <a href="rodez-contact.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg hover:-translate-y-1 transition-all border border-blue-700">Prendre rendez-vous</a>
+                <a href="mailto:sophie.rodier.expertisecomptable@orange.fr" class="bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-3.5 rounded-xl border border-white/20 transition-all">Envoyer un message</a>
             </div>
         </div>
+    </div>
 
-        <!-- PARTIE DROITE : Image du bureau recadrée et non étirée -->
-        <div class="lg:w-2/5 w-full relative min-h-[400px] lg:min-h-auto z-20 lg:shadow-[-15px_0_30px_rgba(0,0,0,0.5)]">
-            <!-- 'object-cover' coupe ce qui dépasse sans altérer les proportions -->
-            <!-- J'ai mis des %20 à la place des espaces dans le nom de l'image pour éviter tout bug d'affichage -->
-            <img src="images/WhatsApp%20Image%202026-08-03%20at%2010.22.04.jpeg" alt="Bureau Patrimoine Conseil Expertise Rodez" class="absolute inset-0 w-full h-full object-cover object-center">
-        </div>
-    </section>
+    <!-- PARTIE DROITE : Image du bureau -->
+    <div class="lg:w-2/5 w-full relative min-h-[400px] lg:min-h-auto z-10">
+        <img src="images/WhatsApp%20Image%202026-08-03%20at%2010.22.04.jpeg" alt="Bureau Patrimoine Conseil Expertise Rodez" class="absolute inset-0 w-full h-full object-cover object-center">
+    </div>
+</section>
 
     <!-- SECTION SERVICES AVEC BADGES RONDS HD -->
     <section id="expertises" class="py-24 bg-slate-50">
