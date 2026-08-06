@@ -42,88 +42,56 @@
     </header>
 
    <main>
-    <!-- BANNIÈRE ADMINISTRATIVE -->
-    <section class="bg-gradient-to-br from-yellow-50 to-white pt-20 pb-24 border-b border-yellow-100 relative overflow-hidden">
-        <div class="absolute bottom-0 left-0 w-1/2 h-full bg-yellow-100/50 rounded-r-full blur-3xl -z-0 transform -translate-x-1/3"></div>
-        
+    <section class="bg-gradient-to-br from-yellow-50 to-white pt-20 pb-24 border-b-2 border-yellow-200 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
             <div class="md:w-3/5">
                 <span class="inline-block bg-yellow-100 text-yellow-600 font-bold text-xs tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">PÔLE ASSISTANCE & DÉLÉGATION</span>
                 <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 uppercase">
                     CÔTÉ <span class="text-yellow-500">ADMINISTRATIF</span>
                 </h1>
-                <p class="text-slate-600 text-lg leading-relaxed max-w-xl">
-                    Facturation en retard, relances chronophages, courriers empilés... Libérez-vous de cette charge mentale en externalisant votre secrétariat auprès de notre équipe.
-                </p>
+                <p class="text-slate-600 text-lg leading-relaxed max-w-xl">Facturation en retard, relances chronophages... Libérez-vous de cette charge mentale en externalisant votre secrétariat.</p>
             </div>
-            <!-- LOGO ADMINISTRATIF CORRIGÉ -->
             <div class="md:w-2/5 flex justify-center">
-                <div class="w-48 h-48 bg-white rounded-full flex items-center justify-center p-6 shadow-2xl border border-yellow-100 transform hover:-translate-y-2 transition-transform">
-                    <img src="images/logo-admin.png" alt="Logo Administratif" class="w-full h-full object-contain rounded-full">
+                <div class="w-48 h-48 bg-white rounded-full flex items-center justify-center p-5 shadow-xl border-4 border-yellow-100 overflow-hidden transform hover:-translate-y-2 transition-transform">
+                    <img src="images/logo-admin.png" alt="Logo Admin" class="w-full h-full object-contain rounded-full">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION UNIQUE : MISE EN PAGE ASYMÉTRIQUE -->
     <section class="bg-slate-50 py-24">
         <div class="max-w-7xl mx-auto px-6">
-            
-            <div class="flex flex-col lg:flex-row gap-16 items-start">
-                
-                <!-- Colonne Gauche : Intro Figée -->
-                <div class="lg:w-1/3 lg:sticky lg:top-32">
-                    <h2 class="font-handwritten text-4xl text-yellow-500 font-bold mb-3">Vos besoins au quotidien</h2>
-                    <h3 class="text-3xl font-extrabold text-slate-900 mb-6 leading-tight">Un secrétariat externalisé flexible.</h3>
-                    <p class="text-slate-600 text-base mb-8">Parce que vous n'avez pas forcément le volume pour embaucher une assistante à temps plein, nous vous proposons une délégation à la carte, ultra-réactive. Vous ne payez que ce dont vous avez réellement besoin, sans contrainte RH.</p>
-                    <a href="rodez-contact.html" class="hidden lg:inline-block bg-slate-900 text-white font-bold px-8 py-3 rounded-xl hover:bg-yellow-500 transition-colors shadow-lg">Déléguer mes tâches</a>
+            <div class="text-center mb-16">
+                <h2 class="font-handwritten text-5xl text-yellow-500 font-bold mb-4">Vos besoins au quotidien</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900">Un secrétariat externalisé flexible.</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="md:col-span-2 bg-yellow-50/50 rounded-[2rem] p-10 border-2 border-yellow-200 shadow-sm hover:shadow-lg transition-all group">
+                    <i class="fa-solid fa-file-invoice-dollar text-4xl text-yellow-500 mb-6"></i>
+                    <h4 class="text-2xl font-bold text-slate-900 mb-4">Facturation & Pré-comptabilité</h4>
+                    <p class="text-slate-700 mb-6">Déléguez la gestion de vos flux documentaires pour un suivi parfait.</p>
+                    <ul class="space-y-3 text-sm text-slate-700 font-medium">
+                        <li><i class="fa-solid fa-arrow-right text-yellow-500 mr-2"></i> Émission de vos devis et factures conformes</li>
+                        <li><i class="fa-solid fa-arrow-right text-yellow-500 mr-2"></i> Numérisation et classement des notes de frais</li>
+                        <li><i class="fa-solid fa-arrow-right text-yellow-500 mr-2"></i> Rapprochements bancaires de base</li>
+                    </ul>
                 </div>
-
-                <!-- Colonne Droite : Cartes de prestations -->
-                <div class="lg:w-2/3 grid sm:grid-cols-2 gap-6">
-                    
-                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 rounded-xl bg-yellow-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-file-invoice-dollar text-yellow-500 text-xl"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-slate-900 mb-3">Gestion de la Facturation</h4>
-                        <p class="text-sm text-slate-600">Émission de vos devis et factures avec les bonnes mentions légales, et suivi rigoureux des encaissements bancaires.</p>
+                <div class="bg-white rounded-[2rem] p-10 border-2 border-yellow-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                    <div>
+                        <i class="fa-solid fa-phone-volume text-4xl text-yellow-500 mb-6"></i>
+                        <h4 class="text-xl font-bold text-slate-900 mb-4">Relance Clients</h4>
+                        <p class="text-slate-600 text-sm">Suivi des impayés et relances diplomates pour protéger votre trésorerie.</p>
                     </div>
-
-                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 rounded-xl bg-yellow-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-phone-volume text-yellow-500 text-xl"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-slate-900 mb-3">Relance Clients</h4>
-                        <p class="text-sm text-slate-600">Protégez votre trésorerie. Nous effectuons le suivi de vos impayés et les relances de manière réactive et diplomate.</p>
-                    </div>
-
-                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 rounded-xl bg-yellow-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fa-regular fa-folder-open text-yellow-500 text-xl"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-slate-900 mb-3">Pré-comptabilité</h4>
-                        <p class="text-sm text-slate-600">Collecte, tri, numérisation et classement précis de toutes vos notes de frais et factures d'achat fournisseurs.</p>
-                    </div>
-
-                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-shadow group">
-                        <div class="w-12 h-12 rounded-xl bg-yellow-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-envelope-open-text text-yellow-500 text-xl"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-slate-900 mb-3">Secrétariat Courant</h4>
-                        <p class="text-sm text-slate-600">Traitement de votre courrier entrant/sortant, mise en page de documents professionnels et gestion d'agenda.</p>
-                    </div>
-
-                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-shadow group sm:col-span-2 flex flex-col md:flex-row gap-6 items-center">
-                        <div class="w-16 h-16 rounded-2xl bg-yellow-500 flex items-center justify-center shrink-0">
-                            <i class="fa-solid fa-building-columns text-white text-2xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-2">Relations avec les Organismes Officiels</h4>
-                            <p class="text-sm text-slate-600 m-0">Ne perdez plus de temps au téléphone. Nous gérons vos démarches auprès de l'URSSAF, des caisses de retraite, mutuelles, ou le montage de vos dossiers spécifiques.</p>
-                        </div>
-                    </div>
-
+                </div>
+                <div class="bg-white rounded-[2rem] p-10 border-2 border-yellow-200 shadow-sm hover:shadow-lg transition-all group">
+                    <i class="fa-solid fa-envelope-open-text text-4xl text-yellow-500 mb-6"></i>
+                    <h4 class="text-xl font-bold text-slate-900 mb-4">Secrétariat Courant</h4>
+                    <p class="text-slate-600 text-sm">Gestion du courrier, agenda, et mise en page de documents pro.</p>
+                </div>
+                <div class="md:col-span-2 bg-yellow-50/50 rounded-[2rem] p-10 border-2 border-yellow-200 shadow-sm hover:shadow-lg transition-all group">
+                    <i class="fa-solid fa-building-columns text-4xl text-yellow-500 mb-6"></i>
+                    <h4 class="text-2xl font-bold text-slate-900 mb-4">Relations Organismes Officiels</h4>
+                    <p class="text-slate-700">Nous faisons l'intermédiaire avec vos interlocuteurs (URSSAF, Caisses, mutuelles) et constituons vos dossiers spécifiques et appels d'offres.</p>
                 </div>
             </div>
         </div>
