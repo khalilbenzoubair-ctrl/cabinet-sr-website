@@ -41,91 +41,76 @@
         </div>
     </header>
 
-    <!-- BANNIÈRE -->
-    <section class="bg-slate-900 text-white py-20 relative overflow-hidden">
-        <div class="absolute inset-0 bg-sr-green/10"></div>
-        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
+   <main>
+    <!-- BANNIÈRE LANCE TA BOITE -->
+    <section class="bg-gradient-to-br from-green-50 to-white pt-20 pb-24 border-b border-green-100 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
             <div class="md:w-3/5">
-                <span class="inline-block px-4 py-1.5 bg-sr-green/20 text-emerald-300 rounded-full text-xs font-bold tracking-widest uppercase mb-6 border border-sr-green/50">Pôle Création d'Entreprise</span>
-                <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">LANCE TA <span class="text-sr-green">BOÎTE</span></h1>
-                <p class="text-slate-300 text-xl font-light">Le tremplin complet pour les créateurs et repreneurs d'entreprise à Rodez. Nous transformons votre projet en société viable, structurée et prête à réussir sur le marché de l'Aveyron.</p>
+                <span class="inline-block bg-green-100 text-sr-green font-bold text-xs tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">PÔLE CRÉATION D'ENTREPRISE</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 uppercase">
+                    LANCE <span class="text-sr-green">TA BOÎTE</span>
+                </h1>
+                <p class="text-slate-600 text-lg leading-relaxed max-w-xl">
+                    Le tremplin complet pour les créateurs. Nous transformons votre projet en société viable, structurée et prête à réussir.
+                </p>
             </div>
-            <!-- Badge rond Vert HD -->
             <div class="md:w-2/5 flex justify-center">
-                <div class="bg-white p-3 rounded-full shadow-2xl transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-500 border-4 border-white/10">
-                    <img src="images/logo-creation.png" alt="LANCE TA BOÎTE" class="h-44 w-44 rounded-full object-contain">
+                <div class="w-48 h-48 bg-white rounded-full flex items-center justify-center p-5 shadow-2xl border border-green-100 overflow-hidden transform hover:-translate-y-2 transition-transform">
+                    <img src="images/logo-creation.png" alt="Logo Lance Ta Boite" class="w-full h-full object-contain rounded-full">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTENU DÉTAILLÉ (4 Étapes intégrales) -->
-    <section class="py-24 bg-white relative">
+    <!-- SECTION STICKY SIDEBAR -->
+    <section class="bg-slate-50 py-24">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16 md:w-2/3">
-                <h2 class="font-handwritten text-4xl text-sr-green font-bold mb-2">Notre Pôle Création</h2>
-                <h3 class="text-3xl font-bold text-slate-900">Un parcours en 4 étapes clés pour ne rien laisser au hasard.</h3>
-                <p class="text-slate-600 mt-4 text-lg">Créer une entreprise ne consiste pas simplement à remplir un formulaire en ligne. C'est faire des choix fiscaux, sociaux et juridiques qui impacteront vos revenus pendant des années. Nous vous guidons à chaque pas.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Étape 1 -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all">
-                    <div class="w-12 h-12 bg-sr-green text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-lightbulb"></i></div>
-                    <h4 class="text-2xl font-bold text-slate-900 mb-3">1. Business Plan & Faisabilité</h4>
-                    <p class="text-slate-600 text-sm mb-6">Nous réalisons un crash-test de votre modèle économique pour vérifier sa rentabilité réelle avant de vous lancer.</p>
-                    <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-green mt-1"></i> <strong>Prévisionnel financier sur 3 ans :</strong> Bilan, compte de résultat et plan de financement crédibles pour vos banques.</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-green mt-1"></i> <strong>Analyse des charges :</strong> Évaluation précise des frais fixes, salaires et investissements initiaux.</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-green mt-1"></i> <strong>Recherche d'aides à la création :</strong> ARE, ACRE, prêts d'honneur Initiative Aveyron.</li>
-                    </ul>
+            <div class="flex flex-col lg:flex-row gap-16 items-start">
+                
+                <div class="lg:w-1/3 lg:sticky lg:top-32">
+                    <h2 class="font-handwritten text-4xl text-sr-green font-bold mb-3">Notre Pôle Création</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900 mb-6 leading-tight">Un parcours en 4 étapes clés.</h3>
+                    <p class="text-slate-600 text-base mb-8">Créer une entreprise ne consiste pas simplement à remplir un formulaire en ligne. C'est faire des choix fiscaux, sociaux et juridiques qui impacteront vos revenus pendant des années. Nous vous guidons à chaque pas.</p>
+                    <a href="rodez-contact.html" class="hidden lg:inline-block bg-slate-900 text-white font-bold px-8 py-3 rounded-xl hover:bg-sr-green transition-colors shadow-lg">Lancer mon projet</a>
                 </div>
 
-                <!-- Étape 2 -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all">
-                    <div class="w-12 h-12 bg-sr-green text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-scale-balanced"></i></div>
-                    <h4 class="text-2xl font-bold text-slate-900 mb-3">2. Statut Juridique & Rémunération</h4>
-                    <p class="text-slate-600 text-sm mb-6">SASU, EURL, SARL, SAS, Profession Libérale... Lequel choisir ? Nous étudions votre situation personnelle pour choisir la forme optimale.</p>
-                    <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-green mt-1"></i> <strong>Protection du patrimoine :</strong> Sécurisation de vos biens personnels vis-à-vis de l'activité professionnelle.</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-green mt-1"></i> <strong>Statut social du dirigeant :</strong> Arbitrage entre Assimilé Salarié (SAS) ou TNS (EURL).</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-green mt-1"></i> <strong>Optimisation Salaire vs Dividendes :</strong> Calcul du mode de rémunération le moins taxé.</li>
-                    </ul>
-                </div>
-
-                <!-- Étape 3 -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all">
-                    <div class="w-12 h-12 bg-sr-green text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fa-solid fa-stamp"></i></div>
-                    <h4 class="text-2xl font-bold text-slate-900 mb-3">3. Formalités & Immatriculation</h4>
-                    <p class="text-slate-600 text-sm mb-6">Zéro stress administratif. Nos équipes juridiques rédigent l'ensemble de vos actes légaux et s'occupent des greffes.</p>
-                    <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-green mt-1"></i> <strong>Rédaction des statuts sur-mesure :</strong> Adaptés au pacte d'associés et à vos spécificités métiers.</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-green mt-1"></i> <strong>Guichet unique INPI :</strong> Dépôt, publication dans un journal d'annonces légales (JAL) et suivi de dossier.</li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-sr-green mt-1"></i> <strong>Obtention rapide du KBIS :</strong> Pour ouvrir votre compte bancaire et signer vos premiers contrats.</li>
-                    </ul>
-                </div>
-
-                <!-- Étape 4 -->
-                <div class="bg-sr-green text-white p-8 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between">
-                    <div class="absolute -bottom-10 -right-10 text-white/10 text-9xl"><i class="fa-solid fa-rocket"></i></div>
-                    <div>
-                        <h4 class="text-2xl font-bold mb-3">4. Suivi Post-Création (90 jours)</h4>
-                        <p class="text-emerald-50 text-sm mb-6">Une fois l'entreprise lancée, vous n'êtes pas livré à vous-même. Nous restons à vos côtés pendant les premiers mois cruciaux.</p>
-                        <ul class="space-y-3 text-sm text-emerald-100 mb-8">
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-star text-white mt-1"></i> <span>Mise en place de votre outil de facturation conforme aux lois.</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-star text-white mt-1"></i> <span>Point d'étape trimestriel pour comparer le réel au business plan.</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-star text-white mt-1"></i> <span>Réponses illimitées à vos questions de nouveau chef d'entreprise.</span></li>
-                        </ul>
+                <div class="lg:w-2/3 grid sm:grid-cols-2 gap-6">
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow group">
+                        <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-regular fa-lightbulb text-sr-green text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-3">1. Business Plan & Faisabilité</h4>
+                        <p class="text-sm text-slate-600">Crash-test de votre modèle économique, réalisation du prévisionnel financier sur 3 ans et recherche d'aides à la création (ACRE).</p>
                     </div>
-                    <div class="relative z-10">
-                        <a href="rodez-contact.html" class="inline-block bg-white text-sr-green font-bold px-8 py-3 rounded-xl shadow-lg hover:bg-slate-100 transition-colors">Planifier un premier échange</a>
+
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow group">
+                        <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-scale-unbalanced text-sr-green text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-3">2. Statut & Rémunération</h4>
+                        <p class="text-sm text-slate-600">SASU, EURL, Auto-entreprise ? Nous étudions votre situation personnelle pour choisir la forme optimale et protéger votre patrimoine.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow group">
+                        <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-file-contract text-sr-green text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-3">3. Formalités & Immatriculation</h4>
+                        <p class="text-sm text-slate-600">Zéro stress administratif. Rédaction des statuts sur-mesure, dépôt au guichet unique INPI et obtention rapide du Kbis.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow group">
+                        <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-rocket text-sr-green text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-3">4. Suivi Post-Création</h4>
+                        <p class="text-sm text-slate-600">Mise en place de votre outil de facturation, point d'étape trimestriel et réponses illimitées à vos questions de nouveau chef d'entreprise.</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
+</main>
     <!-- FOOTER -->
     <footer class="bg-slate-900 text-white py-12 border-t border-slate-900">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
