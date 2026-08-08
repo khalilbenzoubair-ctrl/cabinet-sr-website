@@ -10,11 +10,12 @@
     tailwind.config = {
         theme: {
             extend: {
+                fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
                 colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#ECA926', bgLight: '#FAF9F6' } }
             }
         }
     }
-    </script>
+</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
@@ -51,22 +52,23 @@
     </header>
 
    <main>
-    <section class="bg-gradient-to-br from-yellow-50 to-white pt-20 pb-24 border-b-2 border-yellow-200 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
-            <div class="md:w-3/5">
-                <span class="inline-block bg-yellow-100 text-yellow-600 font-bold text-xs tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">PÔLE ASSISTANCE & DÉLÉGATION</span>
-                <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 uppercase">
-                    CÔTÉ <span class="text-yellow-500">ADMINISTRATIF</span>
-                </h1>
-                <p class="text-slate-600 text-lg leading-relaxed max-w-xl">Facturation en retard, relances chronophages... Libérez-vous de cette charge mentale en externalisant votre secrétariat.</p>
-            </div>
-            <div class="md:w-2/5 flex justify-center">
-                <div class="w-48 h-48 bg-white rounded-full flex items-center justify-center p-5 shadow-xl border-4 border-yellow-100 overflow-hidden transform hover:-translate-y-2 transition-transform">
-                    <img src="images/logo-admin.png" alt="Logo Admin" class="w-full h-full object-contain rounded-full">
-                </div>
+   <!-- BANNIÈRE ADMINISTRATIF CORRIGÉE -->
+<section class="bg-gradient-to-br from-yellow-50 to-white pt-20 pb-24 border-b-2 border-sr-yellow relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+        <div class="md:w-3/5">
+            <span class="inline-block bg-yellow-100 text-sr-yellow font-bold text-xs tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">PÔLE ASSISTANCE & DÉLÉGATION</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 uppercase">
+                CÔTÉ <span class="text-sr-yellow">ADMINISTRATIF</span>
+            </h1>
+            <p class="text-slate-600 text-lg leading-relaxed max-w-xl">Facturation en retard, relances chronophages... Libérez-vous de cette charge mentale en externalisant votre secrétariat.</p>
+        </div>
+        <div class="md:w-2/5 flex justify-center">
+            <div class="w-48 h-48 bg-white rounded-full flex items-center justify-center p-5 shadow-xl border-4 border-yellow-100 overflow-hidden transform hover:-translate-y-2 transition-transform">
+                <img src="images/logo-admin.png" alt="Logo Admin" class="w-full h-full object-contain rounded-full">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section class="bg-slate-50 py-24">
         <div class="max-w-7xl mx-auto px-6">
