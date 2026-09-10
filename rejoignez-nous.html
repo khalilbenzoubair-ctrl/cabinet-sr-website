@@ -67,56 +67,35 @@
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Formulaire de candidature spontanée / offre</h2>
                 
                <!-- CODE DÉFINITIF À REMETTRE APRÈS LE TEST -->
-<form action="mailto:secretariat@srexpertise.fr" method="post" enctype="multipart/form-data" class="space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-1">Prénom *</label>
-                            <input type="text" name="prenom" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-sr-blue outline-none transition-all" placeholder="Jean">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-1">Nom *</label>
-                            <input type="text" name="nom" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-sr-blue outline-none transition-all" placeholder="Dupont">
-                        </div>
-                    </div>
+<!-- FORMULAIRE AVEC ENVOI DIRECT (MODE TEST) -->
+<form action="https://formsubmit.co/kbenzoubair@icloud.com" method="POST" enctype="multipart/form-data" class="space-y-6">
+    
+    <!-- Options FormSubmit (Invisibles pour l'utilisateur) -->
+    <!-- 1. Désactiver le Captcha relou -->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- 2. Page de redirection après l'envoi (Mets le lien de ton site ici) -->
+    <!-- <input type="hidden" name="_next" value="https://ton-site.com/merci.html"> -->
 
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-1">Adresse Email *</label>
-                            <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-sr-blue outline-none transition-all" placeholder="jean.dupont@email.fr">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-1">Numéro de téléphone *</label>
-                            <input type="tel" name="telephone" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-sr-blue outline-none transition-all" placeholder="06 00 00 00 00">
-                        </div>
-                    </div>
+    <!-- Tes champs visibles (Exemple) -->
+    <div>
+        <label class="block text-sm font-medium text-slate-700 mb-2">Nom complet</label>
+        <input type="text" name="Nom" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-sr-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all">
+    </div>
+    
+    <div>
+        <label class="block text-sm font-medium text-slate-700 mb-2">Email</label>
+        <input type="email" name="Email" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-sr-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all">
+    </div>
 
-                    <div class="grid md:grid-cols-2 gap-6 pt-2">
-                        <!-- Upload CV -->
-                        <div class="border-2 border-dashed border-slate-200 rounded-2xl p-6 text-center hover:border-sr-blue transition-colors bg-slate-50">
-                            <i class="fa-solid fa-file-arrow-up text-3xl text-sr-blue mb-2"></i>
-                            <label class="block text-sm font-bold text-slate-800 mb-1">Curriculum Vitae (CV) *</label>
-                            <p class="text-xs text-slate-500 mb-3">Format PDF ou Word</p>
-                            <input type="file" name="cv" required accept=".pdf,.doc,.docx" class="text-xs text-slate-600 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-sr-blue file:text-white hover:file:bg-blue-800 cursor-pointer">
-                        </div>
-
-                        <!-- Upload Lettre de Motivation -->
-                        <div class="border-2 border-dashed border-slate-200 rounded-2xl p-6 text-center hover:border-sr-blue transition-colors bg-slate-50">
-                            <i class="fa-solid fa-file-lines text-3xl text-sr-blue mb-2"></i>
-                            <label class="block text-sm font-bold text-slate-800 mb-1">Lettre de motivation *</label>
-                            <p class="text-xs text-slate-500 mb-3">Format PDF ou Word</p>
-                            <input type="file" name="lettre_motivation" required accept=".pdf,.doc,.docx" class="text-xs text-slate-600 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-slate-800 file:text-white hover:file:bg-slate-900 cursor-pointer">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-1">Message ou précisions (optionnel)</label>
-                        <textarea name="message" rows="3" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-sr-blue outline-none transition-all resize-none" placeholder="Indiquez vos disponibilités, le cabinet souhaité (Rodez ou Saint-Affrique)..."></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full bg-sr-blue hover:bg-blue-800 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
-                        <i class="fa-solid fa-paper-plane"></i> Transmettre ma candidature à Sophie RODIER
-                    </button>
-                </form>
+    <div>
+        <label class="block text-sm font-medium text-slate-700 mb-2">Votre CV (Optionnel)</label>
+        <input type="file" name="CV" accept=".pdf,.doc,.docx" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-sr-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all">
+    </div>
+    
+    <button type="submit" class="w-full bg-sr-blue text-white font-bold py-4 rounded-xl hover:bg-blue-800 transition-colors shadow-lg">
+        Envoyer ma candidature
+    </button>
+</form>
             </div>
         </div>
     </section>
