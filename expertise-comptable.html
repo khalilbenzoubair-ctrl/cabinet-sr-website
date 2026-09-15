@@ -62,29 +62,28 @@
         </div>
     </header>
 
-    <!-- Banner (Design mis à jour) -->
-    <section class="bg-[#0f172a] text-white py-16 lg:py-24 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+   <!-- Banner (Taille réduite et image à gauche) -->
+    <section class="bg-[#0f172a] text-white py-10 md:py-12 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-8 items-center">
             
-            <!-- TEXTE -->
-            <div class="space-y-6 text-center md:text-left">
+            <!-- IMAGE À GAUCHE -->
+            <div class="hidden md:flex md:col-span-5 relative justify-center md:justify-start">
+                <img src="images/hero-comptable.png" alt="Expertise Comptable" class="w-full max-w-xs object-contain animate-float max-h-56">
+            </div>
+
+            <!-- TEXTE À DROITE -->
+            <div class="md:col-span-7 space-y-4 text-center md:text-left">
                 <span class="text-slate-400 text-xs font-bold tracking-widest uppercase">Pôle Fiabilité & Sécurité</span>
-                <h1 class="text-5xl md:text-6xl font-extrabold text-white leading-tight uppercase">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight uppercase">
                     EXPERTISE <span class="text-blue-500">& AUDIT</span>
                 </h1>
-                <p class="text-slate-300 text-lg max-w-xl mx-auto md:mx-0">
+                <p class="text-slate-300 text-base max-w-xl mx-auto md:mx-0">
                     De la tenue rigoureuse de votre comptabilité à la certification légale de vos comptes.
                 </p>
             </div>
             
-            <!-- IMAGE ANIMÉE (Conservée comme demandé) -->
-            <div class="relative flex justify-center md:justify-end">
-                <img src="images/hero-comptable.png" alt="Expertise Comptable" class="w-full max-w-md h-auto object-contain animate-float">
-            </div>
-
         </div>
     </section>
-
     <!-- Content (Bento Grid) -->
     <main class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6">
