@@ -8,13 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-   <script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
-                    // Mise à jour : Rose pâle et Jaune électrique
-                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#FDE047', bgLight: '#FAF9F6' } },
+                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#FFD600', bgLight: '#FAF9F6' } },
                     keyframes: {
                         float: {
                             '0%, 100%': { transform: 'translateY(0)' },
@@ -49,7 +48,6 @@
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
             
-            <!-- 1. LE LOGO (Il n'y a plus de texte "Accueil" ici, et il pointe vers index.html) -->
             <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity group">
                 <img src="images/logo-st-affrique.jpg" alt="Cabinet Saint-Affrique" class="h-16 w-auto mix-blend-multiply">
                 <div class="font-handwritten text-3xl font-bold text-slate-900 leading-none">
@@ -58,7 +56,6 @@
                 </div>
             </a>
 
-            <!-- 2. LE MENU (Le bouton "Accueil" pointe bien vers saint-affrique.html) -->
             <nav class="hidden lg:flex items-center space-x-6 font-semibold text-sm">
                 <a href="saint-affrique.html" class="text-sr-blue font-bold">Accueil</a>
                 <a href="expertise-comptable.html" class="hover:text-sr-blue hover:-translate-y-0.5 transition-transform duration-200">Expertise Comptable</a>
@@ -67,25 +64,20 @@
                 <a href="juridique-administratif.html" class="hover:text-sr-pink hover:-translate-y-0.5 transition-transform duration-200">Juridique & Admin</a>
             </nav>
 
-            <!-- 3. LE BOUTON CONTACT -->
             <div class="flex items-center gap-3">
-    <a href="rejoignez-nous.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Nous rejoindre</a>
-    <a href="contact.html" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Contactez-nous</a>
-</div>
+                <a href="rejoignez-nous.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Nous rejoindre</a>
+                <a href="contact.html" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Contactez-nous</a>
+            </div>
         </div>
     </header>
-<!-- HERO SECTION -->
+
+    <!-- HERO SECTION (Bannière conservée intacte) -->
     <section class="relative py-20 lg:py-32 bg-white border-b border-slate-100 overflow-hidden flex items-center">
-        
-        <!-- IMAGE DE FOND (Collée à gauche, fondue dans le blanc) -->
         <div class="absolute inset-y-0 left-0 w-full lg:w-1/2 pointer-events-none z-0">
-            <!-- Le dégradé qui part de transparent à gauche vers le blanc total à droite -->
             <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/60 to-white z-10"></div>
-            <!-- mix-blend-darken élimine les différences de teintes de blanc -->
             <img src="images/hero-bureau.png" alt="" class="w-full h-full object-cover lg:object-contain object-left mix-blend-darken opacity-30 lg:opacity-100">
         </div>
 
-        <!-- CONTENU TEXTUEL (Au premier plan et centré) -->
         <div class="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-6">
             <span class="font-handwritten text-3xl lg:text-4xl text-sr-blue font-bold block">
                 Un cabinet qui va au-delà de la simple comptabilité
@@ -106,72 +98,97 @@
             </div>
         </div>
     </section>
-    <!-- SECTION ACTIVITÉS (Avec animations améliorées) -->
-    <section id="expertises" class="py-20">
+
+    <!-- SECTION DOMAINES D'INTERVENTION (Nouveau design) -->
+    <section id="expertises" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6">
-            <!-- En-tête de la section -->
-        <div class="text-center mb-12">
-            <p class="text-slate-500">Cliquez sur une expertise pour découvrir tous nos services</p>
-        </div>
+            
+            <div class="text-center mb-16">
+                <h2 class="font-handwritten text-5xl font-bold text-slate-900 mb-4">Nos Domaines d'Intervention</h2>
+                <p class="text-slate-600 text-lg">Une synergie de compétences pour répondre à l'ensemble des défis de votre entreprise.</p>
+            </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Les cartes ont un hover:scale-[1.03] et un glow d'ombre -->
-                <a href="expertise-comptable.html" class="bg-sr-black text-white p-8 rounded-2xl shadow-md hover:shadow-2xl hover:shadow-sr-black/30 hover:-translate-y-2 hover:scale-[1.03] transition-all duration-300 block relative group">
-                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white group-hover:rotate-6 transition-transform">
-                        <i class="fa-solid fa-calculator"></i>
+                
+                <!-- CARTE 1 : PATRIMOINE -->
+                <a href="expertise-comptable.html" class="bg-white rounded-[2rem] p-8 relative overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 block border border-slate-100 group flex flex-col h-full">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-slate-100 rounded-bl-[100px] z-0 transition-transform duration-500 group-hover:scale-110"></div>
+                    <div class="relative z-10 flex flex-col flex-grow">
+                        <!-- Remplace par le vrai logo SR Noir si tu l'as, sinon j'ai mis une icône stylisée -->
+                        <div class="w-16 h-16 bg-slate-900 text-white rounded-full flex items-center justify-center text-3xl mb-6">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-slate-900 mb-4 tracking-wide uppercase">PATRIMOINE CONSEIL EXPERTISE RODEZ</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">Fiabilisation de vos données financières, bilans, déclarations fiscales et gestion sociale de vos équipes.</p>
+                        <span class="text-xs font-bold text-slate-900 uppercase flex items-center group-hover:translate-x-2 transition-transform">EXPLORER L'ENTITÉ <i class="fa-solid fa-arrow-right ml-2"></i></span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">Expert Comptable</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6">Cabinet dynamique répondant aux obligations légales et offrant un accompagnement complet.</p>
-                    <span class="inline-flex items-center text-xs font-bold uppercase text-yellow-400 group-hover:translate-x-2 transition-transform">En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i></span>
                 </a>
 
-                <a href="expertise-comptable.html#audit" class="bg-sr-blue text-white p-8 rounded-2xl shadow-md hover:shadow-2xl hover:shadow-sr-blue/30 hover:-translate-y-2 hover:scale-[1.03] transition-all duration-300 block relative group">
-                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white group-hover:rotate-6 transition-transform">
-                        <i class="fa-solid fa-shield-halved"></i>
+                <!-- CARTE 2 : COMMISSAIRE AUX COMPTES -->
+                <a href="expertise-comptable.html#audit" class="bg-white rounded-[2rem] p-8 relative overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 block border border-slate-100 group flex flex-col h-full">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-[100px] z-0 transition-transform duration-500 group-hover:scale-110"></div>
+                    <div class="relative z-10 flex flex-col flex-grow">
+                        <div class="w-16 h-16 bg-sr-blue text-white rounded-full flex items-center justify-center text-3xl mb-6">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-sr-blue mb-4 tracking-wide uppercase">COMMISSAIRE AUX COMPTES</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">Commissariat aux comptes, audits d'acquisition et certification rigoureuse de votre information financière.</p>
+                        <span class="text-xs font-bold text-sr-blue uppercase flex items-center group-hover:translate-x-2 transition-transform">EXPLORER L'ENTITÉ <i class="fa-solid fa-arrow-right ml-2"></i></span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">Commissariat aux Comptes</h3>
-                    <p class="text-blue-100 text-sm leading-relaxed mb-6">Certification légale des comptes, un gage de transparence et de confiance pour vos parties prenantes.</p>
-                    <span class="inline-flex items-center text-xs font-bold uppercase text-blue-200 group-hover:translate-x-2 transition-transform">En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i></span>
                 </a>
 
-                <a href="elite-conseil.html" class="bg-sr-orange text-white p-8 rounded-2xl shadow-md hover:shadow-2xl hover:shadow-sr-orange/30 hover:-translate-y-2 hover:scale-[1.03] transition-all duration-300 block relative group">
-                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white group-hover:rotate-6 transition-transform">
-                        <i class="fa-solid fa-chart-line"></i>
+                <!-- CARTE 3 : ÉLITE CONSEIL -->
+                <a href="elite-conseil.html" class="bg-white rounded-[2rem] p-8 relative overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 block border border-slate-100 group flex flex-col h-full">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-bl-[100px] z-0 transition-transform duration-500 group-hover:scale-110"></div>
+                    <div class="relative z-10 flex flex-col flex-grow">
+                        <div class="w-16 h-16 bg-sr-orange text-white rounded-full flex items-center justify-center text-3xl mb-6">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-sr-orange mb-4 tracking-wide uppercase">ÉLITE CONSEIL & PATRIMOINE</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">Pilotage de la performance, direction financière externalisée, ingénierie de financement et gestion de votre patrimoine.</p>
+                        <span class="text-xs font-bold text-sr-orange uppercase flex items-center group-hover:translate-x-2 transition-transform">EXPLORER L'ENTITÉ <i class="fa-solid fa-arrow-right ml-2"></i></span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">Elite Conseil <br>& Gestion de Patrimoine</h3>
-                    <p class="text-orange-100 text-sm leading-relaxed mb-6">Chef d'entreprise, bénéficiez d'un conseil et accompagnement sur-mesure à haute valeur ajoutée.</p>
-                    <span class="inline-flex items-center text-xs font-bold uppercase text-orange-200 group-hover:translate-x-2 transition-transform">En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i></span>
                 </a>
 
-                <a href="lance-ta-boite.html" class="bg-sr-green text-white p-8 rounded-2xl shadow-md hover:shadow-2xl hover:shadow-sr-green/30 hover:-translate-y-2 hover:scale-[1.03] transition-all duration-300 block relative group">
-                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white group-hover:rotate-6 transition-transform">
-                        <i class="fa-solid fa-rocket"></i>
+                <!-- CARTE 4 : LANCE TA BOÎTE -->
+                <a href="lance-ta-boite.html" class="bg-white rounded-[2rem] p-8 relative overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 block border border-slate-100 group flex flex-col h-full">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-green-50 rounded-bl-[100px] z-0 transition-transform duration-500 group-hover:scale-110"></div>
+                    <div class="relative z-10 flex flex-col flex-grow">
+                        <div class="w-16 h-16 bg-sr-green text-white rounded-full flex items-center justify-center text-3xl mb-6">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-sr-green mb-4 tracking-wide uppercase">LANCE TA BOÎTE</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">Du business plan au choix des statuts : un parcours balisé pour faire décoller votre projet sereinement.</p>
+                        <span class="text-xs font-bold text-sr-green uppercase flex items-center group-hover:translate-x-2 transition-transform">EXPLORER L'ENTITÉ <i class="fa-solid fa-arrow-right ml-2"></i></span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">Lance Ta Boîte</h3>
-                    <p class="text-emerald-100 text-sm leading-relaxed mb-6">Accompagnement sur-mesure et rassurant pour créer votre entreprise. Nous gérons vos démarches.</p>
-                    <span class="inline-flex items-center text-xs font-bold uppercase text-emerald-200 group-hover:translate-x-2 transition-transform">En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i></span>
                 </a>
 
-                <a href="juridique-administratif.html#juridique" class="bg-sr-pink text-white p-8 rounded-2xl shadow-md hover:shadow-2xl hover:shadow-sr-pink/30 hover:-translate-y-2 hover:scale-[1.03] transition-all duration-300 block relative group">
-                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-2xl text-white group-hover:rotate-6 transition-transform">
-                        <i class="fa-solid fa-gavel"></i>
+                <!-- CARTE 5 : JURIDIQUE -->
+                <a href="juridique-administratif.html#juridique" class="bg-white rounded-[2rem] p-8 relative overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 block border border-slate-100 group flex flex-col h-full">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-pink-50 rounded-bl-[100px] z-0 transition-transform duration-500 group-hover:scale-110"></div>
+                    <div class="relative z-10 flex flex-col flex-grow">
+                        <div class="w-16 h-16 bg-sr-pink text-white rounded-full flex items-center justify-center text-3xl mb-6">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-sr-pink mb-4 tracking-wide uppercase">CÔTÉ JURIDIQUE</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">Rédaction d'actes, gestion des assemblées et modifications statutaires gérées par nos juristes.</p>
+                        <span class="text-xs font-bold text-sr-pink uppercase flex items-center group-hover:translate-x-2 transition-transform">EXPLORER L'ENTITÉ <i class="fa-solid fa-arrow-right ml-2"></i></span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">Côté Juridique</h3>
-                    <p class="text-rose-100 text-sm leading-relaxed mb-6">Formalités juridiques rapides : création, modifications, assemblées et actes ponctuels.</p>
-                    <span class="inline-flex items-center text-xs font-bold uppercase text-rose-200 group-hover:translate-x-2 transition-transform">En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i></span>
                 </a>
 
-                <!-- Carte Côté Administratif (Texte foncé pour lisibilité) -->
-            <a href="juridique-administratif.html#administratif" class="bg-sr-yellow text-slate-900 p-8 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-                <div class="w-12 h-12 bg-black/5 rounded-lg flex items-center justify-center text-xl mb-6">
-                    <i class="fa-solid fa-folder-open text-slate-900"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-3">Côté Administratif</h3>
-                <p class="text-slate-800 text-sm mb-6 opacity-90">Affranchissez-vous des tâches chronophages ou bénéficiez du crédit d'impôt (particuliers).</p>
-                <span class="text-xs font-bold tracking-wider uppercase flex items-center text-slate-900 group-hover:translate-x-2 transition-transform duration-300">
-                    En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i>
-                </span>
-            </a>
+                <!-- CARTE 6 : ADMINISTRATIF -->
+                <a href="juridique-administratif.html#administratif" class="bg-white rounded-[2rem] p-8 relative overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 block border border-slate-100 group flex flex-col h-full">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-50 rounded-bl-[100px] z-0 transition-transform duration-500 group-hover:scale-110"></div>
+                    <div class="relative z-10 flex flex-col flex-grow">
+                        <div class="w-16 h-16 bg-sr-yellow text-white rounded-full flex items-center justify-center text-3xl mb-6">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-sr-yellow mb-4 tracking-wide uppercase">CÔTÉ ADMINISTRATIF</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">Externalisation de votre facturation, relances clients et rapprochements bancaires.</p>
+                        <span class="text-xs font-bold text-sr-yellow uppercase flex items-center group-hover:translate-x-2 transition-transform">EXPLORER L'ENTITÉ <i class="fa-solid fa-arrow-right ml-2"></i></span>
+                    </div>
+                </a>
+
             </div>
         </div>
     </section>
@@ -183,7 +200,6 @@
                 <h2 class="font-handwritten text-4xl font-bold text-slate-900 mb-2">Notre Cabinet</h2>
                 <p class="text-slate-600">Venez nous rencontrer au 10B, boulevard de Verdun - 12400 SAINT-AFFRIQUE</p>
             </div>
-            <!-- Intégration Google Maps -->
             <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-200 h-[400px]">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.0934149257697!2d2.8822363!3d43.9575807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b21c437a89b7eb%3A0x8e83b8bd7bb5d!2s10B%20Bd%20de%20Verdun%2C%2012400%20Saint-Affrique!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" 
@@ -202,7 +218,8 @@
     <footer class="bg-sr-black text-white py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
             <div>
-<img src="images/logo-st-affrique.jpg" alt="Cabinet Saint-Affrique" class="h-16 w-auto bg-white rounded-xl p-2 mb-4">                <p class="text-xs text-slate-400">Cabinet d'expertise comptable, de conseil et d'accompagnement administratif.</p>
+                <img src="images/logo-st-affrique.jpg" alt="Cabinet Saint-Affrique" class="h-16 w-auto bg-white rounded-xl p-2 mb-4">
+                <p class="text-xs text-slate-400">Cabinet d'expertise comptable, de conseil et d'accompagnement administratif.</p>
             </div>
             <div>
                 <h4 class="font-bold text-sm text-yellow-400 mb-3">Coordonnées</h4>
@@ -212,8 +229,11 @@
                     <li class="hover:text-white transition-colors"><a href="mailto:secretariat@srexpertise.fr"><i class="fa-solid fa-envelope mr-2 text-sr-yellow"></i> secretariat@srexpertise.fr</a></li>
                 </ul>
             </div>
-            <div class="text-xs text-slate-400">
-                © 2026 Sophie Rodier - Tous droits réservés.
+            
+            <!-- Lien Mentions Légales ajouté ici -->
+            <div class="text-xs text-slate-400 flex flex-col items-start md:items-end gap-2">
+                <span>© 2026 Sophie Rodier - Tous droits réservés.</span>
+                <a href="saint-affrique-mentions-legales.html" class="hover:text-white transition-colors underline underline-offset-2">Mentions Légales & RGPD</a>
             </div>
         </div>
     </footer>
