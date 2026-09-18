@@ -11,7 +11,6 @@
             theme: {
                 extend: {
                     fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
-                    // Remplacement du rouge (#E11D48) par ton rose pâle (#F472B6)
                     colors: { sr: { black: '#0B1121', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#D97706', bgLight: '#FAF9F6' } },
                     keyframes: {
                         float: {
@@ -54,7 +53,7 @@
                 <a href="expertise-comptable.html" class="hover:text-sr-blue hover:-translate-y-0.5 transition-transform duration-200">Expertise Comptable</a>
                 <a href="elite-conseil.html" class="hover:text-sr-orange hover:-translate-y-0.5 transition-transform duration-200">Élite Conseil</a>
                 <a href="lance-ta-boite.html" class="hover:text-sr-green hover:-translate-y-0.5 transition-transform duration-200">Lance Ta Boîte</a>
-                <a href="juridique.html" class="hover:text-sr-pink hover:-translate-y-0.5 transition-transform duration-200 text-sr-pink">Juridique</a>
+                <a href="juridique.html" class="text-[#F472B6] font-bold hover:-translate-y-0.5 transition-transform duration-200">Juridique</a>
                 <a href="administratif.html" class="hover:text-yellow-600 hover:-translate-y-0.5 transition-transform duration-200">Administratif</a>
             </nav>
 
@@ -65,8 +64,8 @@
         </div>
     </header>
 
-    <!-- Banner -->
-    <section class="bg-sr-pink text-white py-12 lg:py-16 overflow-hidden">
+    <!-- Banner (Forcée en rose pâle #F472B6) -->
+    <section class="bg-[#F472B6] text-white py-12 lg:py-16 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-8 items-center">
             
             <div class="hidden md:flex md:col-span-5 relative justify-center md:justify-start">
@@ -90,12 +89,12 @@
         </div>
     </section>
 
-    <!-- Content (Bento Grid Juridique) -->
+    <!-- Content (Bento Grid Juridique forcée en rose pâle) -->
     <main class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6">
             
             <div class="text-center mb-12">
-                <h2 class="font-handwritten text-4xl text-sr-pink font-bold mb-2">Notre Pôle Juridique</h2>
+                <h2 class="font-handwritten text-4xl text-[#F472B6] font-bold mb-2">Notre Pôle Juridique</h2>
                 <h3 class="text-3xl font-extrabold text-slate-900">Un encadrement rigoureux pour sécuriser vos documents.</h3>
             </div>
 
@@ -103,21 +102,21 @@
                 
                 <!-- Secrétariat Juridique Annuel -->
                 <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-2 shadow-sm hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center mb-6">
+                    <div class="w-12 h-12 bg-[#FDF2F8] text-[#F472B6] rounded-xl flex items-center justify-center mb-6">
                         <i class="fa-solid fa-file-contract text-xl"></i>
                     </div>
                     <h4 class="text-xl font-bold text-slate-900 mb-3">Secrétariat Juridique Annuel</h4>
                     <p class="text-slate-500 text-sm mb-6">L'approbation des comptes est une formalité obligatoire. Nous rédigeons toute la documentation nécessaire pour clôturer votre exercice en toute conformité.</p>
                     <div class="flex flex-col gap-3 text-sm text-slate-700 font-medium">
-                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-sr-pink mt-1 text-xs"></i> Rédaction des rapports de gestion annuels</div>
-                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-sr-pink mt-1 text-xs"></i> Convocations et procès-verbaux d'AG</div>
-                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-sr-pink mt-1 text-xs"></i> Dépôt légal au greffe du tribunal</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-[#F472B6] mt-1 text-xs"></i> Rédaction des rapports de gestion annuels</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-[#F472B6] mt-1 text-xs"></i> Convocations et procès-verbaux d'AG</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-[#F472B6] mt-1 text-xs"></i> Dépôt légal au greffe du tribunal</div>
                     </div>
                 </div>
 
                 <!-- Contrats & Baux -->
                 <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-1 shadow-sm hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center mb-6">
+                    <div class="w-12 h-12 bg-[#FDF2F8] text-[#F472B6] rounded-xl flex items-center justify-center mb-6">
                         <i class="fa-solid fa-handshake-simple text-xl"></i>
                     </div>
                     <h4 class="text-xl font-bold text-slate-900 mb-3">Contrats & Baux</h4>
@@ -126,7 +125,7 @@
 
                 <!-- Restructuration -->
                 <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-1 shadow-sm hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center mb-6">
+                    <div class="w-12 h-12 bg-[#FDF2F8] text-[#F472B6] rounded-xl flex items-center justify-center mb-6">
                         <i class="fa-solid fa-sitemap text-xl"></i>
                     </div>
                     <h4 class="text-xl font-bold text-slate-900 mb-3">Restructuration</h4>
@@ -135,16 +134,16 @@
 
                 <!-- Modifications Statutaires -->
                 <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-2 shadow-sm hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center mb-6">
+                    <div class="w-12 h-12 bg-[#FDF2F8] text-[#F472B6] rounded-xl flex items-center justify-center mb-6">
                         <i class="fa-solid fa-pen-to-square text-xl"></i>
                     </div>
                     <h4 class="text-xl font-bold text-slate-900 mb-3">Modifications Statutaires</h4>
                     <p class="text-slate-500 text-sm mb-6">Votre structure évolue. Nous mettons à jour vos statuts en rédigeant les actes exceptionnels adaptés à votre nouvelle situation.</p>
                     <div class="grid sm:grid-cols-2 gap-4 text-sm text-slate-700 font-medium">
-                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-pink mt-1.5" style="font-size: 0.4rem;"></i> Transfert de siège social</div>
-                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-pink mt-1.5" style="font-size: 0.4rem;"></i> Changement de dirigeant</div>
-                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-pink mt-1.5" style="font-size: 0.4rem;"></i> Augmentation de capital</div>
-                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-pink mt-1.5" style="font-size: 0.4rem;"></i> Transformation de société</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-[#F472B6] mt-1.5" style="font-size: 0.4rem;"></i> Transfert de siège social</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-[#F472B6] mt-1.5" style="font-size: 0.4rem;"></i> Changement de dirigeant</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-[#F472B6] mt-1.5" style="font-size: 0.4rem;"></i> Augmentation de capital</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-[#F472B6] mt-1.5" style="font-size: 0.4rem;"></i> Transformation de société</div>
                     </div>
                 </div>
 
@@ -163,9 +162,9 @@
             <div>
                 <h4 class="font-bold text-sm text-slate-400 mb-3 uppercase tracking-wider">Contactez St-Affrique</h4>
                 <ul class="space-y-2 text-sm text-slate-300">
-                    <li><i class="fa-solid fa-location-dot mr-2 text-sr-pink"></i> 10B Bd de Verdun, 12400 Saint-Affrique</li>
-                    <li><i class="fa-solid fa-phone mr-2 text-sr-pink"></i> 05 65 49 01 53</li>
-                    <li><a href="mailto:secretariat@srexpertise.fr" class="hover:text-white transition-colors"><i class="fa-solid fa-envelope mr-2 text-sr-pink"></i> secretariat@srexpertise.fr</a></li>
+                    <li><i class="fa-solid fa-location-dot mr-2 text-[#F472B6]"></i> 10B Bd de Verdun, 12400 Saint-Affrique</li>
+                    <li><i class="fa-solid fa-phone mr-2 text-[#F472B6]"></i> 05 65 49 01 53</li>
+                    <li><a href="mailto:secretariat@srexpertise.fr" class="hover:text-white transition-colors"><i class="fa-solid fa-envelope mr-2 text-[#F472B6]"></i> secretariat@srexpertise.fr</a></li>
                 </ul>
             </div>
             
