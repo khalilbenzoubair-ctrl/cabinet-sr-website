@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juridique & Administratif - Sophie Rodier</title>
+    <title>Côté Juridique - Sophie Rodier</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-   <script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
-                    // Mise à jour : Rose pâle et Jaune électrique
-                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#FDE047', bgLight: '#FAF9F6' } },
+                    colors: { sr: { black: '#0B1121', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } },
                     keyframes: {
                         float: {
                             '0%, 100%': { transform: 'translateY(0)' },
@@ -32,14 +31,14 @@
 
     <!-- Topbar & Header -->
     <div class="bg-sr-black text-white text-xs py-2 px-6 flex justify-between items-center">
-        <a href="tel:0565555913" class="hover:text-yellow-400 flex items-center gap-2"><i class="fa-solid fa-phone text-sr-yellow"></i> 05 65 49 01 53</a>
+        <a href="tel:0565490153" class="hover:text-yellow-400 flex items-center gap-2"><i class="fa-solid fa-phone text-sr-yellow"></i> 05 65 49 01 53</a>
         <div>Rodez & Aveyron</div>
     </div>
-   <!-- Header Navigation -->
+    
+    <!-- Header Navigation -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
             
-            <!-- 1. LE LOGO (Il n'y a plus de texte "Accueil" ici, et il pointe vers index.html) -->
             <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity group">
                 <img src="images/logo-st-affrique.jpg" alt="Cabinet Saint-Affrique" class="h-16 md:h-20 w-auto object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300">
                 <div class="font-handwritten text-3xl font-bold text-slate-900 leading-none">
@@ -48,114 +47,140 @@
                 </div>
             </a>
 
-            <!-- 2. LE MENU (Le bouton "Accueil" pointe bien vers saint-affrique.html) -->
-            <nav class="hidden lg:flex items-center space-x-6 font-semibold text-sm">
+            <!-- Menu de navigation mis à jour : Juridique et Administratif séparés -->
+            <nav class="hidden lg:flex items-center space-x-5 font-semibold text-sm">
                 <a href="saint-affrique.html" class="text-sr-blue font-bold">Accueil</a>
                 <a href="expertise-comptable.html" class="hover:text-sr-blue hover:-translate-y-0.5 transition-transform duration-200">Expertise Comptable</a>
-                <a href="elite-conseil.html" class="hover:text-sr-orange hover:-translate-y-0.5 transition-transform duration-200">Elite Conseil</a>
+                <a href="elite-conseil.html" class="hover:text-sr-orange hover:-translate-y-0.5 transition-transform duration-200">Élite Conseil</a>
                 <a href="lance-ta-boite.html" class="hover:text-sr-green hover:-translate-y-0.5 transition-transform duration-200">Lance Ta Boîte</a>
-                <a href="juridique-administratif.html" class="hover:text-sr-pink hover:-translate-y-0.5 transition-transform duration-200">Juridique & Admin</a>
+                <a href="juridique.html" class="hover:text-sr-pink hover:-translate-y-0.5 transition-transform duration-200 text-sr-pink">Juridique</a>
+                <a href="administratif.html" class="hover:text-yellow-600 hover:-translate-y-0.5 transition-transform duration-200">Administratif</a>
             </nav>
 
-            <!-- 3. LE BOUTON CONTACT -->
             <div class="flex items-center gap-3">
-    <a href="rejoignez-nous.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Nous rejoindre</a>
-    <a href="contact.html" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Contactez-nous</a>
-</div>
+                <a href="rejoignez-nous.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Nous rejoindre</a>
+                <a href="contact.html" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Contactez-nous</a>
+            </div>
         </div>
     </header>
-    <!-- Banner -->
+
+    <!-- Banner (Couleur conservée, textes issus de la nouvelle maquette) -->
     <section class="bg-sr-pink text-white py-12 lg:py-16 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-8 items-center">
             
-            <div class="hidden md:block md:col-span-5 relative">
-                <img src="images/hero-juridique.png" alt="Juridique et Administratif" class="w-full h-auto object-contain animate-float max-h-80">
+            <!-- IMAGE À GAUCHE (Taille conservée avec l'animation) -->
+            <div class="hidden md:flex md:col-span-5 relative justify-center md:justify-start">
+                <img src="images/hero-juridique.png" alt="Côté Juridique" class="w-full max-w-sm h-auto object-contain animate-float max-h-72">
             </div>
 
-            <div class="md:col-span-7 text-center md:text-left space-y-4">
-                <h1 class="font-handwritten text-5xl md:text-6xl font-bold text-pink-200 leading-tight">Juridique & Admin</h1>
-                <p class="text-pink-100 text-base md:text-lg max-w-2xl mx-auto md:mx-0">
-                    Sécurisez votre entreprise et libérez-vous des contraintes administratives.
+            <!-- TEXTE À DROITE -->
+            <div class="md:col-span-7 space-y-4 text-center md:text-left relative z-10">
+                <span class="text-pink-200 text-xs font-bold tracking-widest uppercase inline-block">
+                    Pôle Sécurisation & Délégation
+                </span>
+                
+                <h1 class="font-handwritten text-5xl md:text-7xl font-bold text-white leading-tight">
+                    Côté <span class="text-pink-200">Juridique</span>
+                </h1>
+                
+                <p class="text-pink-50 text-base md:text-lg max-w-xl mx-auto md:mx-0 leading-relaxed">
+                    Le droit des sociétés ne tolère aucune approximation. Nous sécurisons l'intégralité de vos actes et formalités pour protéger votre responsabilité de dirigeant.
                 </p>
             </div>
             
         </div>
     </section>
 
-  <!-- Content -->
-    <section class="py-16 max-w-7xl mx-auto px-6 space-y-12">
-        
-        <!-- Côté Juridique -->
-        <div id="juridique" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300">
-            <h2 class="text-2xl font-bold text-sr-pink mb-6 border-b pb-4"><i class="fa-solid fa-gavel mr-2"></i> Coté Juridique</h2>
-            <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-600">
-                <div>
-                    <strong class="text-sr-pink block mb-2">Organisation & Constitution</strong>
-                    <ul class="space-y-2 mb-6">
-                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Audit de conformité juridique & Préconisation</li>
-                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Constitution : Bon statut/régime, rédaction, signature élec., Greffe, KBIS rapide</li>
-                    </ul>
-                    <strong class="text-sr-pink block mb-2">Suivi Annuel & Contrats</strong>
-                    <ul class="space-y-2">
-                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> AG d'approbation (prépa, convocation, PV)</li>
-                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Rémunérations & dividendes</li>
-                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Baux commerciaux/professionnels, location gérance</li>
-                    </ul>
+    <!-- Content (Bento Grid Juridique) -->
+    <main class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <!-- TITRE SECTION -->
+            <div class="text-center mb-12">
+                <h2 class="font-handwritten text-4xl text-sr-pink font-bold mb-2">Notre Pôle Juridique</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900">Un encadrement rigoureux pour sécuriser vos documents.</h3>
+            </div>
+
+            <!-- GRILLE BENTO -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Secrétariat Juridique Annuel (Grande Carte) -->
+                <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-2 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-file-contract text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Secrétariat Juridique Annuel</h4>
+                    <p class="text-slate-500 text-sm mb-6">L'approbation des comptes est une formalité obligatoire. Nous rédigeons toute la documentation nécessaire pour clôturer votre exercice en toute conformité.</p>
+                    <div class="flex flex-col gap-3 text-sm text-slate-700 font-medium">
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-sr-pink mt-1 text-xs"></i> Rédaction des rapports de gestion annuels</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-sr-pink mt-1 text-xs"></i> Convocations et procès-verbaux d'AG</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-sr-pink mt-1 text-xs"></i> Dépôt légal au greffe du tribunal</div>
+                    </div>
                 </div>
-                <div>
-                    <strong class="text-sr-pink block mb-2">Interventions ponctuelles</strong>
-                    <ul class="space-y-2">
-                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Modifications statutaires</li>
-                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Distribution des réserves</li>
-                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Cession/apport de titres</li>
-                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Ouverture/fermeture établissement</li>
-                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Augmentation / Réduction capital</li>
-                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Transformations, Pacte d'associés</li>
-                        <li><i class="fa-solid fa-check text-sr-pink mr-2"></i> Mise en sommeil, Dissolution, Liquidation</li>
-                    </ul>
+
+                <!-- Contrats & Baux (Petite Carte) -->
+                <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-1 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-handshake-simple text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Contrats & Baux</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Nous verrouillons vos relations commerciales et immobilières (Baux commerciaux, CGV, conventions).</p>
                 </div>
+
+                <!-- Restructuration (Petite Carte) -->
+                <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-1 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-sitemap text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Restructuration</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Sécurisation des opérations complexes : Création de holdings, fusions, TUP, ou liquidations.</p>
+                </div>
+
+                <!-- Modifications Statutaires (Grande Carte) -->
+                <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-2 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-pen-to-square text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Modifications Statutaires</h4>
+                    <p class="text-slate-500 text-sm mb-6">Votre structure évolue. Nous mettons à jour vos statuts en rédigeant les actes exceptionnels adaptés à votre nouvelle situation.</p>
+                    <div class="grid sm:grid-cols-2 gap-4 text-sm text-slate-700 font-medium">
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-pink mt-1.5" style="font-size: 0.4rem;"></i> Transfert de siège social</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-pink mt-1.5" style="font-size: 0.4rem;"></i> Changement de dirigeant</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-pink mt-1.5" style="font-size: 0.4rem;"></i> Augmentation de capital</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-pink mt-1.5" style="font-size: 0.4rem;"></i> Transformation de société</div>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </main>
 
-       <!-- Côté Administratif (Pros) - Thème Jaune Poussin -->
-        <div id="administratif" class="bg-[#FFFCEB] p-8 rounded-2xl shadow-sm border border-yellow-200 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300">
-            <h2 class="text-2xl font-bold text-yellow-500 mb-6 border-b border-yellow-200 pb-4"><i class="fa-solid fa-folder-open mr-2"></i> Coté Administratif (Entreprises)</h2>
-            <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-700">
-                <ul class="space-y-3">
-                    <li><strong class="text-yellow-600">1/ Admin des ventes :</strong> Facturation, encaissements, relances, remises en banque.</li>
-                    <li><strong class="text-yellow-600">2/ Admin des achats :</strong> Paiements fournisseurs, rapprochement, notes de frais, trésorerie.</li>
-                    <li><strong class="text-yellow-600">3/ Préparation comptable :</strong> Transmission des pièces au cabinet.</li>
+    <!-- Footer St-Affrique -->
+    <footer class="bg-sr-black text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
+            
+            <!-- Logo -->
+            <div>
+                <img src="images/logo-st-affrique.jpg" alt="Cabinet Saint-Affrique" class="h-16 w-16 bg-white rounded-2xl p-1.5 object-contain">
+            </div>
+            
+            <!-- Contact -->
+            <div>
+                <h4 class="font-bold text-sm text-slate-400 mb-3 uppercase tracking-wider">Contactez St-Affrique</h4>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li><i class="fa-solid fa-location-dot mr-2 text-sr-pink"></i> 10B Bd de Verdun, 12400 Saint-Affrique</li>
+                    <li><i class="fa-solid fa-phone mr-2 text-sr-pink"></i> 05 65 49 01 53</li>
+                    <li><a href="mailto:secretariat@srexpertise.fr" class="hover:text-white transition-colors"><i class="fa-solid fa-envelope mr-2 text-sr-pink"></i> secretariat@srexpertise.fr</a></li>
                 </ul>
-                <ul class="space-y-3">
-                    <li><strong class="text-yellow-600">4/ Secrétariat général :</strong> Traitement devis, numérisation, archivage, courriers.</li>
-                    <li><strong class="text-yellow-600">5/ Facture électronique :</strong> Mise en place des obligations.</li>
-                    <li><strong class="text-yellow-600">6/ Montage de dossiers :</strong> Dossiers bancaires, subventions, notariés...</li>
-                </ul>
             </div>
-        </div>
-
-        <!-- Côté Administratif (Particuliers) -->
-        <div class="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300">
-            <h2 class="text-xl font-bold text-amber-600 mb-4"><i class="fa-solid fa-house-user mr-2"></i> Crédit d'impôt Service à la Personne (Particuliers)</h2>
-            <p class="text-sm font-semibold text-slate-800 mb-4">Récupération de 50% des honoraires à titre de crédit d'impôt.</p>
-            <div class="grid sm:grid-cols-2 gap-x-4 gap-y-2 text-sm text-slate-700">
-                <div>1/ Impôt sur le revenu</div>
-                <div>2/ Impôt fortune immobilière (IFI)</div>
-                <div>3/ Déclaration biens immobiliers</div>
-                <div>4/ Organisation, tri et classement</div>
-                <div>5/ Gestion administrative (courriers)</div>
-                <div>6/ Règlement des factures</div>
-                <div>7/ Assistance informatique</div>
-                <div>8/ Suivi projet / financement</div>
-                <div>9/ Aides à domicile (URSSAF/CESU)</div>
-                <div>10/ Aide à la gestion locative</div>
+            
+            <!-- Mentions Légales -->
+            <div class="text-sm text-slate-500 flex flex-col items-start md:items-end justify-center gap-1">
+                <span>© 2026 Sophie RODIER</span>
+                <a href="rodez-mentions-legales.html" class="text-xs text-slate-500 hover:text-white transition-colors">Mentions Légales & RGPD</a>
             </div>
+            
         </div>
-
-    </section>
-
-    <footer class="bg-sr-black text-white py-8 text-center text-xs">
-        © 2026 Sophie Rodier - Tous droits réservés.
     </footer>
 </body>
 </html>
