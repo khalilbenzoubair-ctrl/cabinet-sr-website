@@ -11,7 +11,8 @@
             theme: {
                 extend: {
                     fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
-                    colors: { sr: { black: '#0B1121', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } },
+                    // Remplacement du rouge (#E11D48) par ton rose pâle (#F472B6)
+                    colors: { sr: { black: '#0B1121', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#F472B6', yellow: '#D97706', bgLight: '#FAF9F6' } },
                     keyframes: {
                         float: {
                             '0%, 100%': { transform: 'translateY(0)' },
@@ -47,7 +48,7 @@
                 </div>
             </a>
 
-            <!-- Menu de navigation mis à jour : Juridique et Administratif séparés -->
+            <!-- Menu de navigation -->
             <nav class="hidden lg:flex items-center space-x-5 font-semibold text-sm">
                 <a href="saint-affrique.html" class="text-sr-blue font-bold">Accueil</a>
                 <a href="expertise-comptable.html" class="hover:text-sr-blue hover:-translate-y-0.5 transition-transform duration-200">Expertise Comptable</a>
@@ -64,26 +65,24 @@
         </div>
     </header>
 
-    <!-- Banner (Couleur conservée, textes issus de la nouvelle maquette) -->
+    <!-- Banner -->
     <section class="bg-sr-pink text-white py-12 lg:py-16 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-8 items-center">
             
-            <!-- IMAGE À GAUCHE (Taille conservée avec l'animation) -->
             <div class="hidden md:flex md:col-span-5 relative justify-center md:justify-start">
                 <img src="images/hero-juridique.png" alt="Côté Juridique" class="w-full max-w-sm h-auto object-contain animate-float max-h-72">
             </div>
 
-            <!-- TEXTE À DROITE -->
             <div class="md:col-span-7 space-y-4 text-center md:text-left relative z-10">
-                <span class="text-pink-200 text-xs font-bold tracking-widest uppercase inline-block">
+                <span class="bg-white/20 text-white text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full inline-block">
                     Pôle Sécurisation & Délégation
                 </span>
                 
-                <h1 class="font-handwritten text-5xl md:text-7xl font-bold text-white leading-tight">
-                    Côté <span class="text-pink-200">Juridique</span>
+                <h1 class="font-handwritten text-5xl md:text-7xl font-bold text-white leading-tight mt-4">
+                    Côté <span class="text-white">Juridique</span>
                 </h1>
                 
-                <p class="text-pink-50 text-base md:text-lg max-w-xl mx-auto md:mx-0 leading-relaxed">
+                <p class="text-white/90 text-base md:text-lg max-w-xl mx-auto md:mx-0 leading-relaxed">
                     Le droit des sociétés ne tolère aucune approximation. Nous sécurisons l'intégralité de vos actes et formalités pour protéger votre responsabilité de dirigeant.
                 </p>
             </div>
@@ -95,16 +94,14 @@
     <main class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6">
             
-            <!-- TITRE SECTION -->
             <div class="text-center mb-12">
                 <h2 class="font-handwritten text-4xl text-sr-pink font-bold mb-2">Notre Pôle Juridique</h2>
                 <h3 class="text-3xl font-extrabold text-slate-900">Un encadrement rigoureux pour sécuriser vos documents.</h3>
             </div>
 
-            <!-- GRILLE BENTO -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
-                <!-- Secrétariat Juridique Annuel (Grande Carte) -->
+                <!-- Secrétariat Juridique Annuel -->
                 <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-2 shadow-sm hover:shadow-lg transition-shadow">
                     <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center mb-6">
                         <i class="fa-solid fa-file-contract text-xl"></i>
@@ -118,7 +115,7 @@
                     </div>
                 </div>
 
-                <!-- Contrats & Baux (Petite Carte) -->
+                <!-- Contrats & Baux -->
                 <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-1 shadow-sm hover:shadow-lg transition-shadow">
                     <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center mb-6">
                         <i class="fa-solid fa-handshake-simple text-xl"></i>
@@ -127,7 +124,7 @@
                     <p class="text-slate-500 text-sm leading-relaxed">Nous verrouillons vos relations commerciales et immobilières (Baux commerciaux, CGV, conventions).</p>
                 </div>
 
-                <!-- Restructuration (Petite Carte) -->
+                <!-- Restructuration -->
                 <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-1 shadow-sm hover:shadow-lg transition-shadow">
                     <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center mb-6">
                         <i class="fa-solid fa-sitemap text-xl"></i>
@@ -136,7 +133,7 @@
                     <p class="text-slate-500 text-sm leading-relaxed">Sécurisation des opérations complexes : Création de holdings, fusions, TUP, ou liquidations.</p>
                 </div>
 
-                <!-- Modifications Statutaires (Grande Carte) -->
+                <!-- Modifications Statutaires -->
                 <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-2 shadow-sm hover:shadow-lg transition-shadow">
                     <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center mb-6">
                         <i class="fa-solid fa-pen-to-square text-xl"></i>
@@ -159,12 +156,10 @@
     <footer class="bg-sr-black text-white py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
             
-            <!-- Logo -->
             <div>
                 <img src="images/logo-st-affrique.jpg" alt="Cabinet Saint-Affrique" class="h-16 w-16 bg-white rounded-2xl p-1.5 object-contain">
             </div>
             
-            <!-- Contact -->
             <div>
                 <h4 class="font-bold text-sm text-slate-400 mb-3 uppercase tracking-wider">Contactez St-Affrique</h4>
                 <ul class="space-y-2 text-sm text-slate-300">
@@ -174,7 +169,6 @@
                 </ul>
             </div>
             
-            <!-- Mentions Légales -->
             <div class="text-sm text-slate-500 flex flex-col items-start md:items-end justify-center gap-1">
                 <span>© 2026 Sophie RODIER</span>
                 <a href="rodez-mentions-legales.html" class="text-xs text-slate-500 hover:text-white transition-colors">Mentions Légales & RGPD</a>
