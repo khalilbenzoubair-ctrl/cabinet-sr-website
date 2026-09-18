@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Conseil - Sophie Rodier</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-   <script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
-                    colors: { sr: { black: '#18181B', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } },
+                    colors: { sr: { black: '#0B1121', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } },
                     keyframes: {
                         float: {
                             '0%, 100%': { transform: 'translateY(0)' },
@@ -31,14 +31,14 @@
 
     <!-- Topbar & Header -->
     <div class="bg-sr-black text-white text-xs py-2 px-6 flex justify-between items-center">
-        <a href="tel:0565555913" class="hover:text-yellow-400 flex items-center gap-2"><i class="fa-solid fa-phone text-sr-yellow"></i> 05 65 49 01 53</a>
+        <a href="tel:0565490153" class="hover:text-yellow-400 flex items-center gap-2"><i class="fa-solid fa-phone text-sr-yellow"></i> 05 65 49 01 53</a>
         <div>Rodez & Aveyron</div>
     </div>
+    
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
             
-            <!-- 1. LE LOGO (Il n'y a plus de texte "Accueil" ici, et il pointe vers index.html) -->
             <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity group">
                 <img src="images/logo-st-affrique.jpg" alt="Cabinet Saint-Affrique" class="h-16 md:h-20 w-auto object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300">
                 <div class="font-handwritten text-3xl font-bold text-slate-900 leading-none">
@@ -47,7 +47,6 @@
                 </div>
             </a>
 
-            <!-- 2. LE MENU (Le bouton "Accueil" pointe bien vers saint-affrique.html) -->
             <nav class="hidden lg:flex items-center space-x-6 font-semibold text-sm">
                 <a href="saint-affrique.html" class="text-sr-blue font-bold">Accueil</a>
                 <a href="expertise-comptable.html" class="hover:text-sr-blue hover:-translate-y-0.5 transition-transform duration-200">Expertise Comptable</a>
@@ -56,81 +55,127 @@
                 <a href="juridique-administratif.html" class="hover:text-sr-pink hover:-translate-y-0.5 transition-transform duration-200">Juridique & Admin</a>
             </nav>
 
-            <!-- 3. LE BOUTON CONTACT -->
             <div class="flex items-center gap-3">
-    <a href="rejoignez-nous.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Nous rejoindre</a>
-    <a href="contact.html" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Contactez-nous</a>
-</div>
+                <a href="rejoignez-nous.html" class="bg-sr-blue hover:bg-blue-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Nous rejoindre</a>
+                <a href="contact.html" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-lg text-sm shadow transition-all">Contactez-nous</a>
+            </div>
         </div>
     </header>
-    <!-- Banner -->
+
+    <!-- Banner (Structure originale avec les textes de la nouvelle maquette) -->
     <section class="bg-sr-orange text-white py-12 lg:py-16 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-8 items-center">
             
             <div class="hidden md:block md:col-span-5 relative">
-                <!-- Retrait de mix-blend-multiply pour garder la couleur originale -->
                 <img src="images/hero-elite.png" alt="Equipe Elite Conseil" class="w-full h-auto object-contain animate-float max-h-80">
             </div>
 
             <div class="md:col-span-7 text-center md:text-left space-y-4">
-                <!-- Titre mis à jour -->
-                <h1 class="font-handwritten text-4xl md:text-6xl font-bold text-yellow-200 leading-tight">Elite Conseil <br>& Gestion de Patrimoine</h1>
-                <p class="text-orange-100 text-base md:text-lg max-w-2xl mx-auto md:mx-0">
-                    Conseil sur-mesure et accompagnement stratégique à haute valeur ajoutée pour les chefs d'entreprise et les particuliers.
+                <span class="text-orange-200 text-xs font-bold tracking-widest uppercase">Pôle Stratégie & Croissance</span>
+                <h1 class="font-handwritten text-4xl md:text-6xl font-bold text-yellow-200 leading-tight">Elite Conseil <br>& Gestion Patrimoine</h1>
+                <p class="text-white text-base md:text-lg max-w-2xl mx-auto md:mx-0">
+                    Accélérez votre développement avec l'accompagnement stratégique et sur-mesure d'un Directeur Financier (DAF) à temps partagé.
                 </p>
             </div>
             
         </div>
     </section>
 
-    <!-- Content -->
-    <section class="py-16 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
-        
-        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300">
-            <h2 class="text-xl font-bold text-sr-orange mb-5 border-b pb-3"><i class="fa-solid fa-user-tie mr-2"></i> Conseil au Chef d'Entreprise</h2>
-            <ul class="space-y-3 text-sm text-slate-600">
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> Statut social du dirigeant</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> Choix ou modification de la structure juridique</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> Conseil fiscal et optimisation</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> Optimisation rémunération du dirigeant</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> Restructuration d'entreprise</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> Transmission, cession, succession</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> Stratégie, management & Evaluation d'entreprise</li>
-            </ul>
+    <!-- Content (Bento Grid) -->
+    <main class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <!-- SECTION TItle -->
+            <div class="text-center mb-12">
+                <h2 class="font-handwritten text-4xl text-sr-orange font-bold mb-2">Notre Pôle Conseil</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900">Piloter, financer et sécuriser l'avenir.</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Pilotage de la Performance (Grande Carte) -->
+                <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-2 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-orange-50 text-sr-orange rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-chart-line text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Pilotage de la Performance</h4>
+                    <p class="text-slate-500 text-sm mb-6">Ne naviguez plus à vue. Fini les bilans qui arrivent six mois après la clôture. Nous mettons en place un pilotage continu et réactif de vos chiffres clés.</p>
+                    <div class="grid sm:grid-cols-2 gap-4 text-sm text-slate-700 font-medium">
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-sr-orange mt-1 text-xs"></i> Tableaux de bord mensuels / trimestriels</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-sr-orange mt-1 text-xs"></i> Calcul des coûts de revient et marges</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-sr-orange mt-1 text-xs"></i> Définition et suivi des KPI (Indicateurs Clés)</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-sr-orange mt-1 text-xs"></i> Détermination du seuil de rentabilité</div>
+                    </div>
+                </div>
+
+                <!-- Trésorerie & BFR (Petite Carte) -->
+                <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-1 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-orange-50 text-sr-orange rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-coins text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Trésorerie & BFR</h4>
+                    <p class="text-slate-500 text-sm mb-6">La trésorerie est le nerf de la guerre. Anticipez vos décaissements et sécurisez votre Besoin en Fonds de Roulement (BFR).</p>
+                    <div class="flex flex-col gap-3 text-sm text-slate-700 font-medium">
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-orange mt-1.5" style="font-size: 0.4rem;"></i> Plan de trésorerie prévisionnel</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-orange mt-1.5" style="font-size: 0.4rem;"></i> Suivi des encaissements / décaissements</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-orange mt-1.5" style="font-size: 0.4rem;"></i> Optimisation des délais de paiement</div>
+                    </div>
+                </div>
+
+                <!-- Votre DAF Externe (Petite Carte) -->
+                <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-1 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-orange-50 text-sr-orange rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-user-tie text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Votre DAF Externe</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Bénéficiez de l'expertise d'un Directeur Financier dédié, présent dans vos locaux 1 à 4 jours par mois, sans le coût d'une embauche à temps plein. Un vrai bras droit pour la direction.</p>
+                </div>
+
+                <!-- Ingénierie de Financement (Grande Carte) -->
+                <div class="bg-white border border-slate-200 rounded-[2rem] p-8 md:col-span-2 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-orange-50 text-sr-orange rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-piggy-bank text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Ingénierie de Financement</h4>
+                    <p class="text-slate-500 text-sm mb-6">Que ce soit pour un rachat d'entreprise, un investissement lourd ou de la croissance externe, nous construisons des dossiers en béton armé pour vos partenaires financiers.</p>
+                    <div class="grid sm:grid-cols-2 gap-4 text-sm text-slate-700 font-medium">
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-orange mt-1.5" style="font-size: 0.4rem;"></i> Plan de financement pluriannuel</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-orange mt-1.5" style="font-size: 0.4rem;"></i> Recherche de subventions et aides BPI</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-orange mt-1.5" style="font-size: 0.4rem;"></i> Accompagnement croissance externe</div>
+                        <div class="flex items-start gap-2"><i class="fa-solid fa-circle text-sr-orange mt-1.5" style="font-size: 0.4rem;"></i> Négociation avec les partenaires bancaires</div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </main>
 
-        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300">
-            <h2 class="text-xl font-bold text-sr-orange mb-5 border-b pb-3"><i class="fa-solid fa-chart-line mr-2"></i> Conseil en Gestion</h2>
-            <ul class="space-y-3 text-sm text-slate-600">
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> Business plan développement</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> Mise en place tableaux de bord & Budget prévisionnel</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> Acquisition véhicule & locaux professionnels</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> Reporting & Assistance relation avec les banques</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> Conseil en organisation administrative et SI</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> DAF externalisé & Ressources humaines</li>
-            </ul>
+    <!-- Footer -->
+    <footer class="bg-sr-black text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
+            
+            <!-- Logo -->
+            <div>
+                <img src="images/logo-st-affrique.jpg" alt="Cabinet Saint-Affrique" class="h-16 w-16 bg-white rounded-2xl p-1.5 object-contain">
+            </div>
+            
+            <!-- Contact -->
+            <div>
+                <h4 class="font-bold text-sm text-slate-400 mb-3 uppercase tracking-wider">Contactez St-Affrique</h4>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li><i class="fa-solid fa-location-dot mr-2 text-sr-orange"></i> 10B Bd de Verdun, 12400 Saint-Affrique</li>
+                    <li><i class="fa-solid fa-phone mr-2 text-sr-orange"></i> 05 65 49 01 53</li>
+                    <li><a href="mailto:secretariat@srexpertise.fr" class="hover:text-white transition-colors"><i class="fa-solid fa-envelope mr-2 text-sr-orange"></i> secretariat@srexpertise.fr</a></li>
+                </ul>
+            </div>
+            
+            <!-- Mentions Légales -->
+            <div class="text-sm text-slate-500 flex flex-col items-start md:items-end justify-center gap-1">
+                <span>© 2026 Sophie RODIER</span>
+                <a href="rodez-mentions-legales.html" class="text-xs text-slate-500 hover:text-white transition-colors">Mentions Légales & RGPD</a>
+            </div>
+            
         </div>
-
-        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300">
-            <h2 class="text-xl font-bold text-sr-orange mb-5 border-b pb-3"><i class="fa-solid fa-shield-cat mr-2"></i> Protection & Particulier</h2>
-            <ul class="space-y-3 text-sm text-slate-600">
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> <strong>Protection :</strong> Assistance contrôle fiscal & URSSAF</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> <strong>Protection :</strong> Entreprise en difficulté</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> <strong>Investisseur :</strong> Acquisition investisseur individuel</li>
-                <li><i class="fa-solid fa-check text-sr-orange mr-3"></i> <strong>Investisseur :</strong> LMNP / LMP / Revenu foncier</li>
-            </ul>
-        </div>
-
-        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 flex flex-col justify-center items-center text-center">
-            <i class="fa-solid fa-chalkboard-user text-5xl text-sr-orange mb-4"></i>
-            <h2 class="text-2xl font-bold text-slate-900 mb-2">Formation & Coaching</h2>
-            <p class="text-slate-600 text-sm">Nous proposons également des sessions de formation ciblées et du coaching personnalisé pour les dirigeants.</p>
-        </div>
-
-    </section>
-
-    <footer class="bg-sr-black text-white py-8 text-center text-xs">
-        © 2026 Sophie Rodier - Tous droits réservés.
     </footer>
 </body>
 </html>
