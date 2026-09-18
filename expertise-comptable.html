@@ -62,20 +62,20 @@
         </div>
     </header>
 
-   <!-- Banner (Taille réduite et image à gauche) -->
-    <section class="bg-[#0f172a] text-white py-10 md:py-12 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-8 items-center">
+   <!-- Banner (Image plus grande, hauteur contenue, texte aux couleurs du logo) -->
+    <section class="bg-[#0f172a] text-white py-6 md:py-8 overflow-hidden h-auto md:h-72 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-8 items-center w-full">
             
-            <!-- IMAGE À GAUCHE -->
+            <!-- IMAGE À GAUCHE (Agrandie avec scale-125 mais sans déformer la bannière) -->
             <div class="hidden md:flex md:col-span-5 relative justify-center md:justify-start">
-                <img src="images/hero-comptable.png" alt="Expertise Comptable" class="w-full max-w-xs object-contain animate-float max-h-56">
+                <img src="images/hero-comptable.png" alt="Expertise Comptable" class="w-full max-w-sm object-contain animate-float scale-125 transform origin-left">
             </div>
 
             <!-- TEXTE À DROITE -->
             <div class="md:col-span-7 space-y-4 text-center md:text-left">
                 <span class="text-slate-400 text-xs font-bold tracking-widest uppercase">Pôle Fiabilité & Sécurité</span>
                 <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight uppercase">
-                    EXPERTISE <span class="text-blue-500">& AUDIT</span>
+                    EXPERTISE <span class="text-[#2CA9E1]">& AUDIT</span>
                 </h1>
                 <p class="text-slate-300 text-base max-w-xl mx-auto md:mx-0">
                     De la tenue rigoureuse de votre comptabilité à la certification légale de vos comptes.
@@ -214,9 +214,45 @@
         </div>
     </main>
 
-    <!-- Footer conservé à l'identique -->
-    <footer class="bg-sr-black text-white py-8 text-center text-xs">
-        © 2026 Sophie Rodier - Tous droits réservés.
+   <!-- Footer (Design Rodez adapté pour Saint-Affrique) -->
+    <footer class="bg-[#0B1121] text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            
+            <!-- Logo -->
+            <div class="flex justify-center md:justify-start">
+                <img src="images/logo-st-affrique.jpg" alt="Cabinet Saint-Affrique" class="h-16 w-16 object-contain bg-white rounded-2xl p-2 shadow-lg">
+            </div>
+            
+            <!-- Contact -->
+            <div class="flex flex-col items-center md:items-start text-sm">
+                <h4 class="font-bold text-slate-400 mb-4 uppercase tracking-wider text-xs">Contactez Saint-Affrique</h4>
+                <ul class="space-y-3 text-slate-300 font-medium">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-location-dot text-[#2CA9E1] w-4 text-center"></i> 
+                        10B Bd de Verdun, 12400 Saint-Affrique
+                    </li>
+                    <li>
+                        <a href="tel:0565490153" class="hover:text-white transition-colors flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-[#2CA9E1] w-4 text-center"></i> 
+                            05 65 49 01 53
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:secretariat@srexpertise.fr" class="hover:text-white transition-colors flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-[#2CA9E1] w-4 text-center"></i> 
+                            secretariat@srexpertise.fr
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Copyright & Mentions Légales -->
+            <div class="text-sm text-slate-500 flex flex-col items-center md:items-end gap-2">
+                <span>© 2026 Sophie RODIER</span>
+                <a href="rodez-mentions-legales.html" class="hover:text-white transition-colors underline underline-offset-2">Mentions Légales & RGPD</a>
+            </div>
+            
+        </div>
     </footer>
 </body>
 </html>
