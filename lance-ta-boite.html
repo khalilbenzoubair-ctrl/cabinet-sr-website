@@ -56,22 +56,28 @@
     </header>
 
 <main>
-    <section class="bg-gradient-to-br from-green-50 to-white pt-20 pb-24 border-b-2 border-green-200 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
-            <div class="md:w-3/5">
-                <span class="inline-block bg-green-100 text-sr-green font-bold text-xs tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">PÔLE CRÉATION D'ENTREPRISE</span>
-                <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 uppercase">
-                    LANCE <span class="text-sr-green">TA BOÎTE</span>
+    <!-- Banner (DA structurée avec les couleurs et textes de la nouvelle maquette) -->
+    <section class="bg-[#F4FBF7] py-16 lg:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+            
+            <!-- IMAGE À GAUCHE -->
+            <div class="flex justify-center md:justify-end relative">
+                <img src="images/hero-lance-nouveau.png" alt="Lance Ta Boîte" class="w-full max-w-md lg:max-w-lg object-contain animate-float">
+            </div>
+
+            <!-- TEXTE À DROITE -->
+            <div class="space-y-6 text-center md:text-left">
+                <span class="bg-[#E6F5EC] text-[#059669] text-xs font-extrabold tracking-widest uppercase px-4 py-2 rounded-full inline-block">
+                    Pôle Création D'entreprise
+                </span>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#0B1121] leading-tight uppercase tracking-tight">
+                    LANCE <span class="text-[#059669]">TA BOÎTE</span>
                 </h1>
-                <p class="text-slate-600 text-lg leading-relaxed max-w-xl">
+                <p class="text-slate-600 text-lg md:text-xl max-w-xl mx-auto md:mx-0 leading-relaxed">
                     Le tremplin complet pour les créateurs. Nous transformons votre idée en une société viable, structurée, financée et prête à réussir sur le long terme.
                 </p>
             </div>
-            <div class="md:w-2/5 flex justify-center">
-                <div class="w-48 h-48 bg-white rounded-full flex items-center justify-center p-5 shadow-xl border-4 border-green-100 overflow-hidden transform hover:-translate-y-2 transition-transform">
-                    <img src="images/logo-creation.png" alt="Logo Création" class="w-full h-full object-contain rounded-full">
-                </div>
-            </div>
+            
         </div>
     </section>
 
@@ -181,8 +187,32 @@
         </div>
     </section>
 
-    <footer class="bg-sr-black text-white py-8 text-center text-xs">
-        © 2026 Sophie Rodier - Tous droits réservés.
+    <!-- Footer (Design St-Affrique avec accents verts) -->
+    <footer class="bg-sr-black text-white py-12 border-t border-slate-800 mt-12">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
+            
+            <!-- Logo carré arrondi -->
+            <div>
+                <img src="images/logo-st-affrique.jpg" alt="Cabinet Saint-Affrique" class="h-16 w-16 bg-white rounded-2xl p-1.5 object-contain">
+            </div>
+            
+            <!-- Coordonnées -->
+            <div>
+                <h4 class="font-bold text-sm text-slate-400 mb-3 uppercase tracking-wider">Contactez St-Affrique</h4>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li><i class="fa-solid fa-location-dot mr-2 text-[#059669]"></i> 10B Bd de Verdun, 12400 Saint-Affrique</li>
+                    <li><i class="fa-solid fa-phone mr-2 text-[#059669]"></i> 05 65 49 01 53</li>
+                    <li><a href="mailto:secretariat@srexpertise.fr" class="hover:text-white transition-colors"><i class="fa-solid fa-envelope mr-2 text-[#059669]"></i> secretariat@srexpertise.fr</a></li>
+                </ul>
+            </div>
+            
+            <!-- Mentions Légales -->
+            <div class="text-sm text-slate-500 flex flex-col items-start md:items-end justify-center gap-1">
+                <span>© 2026 Sophie RODIER</span>
+                <a href="rodez-mentions-legales.html" class="text-xs text-slate-500 hover:text-white transition-colors">Mentions Légales & RGPD</a>
+            </div>
+            
+        </div>
     </footer>
 </body>
 </html>
