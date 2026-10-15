@@ -18,89 +18,89 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-white font-sans text-slate-800 antialiased relative h-screen overflow-hidden">
+<!-- Correction ici : scroll autorisé sur téléphone, écran fixe conservé sur PC (lg:) -->
+<body class="bg-white font-sans text-slate-800 antialiased relative min-h-screen overflow-x-hidden lg:h-screen lg:overflow-hidden">
 
     <!-- Décoration de fond (Cercles) -->
     <div class="absolute top-0 left-0 w-96 h-96 bg-sr-blue/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0"></div>
     <div class="absolute bottom-0 right-0 w-96 h-96 bg-sr-orange/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 pointer-events-none z-0"></div>
 
-   <!-- Villes en fond (en bas, fusionnées au centre) -->
+    <!-- Villes en fond (en bas, fusionnées au centre) -->
     <div class="absolute bottom-0 left-0 w-full flex items-end z-0 pointer-events-none opacity-40 overflow-hidden">
-        <!-- Remplacement : translate-y-1/2 pour descendre l'image encore plus bas -->
         <img src="images/ville-gauche.jpg" class="w-1/2 object-cover object-bottom -scale-x-100 translate-y-1/2 scale-110">
         <img src="images/ville-droite.jpg" class="w-1/2 object-contain object-bottom relative z-10">
     </div>
 
     <!-- Contenu Principal -->
-    <div class="relative z-10 w-full max-w-5xl mx-auto px-6 py-12 text-center">
+    <div class="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 py-8 md:py-12 text-center">
         
-<!-- Logo Principal -->
-        <div class="mb-16 flex flex-col items-center">
-            <img src="images/logo-principal.png" alt="Sophie Rodier" class="h-24 md:h-32 w-auto mix-blend-multiply mb-6">
+        <!-- Logo Principal -->
+        <div class="mb-10 md:mb-16 flex flex-col items-center">
+            <img src="images/logo-principal.png" alt="Sophie Rodier" class="h-20 sm:h-24 md:h-32 w-auto mix-blend-multiply mb-4 md:mb-6">
             
-            <!-- Nouveau titre en caligraphie (agrandi pour compenser la police fine) -->
-            <h1 class="text-6xl md:text-7xl font-handwritten font-bold text-slate-900 mb-2">Bienvenue chez Sophie Rodier</h1>
+            <!-- Titre en calligraphie (adapté mobile + taille PC intacte) -->
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-handwritten font-bold text-slate-900 mb-2">Bienvenue chez Sophie Rodier</h1>
             
-            <!-- Nouvelle phrase d'accroche -->
-            <h2 class="text-xl md:text-2xl text-sr-blue font-semibold mb-4">L'expertise comptable qui propulse votre réussite.</h2>
+            <!-- Phrase d'accroche -->
+            <h2 class="text-lg sm:text-xl md:text-2xl text-sr-blue font-semibold mb-3 md:mb-4">L'expertise comptable qui propulse votre réussite.</h2>
             
-            <!-- Description existante -->
-            <p class="text-lg text-slate-600 max-w-2xl mx-auto">Veuillez sélectionner le cabinet de votre choix pour accéder à nos services d'expertise comptable et de conseil.</p>
+            <!-- Description -->
+            <p class="text-sm sm:text-base md:text-lg text-slate-600 max-w-2xl mx-auto px-2">Veuillez sélectionner le cabinet de votre choix pour accéder à nos services d'expertise comptable et de conseil.</p>
         </div>
 
-       <!-- GRILLE DE SÉLECTION DES 2 CABINETS (100% SYMÉTRIQUE) -->
-<div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto px-6">
-    
-    <!-- CARTE GAUCHE : SAINT-AFFRIQUE -->
-    <a href="saint-affrique.html" class="group bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 text-center flex flex-col justify-between">
-        <div>
-            <!-- Conteneur du Logo Saint-Affrique -->
-            <!-- Conteneur du Logo Saint-Affrique (Zoom réduit) -->
-            <div class="w-28 h-28 mx-auto bg-[#F0F7FF] rounded-3xl flex items-center justify-center mb-8 overflow-hidden">
-                <img src="images/logo-st-affrique.jpg" alt="Logo Saint-Affrique" class="w-full h-full object-contain mix-blend-multiply scale-110">
-            </div>
-            <!-- Titre en police bleue identique -->
-            <h3 class="text-sm font-bold text-sr-blue uppercase tracking-wider mb-2">
-                PATRIMOINE CONSEIL EXPERTISE SAINT-AFFRIQUE
-            </h3>
-            <!-- Adresse -->
-            <p class="text-slate-500 text-sm leading-relaxed mb-8">
-                10B, boulevard de Verdun<br>12400 SAINT-AFFRIQUE
-            </p>
-        </div>
-        <!-- Bouton pilule identique -->
-        <div>
-            <span class="inline-flex items-center gap-2 bg-slate-100 group-hover:bg-sr-blue group-hover:text-white text-sr-blue font-bold text-sm px-6 py-3 rounded-full transition-all">
-                Accéder au site <i class="fa-solid fa-arrow-right"></i>
-            </span>
-        </div>
-    </a>
+        <!-- GRILLE DE SÉLECTION DES 2 CABINETS (100% SYMÉTRIQUE) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto px-2 sm:px-6">
+            
+            <!-- CARTE GAUCHE : SAINT-AFFRIQUE -->
+            <a href="saint-affrique.html" class="group bg-white p-6 sm:p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 text-center flex flex-col justify-between">
+                <div>
+                    <!-- Conteneur du Logo Saint-Affrique (Aligné en w-36 h-36 sur PC comme Rodez) -->
+                    <div class="w-28 h-28 md:w-36 md:h-36 mx-auto mb-6 bg-[#F0F7FF] rounded-3xl flex items-center justify-center overflow-hidden border border-blue-100/50">
+                        <img src="images/logo-st-affrique.jpg" alt="Logo Saint-Affrique" class="w-full h-full object-contain mix-blend-multiply scale-110 group-hover:scale-115 transition-transform">
+                    </div>
+                    <!-- Titre en police bleue identique -->
+                    <h3 class="text-sm font-bold text-sr-blue uppercase tracking-wider mb-2">
+                        PATRIMOINE CONSEIL EXPERTISE SAINT-AFFRIQUE
+                    </h3>
+                    <!-- Adresse -->
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6 md:mb-8">
+                        10B, boulevard de Verdun<br>12400 SAINT-AFFRIQUE
+                    </p>
+                </div>
+                <!-- Bouton pilule identique -->
+                <div>
+                    <span class="inline-flex items-center gap-2 bg-slate-100 group-hover:bg-sr-blue group-hover:text-white text-sr-blue font-bold text-sm px-6 py-3 rounded-full transition-all">
+                        Accéder au site <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+            </a>
 
-    <!-- CARTE DROITE : RODEZ -->
-    <a href="rodez.html" class="group bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 text-center flex flex-col justify-between">
-        <div>
-            <!-- Conteneur logo identique -->
-            <div class="w-36 h-36 mx-auto mb-6 bg-amber-50/60 rounded-3xl flex items-center justify-center p-4 border border-amber-100/50">
-                <img src="images/logo-rodez.png" alt="Rodez" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform">
-            </div>
-            <!-- Titre en police bleue identique -->
-            <h3 class="text-sm font-bold text-sr-blue uppercase tracking-wider mb-2">
-                Sophie RODIER Expertise Comptable
-            </h3>
-            <!-- Adresse -->
-            <p class="text-slate-500 text-sm leading-relaxed mb-8">
-                5 boulevard Gambetta<br>12000 RODEZ
-            </p>
-        </div>
-        <!-- Bouton pilule identique -->
-        <div>
-            <span class="inline-flex items-center gap-2 bg-slate-100 group-hover:bg-sr-orange group-hover:text-white text-sr-orange font-bold text-sm px-6 py-3 rounded-full transition-all">
-                Accéder au site <i class="fa-solid fa-arrow-right"></i>
-            </span>
-        </div>
-    </a>
+            <!-- CARTE DROITE : RODEZ -->
+            <a href="rodez.html" class="group bg-white p-6 sm:p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 text-center flex flex-col justify-between">
+                <div>
+                    <!-- Conteneur logo identique -->
+                    <div class="w-28 h-28 md:w-36 md:h-36 mx-auto mb-6 bg-amber-50/60 rounded-3xl flex items-center justify-center p-4 border border-amber-100/50">
+                        <img src="images/logo-rodez.png" alt="Rodez" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform">
+                    </div>
+                    <!-- Titre en police bleue identique -->
+                    <h3 class="text-sm font-bold text-sr-blue uppercase tracking-wider mb-2">
+                        Sophie RODIER Expertise Comptable
+                    </h3>
+                    <!-- Adresse -->
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6 md:mb-8">
+                        5 boulevard Gambetta<br>12000 RODEZ
+                    </p>
+                </div>
+                <!-- Bouton pilule identique -->
+                <div>
+                    <span class="inline-flex items-center gap-2 bg-slate-100 group-hover:bg-sr-orange group-hover:text-white text-sr-orange font-bold text-sm px-6 py-3 rounded-full transition-all">
+                        Accéder au site <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+            </a>
 
-</div>
+        </div>
+    </div>
 
 </body>
 </html>
