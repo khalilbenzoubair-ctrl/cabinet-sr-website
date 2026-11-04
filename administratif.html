@@ -94,31 +94,28 @@
         </div>
     </header>
 
-    <!-- Banner (Police manuscrite et suppression du fond blanc de l'image) -->
-    <section class="bg-[#FFFCEB] py-10 md:py-12 overflow-hidden border-b border-yellow-100">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-8 items-center">
+    <!-- HERO BANNIÈRE ADMINISTRATIF (Format Grand Modèle) -->
+    <section class="bg-sr-yellow text-slate-900 py-16 lg:py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
             
-            <!-- IMAGE À GAUCHE (Ajout de mix-blend-multiply pour retirer le blanc) -->
-            <div class="font-handwritten text-4xl sm:text-5xl md:text-7xl md:justify-start py-4">
-                <img src="images/hero-administratif.png" alt="Côté Administratif" class="w-full max-w-sm md:max-w-md lg:max-w-lg object-contain animate-float max-h-72 lg:max-h-80 scale-110 origin-center mix-blend-multiply">
+            <!-- Colonne Illustration (5 colonnes à gauche, grande taille) -->
+            <div class="flex md:col-span-5 relative justify-center">
+                <img src="images/illustration-admin.png" alt="Côté Administratif" class="w-64 sm:w-80 md:w-full max-w-md h-auto object-contain drop-shadow-xl animate-float">
             </div>
 
-            <!-- TEXTE À DROITE -->
-            <div class="md:col-span-7 space-y-4 text-center md:text-left relative z-10">
-                <span class="bg-yellow-200 text-yellow-700 text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full inline-block">
-                    Pôle Assistance & Délégation
+            <!-- Colonne Texte (7 colonnes à droite) -->
+            <div class="md:col-span-7 space-y-5 text-center md:text-left">
+                <span class="inline-block bg-slate-900/10 backdrop-blur-sm text-slate-900 text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full">
+                    PÔLE GESTION & ORGANISATION
                 </span>
-                
-                <!-- Titre modifié avec la police manuscrite (font-handwritten) -->
-                <h1 class="font-handwritten text-6xl md:text-7xl font-bold text-slate-900 leading-tight">
-                    Côté <span class="text-[#EAB308]">Administratif</span>
+                <h1 class="font-handwritten text-5xl sm:text-6xl md:text-7xl font-bold text-slate-900 leading-none">
+                    Côté Administratif
                 </h1>
-                
-                <p class="text-slate-600 text-base md:text-lg max-w-xl mx-auto md:mx-0 leading-relaxed">
-                    Facturation en retard, relances chronophages... Libérez-vous de cette charge mentale en externalisant votre secrétariat.
+                <p class="text-slate-800 text-base sm:text-lg leading-relaxed max-w-2xl font-medium">
+                    Libérez-vous de la charge mentale administrative. Nous prenons en main votre facturation, vos relances et votre organisation quotidienne.
                 </p>
             </div>
-            
+
         </div>
     </section>
 
