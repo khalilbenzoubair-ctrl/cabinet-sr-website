@@ -11,14 +11,14 @@
             theme: {
                 extend: {
                     fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], handwritten: ['Caveat', 'cursive'] },
-                    colors: { sr: { black: '#0B1121', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#D97706', bgLight: '#FAF9F6' } }
+                    colors: { sr: { black: '#0B1121', blue: '#1E3A8A', orange: '#EA580C', green: '#059669', pink: '#E11D48', yellow: '#FFD600', bgLight: '#F8FAFC' } }
                 }
             }
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-sr-bgLight text-slate-800 font-sans antialiased">
+<body class="bg-sr-bgLight text-slate-800 font-sans antialiased flex flex-col min-h-screen">
 
     <!-- Topbar Contact Rodez -->
     <div class="bg-sr-black text-white text-[11px] sm:text-xs py-2 px-4 sm:px-6 flex flex-wrap justify-between items-center gap-2">
@@ -79,140 +79,41 @@
         </div>
     </header>
 
-    <!-- BANNIÈRE CARRIÈRES -->
-    <section class="bg-sr-blue text-white py-16 md:py-24 relative overflow-hidden">
-        <div class="max-w-5xl mx-auto px-6 text-center relative z-10 space-y-4">
-            <span class="inline-block bg-white/15 backdrop-blur-sm text-white text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full">
-                Carrières & Recrutement — Rodez
+    <!-- BANNIÈRE SOMBRE (Identique à ta capture) -->
+    <section class="bg-[#0B1121] text-white py-14 md:py-20 text-center px-4">
+        <div class="max-w-3xl mx-auto space-y-3">
+            <span class="font-handwritten text-3xl sm:text-4xl text-sr-yellow font-bold block">
+                Rejoignez nos équipes
             </span>
-            <h1 class="font-handwritten text-5xl sm:text-6xl md:text-7xl font-bold text-white">
-                Rejoignez l'aventure Sophie Rodier
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
+                Postulez au cabinet Sophie RODIER
             </h1>
-            <p class="text-blue-100 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-                Bien plus qu'un cabinet d'expertise comptable : intégrez une équipe soudée, innovante et résolument tournée vers l'humain au cœur de Rodez.
+            <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto pt-2 leading-relaxed">
+                Vous êtes dynamique, rigoureux(se) et souhaitez évoluer au sein d'un cabinet pluridisciplinaire en Aveyron ? Envoyez-nous votre candidature directement.
             </p>
         </div>
     </section>
 
-    <!-- CONTENU & FORMULAIRE -->
-    <section class="py-16 md:py-24 max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-start">
-        
-        <!-- Pourquoi nous rejoindre (Gauche) -->
-        <div class="lg:col-span-6 space-y-8">
-            <div>
-                <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Pourquoi construire votre carrière chez nous ?</h2>
-                <p class="text-slate-600 leading-relaxed">
-                    Au sein du cabinet Sophie RODIER Expertise Comptable, nous plaçons l'épanouissement de nos collaborateurs au même niveau d'exigence que la satisfaction de nos clients.
-                </p>
-            </div>
+    <!-- FORMULAIRE CENTRAL SIMPLE -->
+    <section class="py-16 px-4 flex-grow flex items-center justify-center">
+        <div class="bg-white w-full max-w-xl p-8 sm:p-10 rounded-3xl shadow-sm border border-slate-100">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 text-center mb-8">
+                Formulaire de candidature spontanée / offre
+            </h2>
 
-            <div class="grid sm:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                    <div class="w-12 h-12 bg-blue-50 text-sr-blue rounded-xl flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-people-group"></i>
-                    </div>
-                    <h3 class="font-bold text-slate-900 mb-2">Esprit d'équipe & Proximité</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Une ambiance bienveillante, des échanges directs et une véritable entraide au quotidien entre tous les pôles.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                    <div class="w-12 h-12 bg-orange-50 text-sr-orange rounded-xl flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <h3 class="font-bold text-slate-900 mb-2">Missions à forte valeur</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">De la création d'entreprise au conseil patrimonial et à l'audit : accompagnez des projets variés et stimulants.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                    <div class="w-12 h-12 bg-emerald-50 text-sr-green rounded-xl flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-laptop-code"></i>
-                    </div>
-                    <h3 class="font-bold text-slate-900 mb-2">Outils modernes & Digital</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Des processus dématérialisés pour vous libérer des tâches répétitives et vous concentrer sur le conseil client.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                    <div class="w-12 h-12 bg-pink-50 text-sr-pink rounded-xl flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="font-bold text-slate-900 mb-2">Évolution & Formation</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Nous accompagnons votre montée en compétences (stages, alternances, mémorialistes, collaborateurs confirmés).</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Formulaire de candidature (Droite) -->
-        <div class="lg:col-span-6 bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-slate-100">
-            <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Postuler au cabinet de Rodez</h3>
-            <p class="text-slate-500 text-sm mb-6">Candidature spontanée ou réponse à une offre : transmettez-nous votre profil.</p>
-
-            <!-- Pense à remettre ton URL Forminit dans action="..." si tu l'avais déjà branchée ! -->
-            <form action="#" method="POST" enctype="multipart/form-data" class="space-y-4">
-                <div class="grid sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nom & Prénom *</label>
-                        <input type="text" name="name" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm" placeholder="Jean Dupont">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Téléphone *</label>
-                        <input type="tel" name="phone" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm" placeholder="06 00 00 00 00">
-                    </div>
+            <!-- Remplace "#" par ton lien Forminit si tu l'as déjà pour Rodez -->
+            <form action="#" method="POST" enctype="multipart/form-data" class="space-y-5">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-2">Nom complet</label>
+                    <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm">
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email *</label>
-                    <input type="email" name="email" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm" placeholder="jean.dupont@email.com">
+                    <label class="block text-xs font-semibold text-slate-700 mb-2">Email</label>
+                    <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm">
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Poste / Pôle recherché *</label>
-                    <select name="pole" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm bg-white">
-                        <option value="Expertise Comptable">Collaborateur Comptable</option>
-                        <option value="Audit / CAC">Audit & Commissariat aux Comptes</option>
-                        <option value="Social / Paie">Gestionnaire de Paie / Pôle Social</option>
-                        <option value="Juridique">Juriste Droit des Sociétés</option>
-                        <option value="Conseil / Patrimoine">Conseil & Gestion de Patrimoine</option>
-                        <option value="Stage / Alternance">Stage / Alternance</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Votre CV (PDF) *</label>
-                    <input type="file" name="cv" accept=".pdf,.doc,.docx" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-blue-50 file:text-sr-blue hover:file:bg-blue-100">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Vos motivations</label>
-                    <textarea name="message" rows="4" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm" placeholder="Parlez-nous de votre parcours et de vos envies..."></textarea>
-                </div>
-
-                <button type="submit" class="w-full bg-sr-blue hover:bg-blue-800 text-white font-bold py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
-                    Envoyer ma candidature
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <!-- FOOTER RODEZ -->
-    <footer class="bg-sr-black text-white py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
-            <div>
-                <img src="images/logo-rodez.png" alt="Cabinet Rodez" class="h-16 w-auto bg-white rounded-xl p-2 mb-4">
-                <p class="text-xs text-slate-400">Sophie RODIER Expertise Comptable — Rodez.</p>
-            </div>
-            <div>
-                <h4 class="font-bold text-sm text-sr-yellow mb-3">Coordonnées</h4>
-                <ul class="space-y-2 text-xs text-slate-300">
-                    <li><i class="fa-solid fa-location-dot mr-2 text-sr-yellow"></i> 5 boulevard Gambetta, 12000 Rodez</li>
-                    <li><a href="tel:0565683520"><i class="fa-solid fa-phone mr-2 text-sr-yellow"></i> 05 65 68 35 20</a></li>
-                    <li><a href="mailto:secretariat@srexpertise.fr"><i class="fa-solid fa-envelope mr-2 text-sr-yellow"></i> secretariat@srexpertise.fr</a></li>
-                </ul>
-            </div>
-            <div class="text-xs text-slate-400 flex flex-col items-start md:items-end gap-2">
-                <span>© 2026 Sophie Rodier - Tous droits réservés.</span>
-                <a href="rodez-mentions-legales.html" class="hover:text-white transition-colors underline underline-offset-2">Mentions Légales & RGPD</a>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+                    <label class="block text-xs font-semibold text-slate-700 mb-2">Votre CV (PDF)</label>
+                    <div class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm text-slate-600">
+                        <input type="file" name="cv" accept=".pdf,.doc,.docx" required class="w-full text-sm text-slate-600 file:
