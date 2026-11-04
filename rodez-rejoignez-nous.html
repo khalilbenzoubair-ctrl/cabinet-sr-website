@@ -79,9 +79,9 @@
         </div>
     </header>
 
-    <!-- BANNIÈRE SOMBRE (Identique à ta capture) -->
-    <section class="bg-[#0B1121] text-white py-14 md:py-20 text-center px-4">
-        <div class="max-w-3xl mx-auto space-y-3">
+    <!-- BANNIÈRE RECRUTEMENT -->
+    <section class="bg-[#0B1121] text-white py-12 md:py-16 text-center px-4">
+        <div class="max-w-3xl mx-auto space-y-2">
             <span class="font-handwritten text-3xl sm:text-4xl text-sr-yellow font-bold block">
                 Rejoignez nos équipes
             </span>
@@ -94,26 +94,80 @@
         </div>
     </section>
 
-    <!-- FORMULAIRE CENTRAL SIMPLE -->
-    <section class="py-16 px-4 flex-grow flex items-center justify-center">
-        <div class="bg-white w-full max-w-xl p-8 sm:p-10 rounded-3xl shadow-sm border border-slate-100">
+    <!-- FORMULAIRE COMPLET DE CANDIDATURE -->
+    <section class="py-12 md:py-16 px-4 flex-grow">
+        <div class="bg-white w-full max-w-2xl mx-auto p-6 sm:p-10 rounded-3xl shadow-md border border-slate-100">
             <h2 class="text-xl sm:text-2xl font-bold text-slate-900 text-center mb-8">
                 Formulaire de candidature spontanée / offre
             </h2>
 
-            <!-- Remplace "#" par ton lien Forminit si tu l'as déjà pour Rodez -->
-            <form action="#" method="POST" enctype="multipart/form-data" class="space-y-5">
-                <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-2">Nom complet</label>
-                    <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm">
+            <!-- Colle ton URL Forminit dans action="..." -->
+            <form action="https://forminit.com/f/TON_ID_ICI" method="POST" enctype="multipart/form-data" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1.5">Nom complet *</label>
+                        <input type="text" name="name" required placeholder="Votre nom et prénom" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1.5">Téléphone *</label>
+                        <input type="tel" name="phone" required placeholder="06 00 00 00 00" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm">
+                    </div>
                 </div>
 
                 <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-2">Email</label>
-                    <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm">
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5">Email *</label>
+                    <input type="email" name="email" required placeholder="votre@email.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm">
                 </div>
 
                 <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-2">Votre CV (PDF)</label>
-                    <div class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm text-slate-600">
-                        <input type="file" name="cv" accept=".pdf,.doc,.docx" required class="w-full text-sm text-slate-600 file:
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5">Votre CV (PDF) *</label>
+                    <div class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50">
+                        <input type="file" name="cv" accept=".pdf,.doc,.docx" required class="w-full text-sm text-slate-600 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border file:border-slate-300 file:text-xs file:font-semibold file:bg-white file:text-slate-800 hover:file:bg-slate-100 cursor-pointer">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5">Lettre de motivation / Autre document (Optionnel)</label>
+                    <div class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50">
+                        <input type="file" name="lettre_motivation" accept=".pdf,.doc,.docx" class="w-full text-sm text-slate-600 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border file:border-slate-300 file:text-xs file:font-semibold file:bg-white file:text-slate-800 hover:file:bg-slate-100 cursor-pointer">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5">Message / Motivations</label>
+                    <textarea name="message" rows="4" placeholder="Présentez brièvement votre profil et le poste recherché..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sr-blue focus:outline-none text-sm"></textarea>
+                </div>
+
+                <div class="pt-3">
+                    <button type="submit" class="w-full bg-sr-blue hover:bg-blue-900 text-white font-bold py-4 rounded-xl shadow-md hover:shadow-lg transition-all text-sm flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Envoyer ma candidature
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- BARRE DU BAS (FOOTER RODEZ COMPLET) -->
+    <footer class="bg-sr-black text-white py-12 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div>
+                <img src="images/logo-rodez.png" alt="Cabinet Rodez" class="h-16 w-auto bg-white rounded-xl p-2 mb-4">
+                <p class="text-xs text-slate-400">Cabinet d'expertise comptable, de commissariat aux comptes et de conseil à Rodez.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-sm text-sr-yellow mb-3">Coordonnées</h4>
+                <ul class="space-y-2 text-xs text-slate-300">
+                    <li class="hover:text-white transition-colors"><i class="fa-solid fa-location-dot mr-2 text-sr-yellow"></i> 5 boulevard Gambetta, 12000 Rodez</li>
+                    <li class="hover:text-white transition-colors"><a href="tel:0565683520"><i class="fa-solid fa-phone mr-2 text-sr-yellow"></i> 05 65 68 35 20</a></li>
+                    <li class="hover:text-white transition-colors"><a href="mailto:secretariat@srexpertise.fr"><i class="fa-solid fa-envelope mr-2 text-sr-yellow"></i> secretariat@srexpertise.fr</a></li>
+                </ul>
+            </div>
+            <div class="text-xs text-slate-400 flex flex-col items-start md:items-end gap-2">
+                <span>© 2026 Sophie Rodier - Tous droits réservés.</span>
+                <a href="rodez-mentions-legales.html" class="hover:text-white transition-colors underline underline-offset-2">Mentions Légales & RGPD</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
